@@ -992,3 +992,8 @@ td {
         font-family: -apple-system,BlinkMacSystemFont,'Helvetica Neue','PingFang SC','Hiragino Sans GB','Droid Sans Fallback','Microsoft YaHei',sans-serif;
       }
     
+      body{
+background:url('https://bing.ioliu.cn/v1/?w=1920&h=1080');
+background-attachment:fixed;
+}
+    
