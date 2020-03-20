@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruxia-tjy.github.io</id>
     <title>ruxia</title>
-    <updated>2020-03-20T11:44:53.435Z</updated>
+    <updated>2020-03-20T12:03:47.757Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruxia-tjy.github.io"/>
     <link rel="self" href="https://ruxia-tjy.github.io/atom.xml"/>
@@ -18,12 +18,13 @@
         <updated>2020-03-20T11:28:59.000Z</updated>
         <content type="html"><![CDATA[<p>写了一个主页，很简单的网页，虽然任何一个初学者都能很轻松的做出来，但是对我来说还是很有用的，也算是我的私人定制😂<br>
 看看图片：<br>
-<img src="https://ruxia-tjy.github.io/post-images/1584704592536.jpg" alt="主页图片" loading="lazy"></p>
-<p>背景是: http://bing.ioliu.cn 这个网站的接口</p>
+<img src="https://ruxia-tjy.github.io/post-images/1584705246437.jpg" alt="主页图片" loading="lazy"></p>
 <p>整个界面也就加了一个搜索框，一个搜索，图标，再加一些单选按钮，毕竟简洁，不需要那些对我来说没意义的东西。</p>
 <p>在搜索框内输入内容，选择相应的单选按钮，点击搜索就可以了。</p>
 <p>网址是： https://ruxia-tjy.gitee.io</p>
-<p>大家有兴趣的话，可以看看</p>
+<p>大家有兴趣的话，可以看看。</p>
+<p>背景是: http://bing.ioliu.cn 这个网站的接口，一开始想用官方接口的，但被跨域问题折磨的欲生欲死。</p>
+<p>还有一开始是想在本地使用的，因为当时不知道可以使用github这些网站。所以有必要判断是否联网，但是我用的Chrome浏览器，navigator.onLine这个死活没用，百度了一下才知道chrome算是不支持，无论是否有网络，始终是true值。然后没办法，就先加载接口的bing图片，然后在最后判断是否获得图片，没获得就加载本地图片。然后部署到gitee上了，就不需要考虑这些了。因为打开网站肯定联网了。</p>
 ]]></content>
     </entry>
     <entry>
@@ -63,7 +64,8 @@
 zh-CN   中国</p>
 </li>
 </ul>
-<figure data-type="image" tabindex="1"><img src="https://ruxia-tjy.github.io/post-images/1584694648996.png" alt="代码截图" loading="lazy"></figure>
+<p>python代码如下图<br>
+<img src="https://ruxia-tjy.github.io/post-images/1584694648996.png" alt="代码截图" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
