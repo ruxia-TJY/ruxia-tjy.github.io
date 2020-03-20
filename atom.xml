@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruxia-tjy.github.io</id>
     <title>ruxia</title>
-    <updated>2020-03-20T09:53:26.738Z</updated>
+    <updated>2020-03-20T09:57:23.978Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruxia-tjy.github.io"/>
     <link rel="self" href="https://ruxia-tjy.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://ruxia-tjy.github.io/images/avatar.png</logo>
     <icon>https://ruxia-tjy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ruxia</rights>
+    <entry>
+        <title type="html"><![CDATA[ceshi ]]></title>
+        <id>https://ruxia-tjy.github.io/post/ceshi/</id>
+        <link href="https://ruxia-tjy.github.io/post/ceshi/">
+        </link>
+        <updated>2020-03-20T09:57:01.000Z</updated>
+        <content type="html"><![CDATA[<p>测试一下</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Python爬取必应每日壁纸]]></title>
         <id>https://ruxia-tjy.github.io/post/python-pa-qu-bi-ying-mei-ri-bi-zhi/</id>
