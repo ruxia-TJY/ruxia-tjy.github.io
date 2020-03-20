@@ -2,19 +2,29 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>信息轰炸 | ruxia</title>
+<title>Python爬取必应每日壁纸 | ruxia</title>
 <link rel="shortcut icon" href="https://ruxia-tjy.github.io/favicon.ico?v=1584694931306">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://ruxia-tjy.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="信息轰炸 | ruxia - Atom Feed" href="https://ruxia-tjy.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="Python爬取必应每日壁纸 | ruxia - Atom Feed" href="https://ruxia-tjy.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="今天从朋友分享了一串vbs代码
+    <meta name="description" content="必应壁纸的API:https://cn.bing.com/HPImageArchive.aspx
+参数：
 
-" />
-    <meta name="keywords" content="vb" />
+
+format(可选)
+如果不存在format参数则返回xml格式
+
+js 返回json格式
+xml   返回xml格式
+
+
+
+id..." />
+    <meta name="keywords" content="python,爬虫" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -74,26 +84,60 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              信息轰炸
+              Python爬取必应每日壁纸
             </h2>
             <div class="post-info">
               <span>
-                2020-03-18
+                2020-03-20
               </span>
               <span>
                 1 min read
               </span>
               
-                <a href="https://ruxia-tjy.github.io/tag/PuLwZxC8M/" class="post-tag">
-                  # vb
+                <a href="https://ruxia-tjy.github.io/tag/gTBalQHBn/" class="post-tag">
+                  # python
+                </a>
+              
+                <a href="https://ruxia-tjy.github.io/tag/csBpSUPAP/" class="post-tag">
+                  # 爬虫
                 </a>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>今天从朋友分享了一串vbs代码<br>
-<img src="https://ruxia-tjy.github.io/post-images/1584690332405.jpg" alt="" loading="lazy"></p>
+                <p>必应壁纸的API:https://cn.bing.com/HPImageArchive.aspx<br>
+参数：</p>
+<ul>
+<li>
+<p>format(可选)<br>
+如果不存在format参数则返回xml格式</p>
+<ul>
+<li>js 返回json格式</li>
+<li>xml   返回xml格式</li>
+</ul>
+</li>
+<li>
+<p>idx()<br>
+截止天数</p>
+<ul>
+<li>0 今天</li>
+<li>1 截止至明天</li>
+<li>-1    截止至昨天</li>
+</ul>
+</li>
+<li>
+<p>n<br>
+返回的数量<br>
+1-8</p>
+</li>
+<li>
+<p>mkt<br>
+地区<br>
+zh-CN   中国</p>
+</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://ruxia-tjy.github.io/post-images/1584694648996.png" alt="代码截图" loading="lazy"></figure>
 
               </div>
               <div class="toc-container">
@@ -103,6 +147,15 @@
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://ruxia-tjy.github.io/post/xin-xi-hong-zha/">
+              <h3 class="post-title">
+                信息轰炸
+              </h3>
+            </a>
+          </div>
         
 
         
