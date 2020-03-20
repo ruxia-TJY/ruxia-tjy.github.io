@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruxia-tjy.github.io</id>
     <title>ruxia</title>
-    <updated>2020-03-20T11:21:45.312Z</updated>
+    <updated>2020-03-20T11:41:27.129Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruxia-tjy.github.io"/>
     <link rel="self" href="https://ruxia-tjy.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://ruxia-tjy.github.io/images/avatar.png</logo>
     <icon>https://ruxia-tjy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ruxia</rights>
+    <entry>
+        <title type="html"><![CDATA[写了个主页]]></title>
+        <id>https://ruxia-tjy.github.io/post/xie-liao-ge-zhu-ye/</id>
+        <link href="https://ruxia-tjy.github.io/post/xie-liao-ge-zhu-ye/">
+        </link>
+        <updated>2020-03-20T11:28:59.000Z</updated>
+        <content type="html"><![CDATA[<p>写了一个主页，很简单的网页，虽然任何一个初学者都能很轻松的做出来，但是对我来说还是很有用的，也算是我的私人定制😂<br>
+看看图片：<br>
+<img src="https://ruxia-tjy.github.io/post-images/1584703906322.jpg" alt="主页图片" loading="lazy"></p>
+<p>背景是: http://bing.ioliu.cn 这个网站的接口</p>
+<p>整个界面也就加了一个搜索框，一个搜索，图标，再加一些单选按钮，毕竟简洁，不需要那些对我来说没意义的东西。</p>
+<p>在搜索框内输入内容，选择相应的单选按钮，点击搜索就可以了。</p>
+<p>网址是： https://ruxia-tjy.gitee.io</p>
+<p>大家有兴趣的话，可以看看</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Python爬取必应每日壁纸]]></title>
         <id>https://ruxia-tjy.github.io/post/python-pa-qu-bi-ying-mei-ri-bi-zhi/</id>
