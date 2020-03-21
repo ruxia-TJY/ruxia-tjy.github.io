@@ -995,6 +995,8 @@ td {
       body{
 background:url('https://bing.ioliu.cn/v1/?w=1920&h=1080');
 background-attachment:fixed;
-
+}
+.main{
+filter:alpha(Opacity=83);-moz-opacity:0.83;opacity: 0.83;
 }
     
