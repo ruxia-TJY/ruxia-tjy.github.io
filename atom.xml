@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruxia-tjy.github.io</id>
     <title>ruxia</title>
-    <updated>2020-03-21T15:11:59.469Z</updated>
+    <updated>2020-03-29T13:42:25.114Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruxia-tjy.github.io"/>
     <link rel="self" href="https://ruxia-tjy.github.io/atom.xml"/>
@@ -64,10 +64,37 @@
 zh-CN   中国</p>
 </li>
 </ul>
-<p>python代码如下图<br>
-<img src="https://ruxia-tjy.github.io/post-images/1584694648996.png" alt="代码截图" loading="lazy"></p>
-<p>投稿到了bilibili：https://www.bilibili.com/video/av97691074/<br>
-求关注😄</p>
+<pre><code class="python">"""
+Python爬取bing每日壁纸
+作者： ruxia-TJY
+转载请注明：https://ruxia-tjy.github.io/
+"""
+import requests
+import json
+import time
+
+def main():
+    # bing壁纸API
+    url = 'https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN'
+    # 获取json
+    jsonr  requests.get(url).text
+    # 获取图片路径
+    imgpath = json.loads(jsonr)["images"][0]["url"]
+    # 拼接路径
+    imgurl = 'http://cn.bing.com' + imgpath
+    # 获取壁纸
+    img = requests.get(imgurl)
+    #保存名称
+    savename = time.strftime("%Y-%m-%d") + '.jpg'
+    # 保存图片
+    with open(savename,'wb') as f1:
+        f1.write(img.content)
+
+if __name__ == '__main__':
+    main()
+</code></pre>
+<p>投稿到了bilibili：<a href="https://www.bilibili.com/video/av97691074/">https://www.bilibili.com/video/av97691074/</a><br>
+求三连😄</p>
 ]]></content>
     </entry>
     <entry>
