@@ -2,11 +2,11 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>友链 | ruxia</title>
+<title>爬取LOL皮肤壁纸 | ruxia</title>
 <link rel="shortcut icon" href="https://ruxia-tjy.github.io/favicon.ico?v=1586690776402">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://ruxia-tjy.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="友链 | ruxia - Atom Feed" href="https://ruxia-tjy.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="爬取LOL皮肤壁纸 | ruxia - Atom Feed" href="https://ruxia-tjy.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
@@ -26,9 +26,14 @@
 <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>  
 <script >hljs.initHighlightingOnLoad();</script>  
 
-    <meta name="description" content="苏博斌博客
-" />
-    <meta name="keywords" content="" />
+    <meta name="description" content="因为之前有爬取王者荣耀的经验，所以爬取LOL时候全程无百度，令我惊奇的是，竟然有语音可以爬取
+不过什么时候LOL变成腾讯的了？？？之前一直以为LOL是外国的。
+因为不玩LOL，爬取了之后没看
+
+'''
+    爬取LOL皮肤壁纸
+    作..." />
+    <meta name="keywords" content="python,爬虫" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -108,22 +113,78 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              友链
+              爬取LOL皮肤壁纸
             </h2>
             <div class="post-info">
               <span>
-                2020-03-21
+                2020-04-12
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
+              
+                <a href="https://ruxia-tjy.github.io/tag/gTBalQHBn/" class="post-tag">
+                  # python
+                </a>
+              
+                <a href="https://ruxia-tjy.github.io/tag/csBpSUPAP/" class="post-tag">
+                  # 爬虫
+                </a>
               
             </div>
             
+              <img class="post-feature-image" src="https://ruxia-tjy.github.io/post-images/pa-qu-lol-pi-fu-bi-zhi.jpg" alt="">
+            
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p><a href="https://s9527.github.io">苏博斌博客</a></p>
+                <p>因为之前有爬取王者荣耀的经验，所以爬取LOL时候全程无百度，令我惊奇的是，竟然有语音可以爬取<br>
+不过什么时候LOL变成腾讯的了？？？之前一直以为LOL是外国的。<br>
+因为不玩LOL，爬取了之后没看</p>
+<pre><code class="python">
+'''
+    爬取LOL皮肤壁纸
+    作者： ruxia-TJY
+'''
+import requests
+import json
+import os
 
+# 英雄列表json文件链接
+herolist = 'https://game.gtimg.cn/images/lol/act/img/js/heroList/hero_list.js'
+# 获取
+herolistjson = json.loads(requests.utils.unquote(requests.get(herolist).text))
+
+for hero in herolistjson["hero"]:
+    # 爬取语音
+    if not os.path.exists('.\\data\\audio\\' + hero["title"]):
+        os.mkdir('.\\data\\audio\\' + hero["title"])
+
+    selectAudio = requests.get(hero['selectAudio'])
+    with open('.\\data\\audio\\' + hero["title"] + '\\selectAudio.ogg','wb') as f1:
+        f1.write(selectAudio.content)
+        print( hero["title"] + '\\selectAudio.ogg is ok')
+
+    banAudio = requests.get(hero['banAudio'])
+    with open('.\\data\\audio\\' + hero["title"] + '\\banAudio.ogg','wb') as f2:
+        f2.write(banAudio.content)
+        print(hero["title"] + '\\banAudio.ogg is ok')
+
+    # 爬取图片
+    if not os.path.exists('.\\data\\img\\' + hero["title"]):
+        os.mkdir('.\\data\\img\\' + hero["title"])
+    
+    imgjsonurl = 'https://game.gtimg.cn/images/lol/act/img/js/hero/' + hero['heroId'] + '.js'
+    jsonr = json.loads(requests.utils.unquote(requests.get(imgjsonurl).text))
+
+    for skin in jsonr["skins"]:
+        try:
+            img = requests.get(skin["mainImg"])
+            with open('.\\data\\img\\' + hero["title"] + '\\' + skin["name"] + ".jpg" ,'wb') as f:
+                f.write(img.content)
+            print(hero["title"] + '\\' + skin["name"] + ".jpg is ok")
+        except:pass
+        else:pass
+</code></pre>
               </div>
               <div class="toc-container">
                 
@@ -132,6 +193,15 @@
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://ruxia-tjy.github.io/post/python-pa-qu-wang-zhe-rong-yao-bi-zhi/">
+              <h3 class="post-title">
+                python爬取王者荣耀壁纸
+              </h3>
+            </a>
+          </div>
         
 
         
