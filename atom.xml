@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruxia-tjy.github.io</id>
     <title>ruxia</title>
-    <updated>2020-04-12T12:40:11.259Z</updated>
+    <updated>2020-04-13T03:45:23.610Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruxia-tjy.github.io"/>
     <link rel="self" href="https://ruxia-tjy.github.io/atom.xml"/>
@@ -10,6 +10,52 @@
     <logo>https://ruxia-tjy.github.io/images/avatar.png</logo>
     <icon>https://ruxia-tjy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ruxia</rights>
+    <entry>
+        <title type="html"><![CDATA[写了个小壁纸软件 - Wallpaper]]></title>
+        <id>https://ruxia-tjy.github.io/post/xie-liao-ge-xiao-bi-zhi-ruan-jian-wallpaper/</id>
+        <link href="https://ruxia-tjy.github.io/post/xie-liao-ge-xiao-bi-zhi-ruan-jian-wallpaper/">
+        </link>
+        <updated>2020-04-13T02:00:02.000Z</updated>
+        <content type="html"><![CDATA[<p>还记得之前发的<a href="https://ruxia-tjy.github.io/post/python-pa-qu-bi-ying-mei-ri-bi-zhi/">使用Python爬取bing壁纸</a>吗？<br>
+写了一个壁纸小软件，名字叫做Wallpaper，暂时有两个功能：</p>
+<ul>
+<li>下载bing当日图片作为壁纸</li>
+<li>随机设置程序data文件夹下的一张图片作为壁纸</li>
+</ul>
+<p>一开始只想做一个运行就自动下载bing图片设置为壁纸的软件，但是后来有好多好看的图片在电脑里面，就增加了随机设置壁纸的功能，只要将图片复制到data文件夹下，运行Wallpaper就会随机挑一张设置为壁纸。<br>
+之前想过将Wallpaper设置开机启动，写了个NSIS脚本，不过后来删除了，因为我的开机启动项实在太多了，真不想添加了，而且问了一些朋友，也是不建议添加到开机启动项。所以如果您想将程序添加到开机启动项，可以在文件资源管理器中打开这个地址 %programdata%\Microsoft\Windows\Start Menu\Programs\Startup 然后将Wallpaper的快捷方式复制进去就行了<br>
+也想过后台运行，实现那种幻灯片放映，每隔个几秒几分钟就自动切换一次壁纸，但是想了想，还是不占用宝贵的计算机资源了，毕竟Windows系统设置壁纸幻灯片放映真的是很容易的，关于如何实现，百度以下就可以找到。<br>
+所以我现在都是将Wallpaper发送个快捷方式到桌面，运行一下就可以。</p>
+<p>如果您感觉Wallpaper这个软件很好的话，您很喜欢这个小软件的话，请star本项目<a href="https://github.com/ruxia-TJY/Wallpaper">Github</a>，感谢感谢！</p>
+<p>程序首次运行会出现如下界面：</p>
+<h2 id="配置程序">配置程序</h2>
+<p><img src="https://ruxia-tjy.github.io/post-images/1586743942488.png" alt="配置程序图片" loading="lazy"><br>
+有两个选项：<br>
+如果您想每次运行程序下载bing图片作为壁纸，直接按Enter或者输入1再按Enter<br>
+如果您想每次运行程序随机在程序data目录下挑选一张图片作为壁纸输入2，按Enter</p>
+<p>然后会问你<br>
+是否保持下载bing壁纸，无论是否开启随机模式(y/n)<br>
+意思是说，当你上一步开启随机模式时候，是否下载bing的当日壁纸图片。如果不想的话，输入n</p>
+<p>配置完成后，每次运行Wallpaper都会按照配置运行，无需再配置。</p>
+<h2 id="常见问题">常见问题</h2>
+<p>###当我只想下载bing当日图片，而不想设置壁纸<br>
+在命令行中运行<br>
+Wallpaper -d<br>
+命令即可</p>
+<h3 id="我想重新配置程序不想使用">我想重新配置程序，不想使用</h3>
+<p>在命令行中输入<br>
+Wallpaper -config<br>
+即可重新配置程序，配置方法跟前面一样</p>
+<h3 id="我想把自己的图片设置为随机壁纸">我想把自己的图片设置为随机壁纸</h3>
+<p>将图片复制到程序的data下如果不存在创建一个或者运行一边Wallpaper即可</p>
+<p>程序MD5和SHA-1</p>
+<ul>
+<li>MD5: FE6F2559A43E8EBE9A2854F62F927E3A</li>
+<li>SHA-1: 4816F2D9F4FCD65F5C306A5791CCBBBD3884F636</li>
+</ul>
+<p>程序下载地址:<a href="https://github.com/ruxia-TJY/Wallpaper/releases">Github</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[很久之前写的华容道小游戏]]></title>
         <id>https://ruxia-tjy.github.io/post/hen-jiu-zhi-qian-de-hua-rong-dao-xiao-you-xi/</id>
