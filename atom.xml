@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruxia-tjy.github.io</id>
     <title>ruxia</title>
-    <updated>2020-04-13T03:45:23.610Z</updated>
+    <updated>2020-04-13T05:13:05.612Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruxia-tjy.github.io"/>
     <link rel="self" href="https://ruxia-tjy.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://ruxia-tjy.github.io/images/avatar.png</logo>
     <icon>https://ruxia-tjy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ruxia</rights>
+    <entry>
+        <title type="html"><![CDATA[svg Browser - 简单、开源的批量svg浏览软件]]></title>
+        <id>https://ruxia-tjy.github.io/post/svg-browser-jian-dan-kai-yuan-de-pi-liang-svg-liu-lan-ruan-jian/</id>
+        <link href="https://ruxia-tjy.github.io/post/svg-browser-jian-dan-kai-yuan-de-pi-liang-svg-liu-lan-ruan-jian/">
+        </link>
+        <updated>2020-04-13T04:47:18.000Z</updated>
+        <content type="html"><![CDATA[<p>在Github上下载了很多svg项目，每次打开svg文件都要关闭在打开浏览器，同时打开很多浏览器也是很烦，干脆用VB.net写了个浏览软件，用了个列表框存储路径，WebBrowser控件显示。<br>
+没有编辑功能，因为我一开始想的就是当文件夹下有很多svg文件，快速查看。<br>
+<img src="https://ruxia-tjy.github.io/post-images/1586754176137.png" alt="" loading="lazy"><br>
+程序可以遍历文件夹下所有的svg文件，添加到列表中，点击列表选中一个时，会显示该文件，并将文件的地址复制到剪切板。<br>
+程序是很简单的，就是一个很实用的工具，估计任何一个初学者都可以做出来，不知道网上有什么类似的软件，但既然自己做出来了，为什么不用呢。</p>
+<p>emm,太没技术含量的软件，我也不好意思求star，也是好久之前做的，今天又在电脑里找到了。<br>
+再说一遍，这只是一个<strong>浏览软件</strong>，并不能<strong>编辑</strong><br>
+<a href="https://gitee.com/ruxia-tjy/svg-Browser/releases">下载地址</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[写了个小壁纸软件 - Wallpaper]]></title>
         <id>https://ruxia-tjy.github.io/post/xie-liao-ge-xiao-bi-zhi-ruan-jian-wallpaper/</id>
