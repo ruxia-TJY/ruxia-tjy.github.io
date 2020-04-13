@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruxia-tjy.github.io</id>
     <title>ruxia</title>
-    <updated>2020-04-13T05:13:05.612Z</updated>
+    <updated>2020-04-13T05:35:30.897Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruxia-tjy.github.io"/>
     <link rel="self" href="https://ruxia-tjy.github.io/atom.xml"/>
@@ -10,6 +10,70 @@
     <logo>https://ruxia-tjy.github.io/images/avatar.png</logo>
     <icon>https://ruxia-tjy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ruxia</rights>
+    <entry>
+        <title type="html"><![CDATA[c语言实现base64加密字符串]]></title>
+        <id>https://ruxia-tjy.github.io/post/c-yu-yan-shi-xian-base64-jia-mi-zi-fu-chuan/</id>
+        <link href="https://ruxia-tjy.github.io/post/c-yu-yan-shi-xian-base64-jia-mi-zi-fu-chuan/">
+        </link>
+        <updated>2020-04-13T05:19:07.000Z</updated>
+        <content type="html"><![CDATA[<p>知道了base64编码原理，就用c语言试了试，边写边学位操作，内存，出现了问题，幸好有万能的百度。</p>
+<pre><code class="c">
+// base64编码表
+unsigned char* encodeTable = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+
+// 对字符串进行base64加密
+// str： 要进行加密的字符串
+unsigned char* base64EncodeStr(unsigned char str[])
+{
+	// str_len,要计算的字符串长度
+	// encode_len,加密后的字符串长度
+	long str_len, encode_len;
+	// strlen()看不懂的话，emm，在看看你的c语言书把
+	str_len = strlen(str);
+	// 计算加密后的字符串长度
+	// （字符串长度 + 2） / 3类似与取进一法，向上取整，
+	encode_len = (str_len + 2) / 3 * 4;
+
+	//分配内存
+	unsigned char* encode;
+	encode = (unsigned char*)malloc(sizeof(unsigned char) * encode_len);
+	encode[encode_len] = '\0';
+
+	// 进行编码
+	int i, j;
+	// 循环每三个字节执行操作
+	for (i = 0, j = 0; i < encode_len - 2; i += 4, j += 3) {
+		// 此处进行位操作
+		// 字符串第一个字节右移两位，高位补零
+		// 获取加密后的第一个字节
+		encode[i] = encodeTable[str[j] >> 2];		
+		// 将字符串第一个字节与0x3(0000 0011)执行与操作，获取第一个字节的低两位
+		// 第二个字节右移四位与执行或操作
+		// 获取加密后第二个字节
+		encode[i + 1] = encodeTable[(str[j] & 0x3) << 4 | str[j + 1] >> 4];		
+		// 将字符串第二个字节与0xf(0000 1111)执行与操作，获取第二个字节的低四位
+		// 第三个字节右移六位与执行或操作
+		// 获取加密后的第三个字节
+		encode[i + 2] = encodeTable[(str[j + 1] & 0xf) << 2 | str[j + 2] >> 6];
+		// 将字符串第三个字节与0x3f(0011 1111)执行与操作，获取第三个字节的低六位
+		// 获取加密后第四个字节
+		encode[i + 3] = encodeTable[str[j + 2] & 0x3f];
+	}
+
+	// 补=
+	if (str_len % 3 == 1) {
+		encode[encode_len - 2] = '=';
+		encode[encode_len - 1] = '=';
+	}
+	else if (str_len % 3 == 2) {
+		encode[encode_len - 1] = '=';
+	}
+
+
+	return encode;
+}
+</code></pre>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[svg Browser - 简单、开源的批量svg浏览软件]]></title>
         <id>https://ruxia-tjy.github.io/post/svg-browser-jian-dan-kai-yuan-de-pi-liang-svg-liu-lan-ruan-jian/</id>

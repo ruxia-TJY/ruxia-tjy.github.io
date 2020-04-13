@@ -2,11 +2,11 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>GooseDesktopEdit | ruxia</title>
+<title>c语言实现base64加密字符串 | ruxia</title>
 <link rel="shortcut icon" href="https://ruxia-tjy.github.io/favicon.ico?v=1586755972983">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://ruxia-tjy.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="GooseDesktopEdit | ruxia - Atom Feed" href="https://ruxia-tjy.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="c语言实现base64加密字符串 | ruxia - Atom Feed" href="https://ruxia-tjy.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
@@ -26,11 +26,11 @@
 <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>  
 <script >hljs.initHighlightingOnLoad();</script>  
 
-    <meta name="description" content="发现了个宠物软件 GooseDesktop,  疫情期间闲的没事干，就做了个配置的软件，
+    <meta name="description" content="知道了base64编码原理，就用c语言试了试，边写边学位操作，内存，出现了问题，幸好有万能的百度。
 
-程序运行之后会自动检测电脑中名为 GooseDesktop.exe 的程序，如果存在多个，还是需要手动配置路径。
-程序使用VB.Net写的，虽说VB..." />
-    <meta name="keywords" content="我的软件,vb" />
+// base64编码表
+unsigned char* encodeTable = "ABCDEFGHIJKLMNOPQRSTUVWXYZ..." />
+    <meta name="keywords" content="c" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -110,44 +110,81 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              GooseDesktopEdit
+              c语言实现base64加密字符串
             </h2>
             <div class="post-info">
               <span>
-                2020-04-12
+                2020-04-13
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
               
-                <a href="https://ruxia-tjy.github.io/tag/StyYC3hCu/" class="post-tag">
-                  # 我的软件
-                </a>
-              
-                <a href="https://ruxia-tjy.github.io/tag/PuLwZxC8M/" class="post-tag">
-                  # vb
+                <a href="https://ruxia-tjy.github.io/tag/CTVK5-Hau/" class="post-tag">
+                  # c
                 </a>
               
             </div>
             
-              <img class="post-feature-image" src="https://ruxia-tjy.github.io/post-images/goosedesktopedit.jpg" alt="">
-            
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>发现了个宠物软件 GooseDesktop,  疫情期间闲的没事干，就做了个配置的软件，</p>
-<figure data-type="image" tabindex="1"><img src="https://ruxia-tjy.github.io/post-images/1586686201259.png" alt="" loading="lazy"></figure>
-<p>程序运行之后会自动检测电脑中名为 GooseDesktop.exe 的程序，如果存在多个，还是需要手动配置路径。</p>
-<p>程序使用VB.Net写的，虽说VB现在越来越没地位，但写些Windows小程序还是忍不住使用，毕竟这个软件也只是个很简单的小程序。</p>
-<ul>
-<li>.Net FrameWork 4.7.2框架（win10系统一般都会有该框架）</li>
-<li>x64位系统（32位的暂未开发）</li>
-<li>本程序包含文件完整（因为我没有写检查自身完整性的代码，基本上发布的压缩包里的文件不删除）</li>
-<li>电脑里有GooseDesktop（本程序是对GooseDektop这款软件的配置进行编辑）</li>
-</ul>
-<p>虽然程序很小很简单，但还是希望您的Star。</p>
-<p><a href="https://gitee.com/ruxia-tjy/GooseDesktopEdit">国内码云地址</a><br>
-<a href="https://github.com/ruxia-tjy/GooseDesktopEdit">github地址</a></p>
+                <p>知道了base64编码原理，就用c语言试了试，边写边学位操作，内存，出现了问题，幸好有万能的百度。</p>
+<pre><code class="c">
+// base64编码表
+unsigned char* encodeTable = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
+// 对字符串进行base64加密
+// str： 要进行加密的字符串
+unsigned char* base64EncodeStr(unsigned char str[])
+{
+	// str_len,要计算的字符串长度
+	// encode_len,加密后的字符串长度
+	long str_len, encode_len;
+	// strlen()看不懂的话，emm，在看看你的c语言书把
+	str_len = strlen(str);
+	// 计算加密后的字符串长度
+	// （字符串长度 + 2） / 3类似与取进一法，向上取整，
+	encode_len = (str_len + 2) / 3 * 4;
+
+	//分配内存
+	unsigned char* encode;
+	encode = (unsigned char*)malloc(sizeof(unsigned char) * encode_len);
+	encode[encode_len] = '\0';
+
+	// 进行编码
+	int i, j;
+	// 循环每三个字节执行操作
+	for (i = 0, j = 0; i < encode_len - 2; i += 4, j += 3) {
+		// 此处进行位操作
+		// 字符串第一个字节右移两位，高位补零
+		// 获取加密后的第一个字节
+		encode[i] = encodeTable[str[j] >> 2];		
+		// 将字符串第一个字节与0x3(0000 0011)执行与操作，获取第一个字节的低两位
+		// 第二个字节右移四位与执行或操作
+		// 获取加密后第二个字节
+		encode[i + 1] = encodeTable[(str[j] & 0x3) << 4 | str[j + 1] >> 4];		
+		// 将字符串第二个字节与0xf(0000 1111)执行与操作，获取第二个字节的低四位
+		// 第三个字节右移六位与执行或操作
+		// 获取加密后的第三个字节
+		encode[i + 2] = encodeTable[(str[j + 1] & 0xf) << 2 | str[j + 2] >> 6];
+		// 将字符串第三个字节与0x3f(0011 1111)执行与操作，获取第三个字节的低六位
+		// 获取加密后第四个字节
+		encode[i + 3] = encodeTable[str[j + 2] & 0x3f];
+	}
+
+	// 补=
+	if (str_len % 3 == 1) {
+		encode[encode_len - 2] = '=';
+		encode[encode_len - 1] = '=';
+	}
+	else if (str_len % 3 == 2) {
+		encode[encode_len - 1] = '=';
+	}
+
+
+	return encode;
+}
+</code></pre>
               </div>
               <div class="toc-container">
                 
@@ -159,9 +196,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://ruxia-tjy.github.io/post/xie-liao-ge-zhu-ye/">
+            <a href="https://ruxia-tjy.github.io/post/svg-browser-jian-dan-kai-yuan-de-pi-liang-svg-liu-lan-ruan-jian/">
               <h3 class="post-title">
-                写了个主页
+                svg Browser - 简单、开源的批量svg浏览软件
               </h3>
             </a>
           </div>
