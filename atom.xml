@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruxia-tjy.github.io</id>
     <title>ruxia</title>
-    <updated>2020-04-14T03:50:23.118Z</updated>
+    <updated>2020-04-14T10:52:44.556Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruxia-tjy.github.io"/>
     <link rel="self" href="https://ruxia-tjy.github.io/atom.xml"/>
@@ -10,6 +10,39 @@
     <logo>https://ruxia-tjy.github.io/images/avatar.png</logo>
     <icon>https://ruxia-tjy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ruxia</rights>
+    <entry>
+        <title type="html"><![CDATA[随机密码生成器 - RandomPW]]></title>
+        <id>https://ruxia-tjy.github.io/post/sui-ji-mi-ma-sheng-cheng-qi-randompw/</id>
+        <link href="https://ruxia-tjy.github.io/post/sui-ji-mi-ma-sheng-cheng-qi-randompw/">
+        </link>
+        <updated>2020-04-14T10:25:02.000Z</updated>
+        <content type="html"><![CDATA[<p>好久之前，，，临时需要个密码，就随手写了个生成器，用完之后就放在那。<br>
+今天又被我重新翻出来，重新编译后发到蓝奏云上去🙄</p>
+<p>每次生成随机密码都会自动复制密码到剪切版上，选中列表里的一个密码也会复制到剪切板里。</p>
+<p>长这样：<br>
+<img src="https://ruxia-tjy.github.io/post-images/1586860117739.png" alt="" loading="lazy"><br>
+大小还是很小的<br>
+<img src="https://ruxia-tjy.github.io/post-images/1586860581467.png" alt="" loading="lazy"></p>
+<p>emm,当时怎么想的，怎么制作的不知道了，但整体思路还在：</p>
+<p>首先定义四个子密码表：</p>
+<ul>
+<li>大写字母表 A-Z</li>
+<li>小写字母表 a-z</li>
+<li>数字表 0-9</li>
+<li>@#_表</li>
+</ul>
+<p>每次生成密码操作如下：</p>
+<ol>
+<li>拼接密码表</li>
+<li>在[0,密码表长度]随机生成一个数字，获取在密码表中的字符</li>
+<li>拼接字符</li>
+<li>每个子密码表都随机生成一个替换一个拼接的字符，确保每个选中的子密码表都会在生成的随机密码中</li>
+</ol>
+<p>云盘地址：<br>
+源代码：<a href="https://ruxia.lanzous.com/ibdpz8h">蓝奏云</a><br>
+程序:<a href="https://ruxia.lanzous.com/ibdq8cf">蓝奏云</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Python将图片转换为字符串 - CharacterMatrix]]></title>
         <id>https://ruxia-tjy.github.io/post/python-jiang-tu-pian-zhuan-huan-wei-zi-fu-chuan-charactermatrix/</id>
@@ -319,76 +352,6 @@ with open('wzry.lst','w') as f:
 <p>大家有兴趣的话，可以看看。</p>
 <p>背景是: http://bing.ioliu.cn 这个网站的接口，一开始想用官方接口的，但被跨域问题折磨的欲生欲死。</p>
 <p>还有一开始是想在本地使用的，因为当时不知道可以使用github这些网站。所以有必要判断是否联网，但是我用的Chrome浏览器，navigator.onLine这个死活没用，百度了一下才知道chrome算是不支持，无论是否有网络，始终是true值。然后没办法，就先加载接口的bing图片，然后在最后判断是否获得图片，没获得就加载本地图片。然后部署到gitee上了，就不需要考虑这些了。因为打开网站肯定联网了。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Python爬取必应每日壁纸]]></title>
-        <id>https://ruxia-tjy.github.io/post/python-pa-qu-bi-ying-mei-ri-bi-zhi/</id>
-        <link href="https://ruxia-tjy.github.io/post/python-pa-qu-bi-ying-mei-ri-bi-zhi/">
-        </link>
-        <updated>2020-03-20T08:48:24.000Z</updated>
-        <content type="html"><![CDATA[<p>必应壁纸的API:https://cn.bing.com/HPImageArchive.aspx<br>
-参数：</p>
-<ul>
-<li>
-<p>format(可选)<br>
-如果不存在format参数则返回xml格式</p>
-<ul>
-<li>js 返回json格式</li>
-<li>xml   返回xml格式</li>
-</ul>
-</li>
-<li>
-<p>idx()<br>
-截止天数</p>
-<ul>
-<li>0 今天</li>
-<li>1 截止至明天</li>
-<li>-1    截止至昨天</li>
-</ul>
-</li>
-<li>
-<p>n<br>
-返回的数量<br>
-1-8</p>
-</li>
-<li>
-<p>mkt<br>
-地区<br>
-zh-CN   中国</p>
-</li>
-</ul>
-<pre><code class="python">"""
-Python爬取bing每日壁纸
-作者： ruxia-TJY
-转载请注明：https://ruxia-tjy.github.io/
-"""
-import requests
-import json
-import time
-
-def main():
-    # bing壁纸API
-    url = 'https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN'
-    # 获取json
-    jsonr  requests.get(url).text
-    # 获取图片路径
-    imgpath = json.loads(jsonr)["images"][0]["url"]
-    # 拼接路径
-    imgurl = 'http://cn.bing.com' + imgpath
-    # 获取壁纸
-    img = requests.get(imgurl)
-    #保存名称
-    savename = time.strftime("%Y-%m-%d") + '.jpg'
-    # 保存图片
-    with open(savename,'wb') as f1:
-        f1.write(img.content)
-
-if __name__ == '__main__':
-    main()
-</code></pre>
-<p>投稿到了bilibili：<a href="https://www.bilibili.com/video/av97691074/">https://www.bilibili.com/video/av97691074/</a><br>
-求三连😄</p>
 ]]></content>
     </entry>
 </feed>
