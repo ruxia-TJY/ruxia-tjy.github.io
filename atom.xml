@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruxia-tjy.github.io</id>
     <title>ruxia</title>
-    <updated>2020-04-13T06:27:44.052Z</updated>
+    <updated>2020-04-14T03:09:01.534Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruxia-tjy.github.io"/>
     <link rel="self" href="https://ruxia-tjy.github.io/atom.xml"/>
@@ -118,8 +118,8 @@ unsigned char* base64EncodeStr(unsigned char str[])
 意思是说，当你上一步开启随机模式时候，是否下载bing的当日壁纸图片。如果不想的话，输入n</p>
 <p>配置完成后，每次运行Wallpaper都会按照配置运行，无需再配置。</p>
 <h2 id="常见问题">常见问题</h2>
-<p>###当我只想下载bing当日图片，而不想设置壁纸<br>
-在命令行中运行<br>
+<h3 id="当我只想下载bing当日图片而不想设置壁纸">当我只想下载bing当日图片，而不想设置壁纸</h3>
+<p>在命令行中运行<br>
 Wallpaper -d<br>
 命令即可</p>
 <h3 id="我想重新配置程序不想使用">我想重新配置程序，不想使用</h3>
