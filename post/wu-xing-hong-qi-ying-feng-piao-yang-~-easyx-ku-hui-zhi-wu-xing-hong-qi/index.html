@@ -2,11 +2,11 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>随机密码生成器 - RandomPW | ruxia</title>
+<title>五星红旗迎风飘扬~ - EasyX库绘制五星红旗 | ruxia</title>
 <link rel="shortcut icon" href="https://ruxia-tjy.github.io/favicon.ico?v=1586863088729">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://ruxia-tjy.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="随机密码生成器 - RandomPW | ruxia - Atom Feed" href="https://ruxia-tjy.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="五星红旗迎风飘扬~ - EasyX库绘制五星红旗 | ruxia - Atom Feed" href="https://ruxia-tjy.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
@@ -26,15 +26,15 @@
 <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>  
 <script >hljs.initHighlightingOnLoad();</script>  
 
-    <meta name="description" content="好久之前，，，临时需要个密码，就随手写了个生成器，用完之后就放在那。
-今天又被我重新翻出来，重新编译后发到蓝奏云上去🙄
-每次生成随机密码都会自动复制密码到剪切版上，选中列表里的一个密码也会复制到剪切板里。
-长这样：
+    <meta name="description" content="先看看效果
 
-大小还是很小的
 
-e..." />
-    <meta name="keywords" content="我的软件,vb" />
+
+/*************************************************
+ * 名称： 基于EasyX绘制五星红旗
+ * 作者： ruxia-TJY
+ * 时2019年12月22日17点44分，..." />
+    <meta name="keywords" content="c" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -114,54 +114,159 @@ e..." />
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              随机密码生成器 - RandomPW
+              五星红旗迎风飘扬~ - EasyX库绘制五星红旗
             </h2>
             <div class="post-info">
               <span>
                 2020-04-14
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
               
-                <a href="https://ruxia-tjy.github.io/tag/StyYC3hCu/" class="post-tag">
-                  # 我的软件
-                </a>
-              
-                <a href="https://ruxia-tjy.github.io/tag/PuLwZxC8M/" class="post-tag">
-                  # vb
+                <a href="https://ruxia-tjy.github.io/tag/CTVK5-Hau/" class="post-tag">
+                  # c
                 </a>
               
             </div>
             
+              <img class="post-feature-image" src="https://ruxia-tjy.github.io/post-images/wu-xing-hong-qi-ying-feng-piao-yang-~-easyx-ku-hui-zhi-wu-xing-hong-qi.jpg" alt="">
+            
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>好久之前，，，临时需要个密码，就随手写了个生成器，用完之后就放在那。<br>
-今天又被我重新翻出来，重新编译后发到蓝奏云上去🙄</p>
-<p>每次生成随机密码都会自动复制密码到剪切版上，选中列表里的一个密码也会复制到剪切板里。</p>
-<p>长这样：<br>
-<img src="https://ruxia-tjy.github.io/post-images/1586860117739.png" alt="" loading="lazy"><br>
-大小还是很小的<br>
-<img src="https://ruxia-tjy.github.io/post-images/1586860581467.png" alt="" loading="lazy"></p>
-<p>emm,当时怎么想的，怎么制作的不知道了，但整体思路还在：</p>
-<p>首先定义四个子密码表：</p>
-<ul>
-<li>大写字母表 A-Z</li>
-<li>小写字母表 a-z</li>
-<li>数字表 0-9</li>
-<li>@#_表</li>
-</ul>
-<p>每次生成密码操作如下：</p>
-<ol>
-<li>拼接密码表</li>
-<li>在[0,密码表长度]随机生成一个数字，获取在密码表中的字符</li>
-<li>拼接字符</li>
-<li>每个子密码表都随机生成一个替换一个拼接的字符，确保每个选中的子密码表都会在生成的随机密码中</li>
-</ol>
-<p>云盘地址：<br>
-源代码：<a href="https://ruxia.lanzous.com/ibdpz8h">蓝奏云</a><br>
-程序:<a href="https://ruxia.lanzous.com/ibdq8cf">蓝奏云</a></p>
+                <p>先看看效果<br>
+<img src="https://ruxia-tjy.github.io/post-images/1586862552103.png" alt="" loading="lazy"></p>
+<figure data-type="image" tabindex="1"><img src="https://ruxia-tjy.github.io/post-images/1586862558776.png" alt="" loading="lazy"></figure>
+<pre><code class="c">
+/*************************************************
+ * 名称： 基于EasyX绘制五星红旗
+ * 作者： ruxia-TJY
+ * 时2019年12月22日17点44分，开始写代码
+ * 时2019年12月24日18点52分，最后修改代码
+ * 
+ * 感谢您的查看！
+*************************************************/
 
+#include&lt;graphics.h&gt;
+#include&lt;math.h&gt;
+
+#define PI 3.1415926535
+
+bool HasStandardLine = false;	// 是否显示标准线
+
+void DrawingFivePointedStar(POINT centlocation, int radius, double RotationAngle);			// 绘制五角星	
+void DrawingFlag();						// 绘制红旗
+void standardline();					// 绘制标准线
+
+int main()
+{
+	MOUSEMSG msg;
+
+	initgraph(600, 400);
+
+	// 设置背景色
+	setbkcolor(RED);
+	cleardevice();
+	DrawingFlag();
+	// 绘制红旗
+
+	while(1)
+	{
+		msg = GetMouseMsg();
+		switch (msg.uMsg) {
+		case WM_LBUTTONDOWN:
+			// 按下鼠标左键
+			// 绘制红旗
+			DrawingFlag();
+			
+			// 绘制标准线
+			if (!HasStandardLine) {
+				standardline();
+			}
+			HasStandardLine = !HasStandardLine;
+			
+			break;
+		case WM_RBUTTONDOWN:
+			// 右键退出
+			return 0;
+		}
+	}	
+}
+
+// 绘制红旗
+void DrawingFlag()
+{
+	// 绘制背景
+	setfillcolor(RED);
+	solidrectangle(0, 0, 600, 400);
+	POINT p;
+
+	// 绘制五角星
+	p.x = 100;
+	p.y = 100;
+	DrawingFivePointedStar(p, 60, PI / 2);
+
+	p.x = 200;
+	p.y = 40;
+	DrawingFivePointedStar(p, 20, PI * 211 / 180);
+
+	p.x = 240;
+	p.y = 80;
+	DrawingFivePointedStar(p, 20, PI * 188 / 180);
+
+	p.x = 240;
+	p.y = 140;
+	DrawingFivePointedStar(p, 20, PI * 164 / 180);
+
+	p.x = 200;
+	p.y = 180;
+	DrawingFivePointedStar(p, 20, PI * 141 / 180);
+}
+
+// 绘制五角星
+void DrawingFivePointedStar(POINT centlocation, int radius, double RotationAngle)
+{
+	POINT pts[5];
+
+	for (int i = 0; i < 5; i++)
+	{
+		pts[i].x = int(centlocation.x + cos(RotationAngle) * radius);
+		pts[i].y = int(centlocation.y - sin(RotationAngle) * radius);
+		RotationAngle += PI * 4 / 5;
+	}
+
+	setpolyfillmode(WINDING);
+	setfillcolor(YELLOW);
+	solidpolygon(pts, 5);
+}
+
+// 绘制标准线
+void standardline()
+{
+	int i;						// 随机变量
+	setlinecolor(BLUE);
+	line(0, 200, 600, 200);
+	line(300, 0, 300, 400);
+
+	for (i = 1; i <= 10; i++) {
+		line(0, 20 * i, 300, 20 * i);
+	}
+	for (i = 1; i <= 15; i++) {
+		line(20 * i, 0, 20 * i, 200);
+	}
+
+	line(100, 100, 200, 40);
+	line(100, 100, 240, 80);
+	line(100, 100, 240, 140);
+	line(100, 100, 200, 180);
+
+	circle(100, 100, 60);
+	circle(200, 40, 20);
+	circle(240, 80, 20);
+	circle(240, 140, 20);
+	circle(200, 180, 20);
+}
+</code></pre>
               </div>
               <div class="toc-container">
                 
@@ -173,9 +278,9 @@ e..." />
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://ruxia-tjy.github.io/post/python-jiang-tu-pian-zhuan-huan-wei-zi-fu-chuan-charactermatrix/">
+            <a href="https://ruxia-tjy.github.io/post/sui-ji-mi-ma-sheng-cheng-qi-randompw/">
               <h3 class="post-title">
-                Python将图片转换为字符串 - CharacterMatrix
+                随机密码生成器 - RandomPW
               </h3>
             </a>
           </div>

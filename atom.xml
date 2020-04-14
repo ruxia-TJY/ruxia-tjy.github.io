@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruxia-tjy.github.io</id>
     <title>ruxia</title>
-    <updated>2020-04-14T10:52:44.556Z</updated>
+    <updated>2020-04-14T11:19:07.970Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruxia-tjy.github.io"/>
     <link rel="self" href="https://ruxia-tjy.github.io/atom.xml"/>
@@ -10,6 +10,146 @@
     <logo>https://ruxia-tjy.github.io/images/avatar.png</logo>
     <icon>https://ruxia-tjy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ruxia</rights>
+    <entry>
+        <title type="html"><![CDATA[五星红旗迎风飘扬~ - EasyX库绘制五星红旗]]></title>
+        <id>https://ruxia-tjy.github.io/post/wu-xing-hong-qi-ying-feng-piao-yang-~-easyx-ku-hui-zhi-wu-xing-hong-qi/</id>
+        <link href="https://ruxia-tjy.github.io/post/wu-xing-hong-qi-ying-feng-piao-yang-~-easyx-ku-hui-zhi-wu-xing-hong-qi/">
+        </link>
+        <updated>2020-04-14T11:07:40.000Z</updated>
+        <content type="html"><![CDATA[<p>先看看效果<br>
+<img src="https://ruxia-tjy.github.io/post-images/1586862552103.png" alt="" loading="lazy"></p>
+<figure data-type="image" tabindex="1"><img src="https://ruxia-tjy.github.io/post-images/1586862558776.png" alt="" loading="lazy"></figure>
+<pre><code class="c">
+/*************************************************
+ * 名称： 基于EasyX绘制五星红旗
+ * 作者： ruxia-TJY
+ * 时2019年12月22日17点44分，开始写代码
+ * 时2019年12月24日18点52分，最后修改代码
+ * 
+ * 感谢您的查看！
+*************************************************/
+
+#include&lt;graphics.h&gt;
+#include&lt;math.h&gt;
+
+#define PI 3.1415926535
+
+bool HasStandardLine = false;	// 是否显示标准线
+
+void DrawingFivePointedStar(POINT centlocation, int radius, double RotationAngle);			// 绘制五角星	
+void DrawingFlag();						// 绘制红旗
+void standardline();					// 绘制标准线
+
+int main()
+{
+	MOUSEMSG msg;
+
+	initgraph(600, 400);
+
+	// 设置背景色
+	setbkcolor(RED);
+	cleardevice();
+	DrawingFlag();
+	// 绘制红旗
+
+	while(1)
+	{
+		msg = GetMouseMsg();
+		switch (msg.uMsg) {
+		case WM_LBUTTONDOWN:
+			// 按下鼠标左键
+			// 绘制红旗
+			DrawingFlag();
+			
+			// 绘制标准线
+			if (!HasStandardLine) {
+				standardline();
+			}
+			HasStandardLine = !HasStandardLine;
+			
+			break;
+		case WM_RBUTTONDOWN:
+			// 右键退出
+			return 0;
+		}
+	}	
+}
+
+// 绘制红旗
+void DrawingFlag()
+{
+	// 绘制背景
+	setfillcolor(RED);
+	solidrectangle(0, 0, 600, 400);
+	POINT p;
+
+	// 绘制五角星
+	p.x = 100;
+	p.y = 100;
+	DrawingFivePointedStar(p, 60, PI / 2);
+
+	p.x = 200;
+	p.y = 40;
+	DrawingFivePointedStar(p, 20, PI * 211 / 180);
+
+	p.x = 240;
+	p.y = 80;
+	DrawingFivePointedStar(p, 20, PI * 188 / 180);
+
+	p.x = 240;
+	p.y = 140;
+	DrawingFivePointedStar(p, 20, PI * 164 / 180);
+
+	p.x = 200;
+	p.y = 180;
+	DrawingFivePointedStar(p, 20, PI * 141 / 180);
+}
+
+// 绘制五角星
+void DrawingFivePointedStar(POINT centlocation, int radius, double RotationAngle)
+{
+	POINT pts[5];
+
+	for (int i = 0; i < 5; i++)
+	{
+		pts[i].x = int(centlocation.x + cos(RotationAngle) * radius);
+		pts[i].y = int(centlocation.y - sin(RotationAngle) * radius);
+		RotationAngle += PI * 4 / 5;
+	}
+
+	setpolyfillmode(WINDING);
+	setfillcolor(YELLOW);
+	solidpolygon(pts, 5);
+}
+
+// 绘制标准线
+void standardline()
+{
+	int i;						// 随机变量
+	setlinecolor(BLUE);
+	line(0, 200, 600, 200);
+	line(300, 0, 300, 400);
+
+	for (i = 1; i <= 10; i++) {
+		line(0, 20 * i, 300, 20 * i);
+	}
+	for (i = 1; i <= 15; i++) {
+		line(20 * i, 0, 20 * i, 200);
+	}
+
+	line(100, 100, 200, 40);
+	line(100, 100, 240, 80);
+	line(100, 100, 240, 140);
+	line(100, 100, 200, 180);
+
+	circle(100, 100, 60);
+	circle(200, 40, 20);
+	circle(240, 80, 20);
+	circle(240, 140, 20);
+	circle(200, 180, 20);
+}
+</code></pre>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[随机密码生成器 - RandomPW]]></title>
         <id>https://ruxia-tjy.github.io/post/sui-ji-mi-ma-sheng-cheng-qi-randompw/</id>
@@ -335,23 +475,6 @@ with open('wzry.lst','w') as f:
 <p>虽然程序很小很简单，但还是希望您的Star。</p>
 <p><a href="https://gitee.com/ruxia-tjy/GooseDesktopEdit">国内码云地址</a><br>
 <a href="https://github.com/ruxia-tjy/GooseDesktopEdit">github地址</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[写了个主页]]></title>
-        <id>https://ruxia-tjy.github.io/post/xie-liao-ge-zhu-ye/</id>
-        <link href="https://ruxia-tjy.github.io/post/xie-liao-ge-zhu-ye/">
-        </link>
-        <updated>2020-03-20T11:28:59.000Z</updated>
-        <content type="html"><![CDATA[<p>写了一个主页，很简单的网页，虽然任何一个初学者都能很轻松的做出来，但是对我来说还是很有用的，也算是我的私人定制😂<br>
-看看图片：<br>
-<img src="https://ruxia-tjy.github.io/post-images/1584705246437.jpg" alt="主页图片" loading="lazy"></p>
-<p>整个界面也就加了一个搜索框，一个搜索，图标，再加一些单选按钮，毕竟简洁，不需要那些对我来说没意义的东西。</p>
-<p>在搜索框内输入内容，选择相应的单选按钮，点击搜索就可以了。</p>
-<p>网址是： https://ruxia-tjy.gitee.io</p>
-<p>大家有兴趣的话，可以看看。</p>
-<p>背景是: http://bing.ioliu.cn 这个网站的接口，一开始想用官方接口的，但被跨域问题折磨的欲生欲死。</p>
-<p>还有一开始是想在本地使用的，因为当时不知道可以使用github这些网站。所以有必要判断是否联网，但是我用的Chrome浏览器，navigator.onLine这个死活没用，百度了一下才知道chrome算是不支持，无论是否有网络，始终是true值。然后没办法，就先加载接口的bing图片，然后在最后判断是否获得图片，没获得就加载本地图片。然后部署到gitee上了，就不需要考虑这些了。因为打开网站肯定联网了。</p>
 ]]></content>
     </entry>
 </feed>
