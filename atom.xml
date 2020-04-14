@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruxia-tjy.github.io</id>
     <title>ruxia</title>
-    <updated>2020-04-14T03:09:01.534Z</updated>
+    <updated>2020-04-14T03:49:13.571Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruxia-tjy.github.io"/>
     <link rel="self" href="https://ruxia-tjy.github.io/atom.xml"/>
@@ -10,6 +10,30 @@
     <logo>https://ruxia-tjy.github.io/images/avatar.png</logo>
     <icon>https://ruxia-tjy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ruxia</rights>
+    <entry>
+        <title type="html"><![CDATA[Python将图片转换为字符串 - CharacterMatrix]]></title>
+        <id>https://ruxia-tjy.github.io/post/python-jiang-tu-pian-zhuan-huan-wei-zi-fu-chuan-charactermatrix/</id>
+        <link href="https://ruxia-tjy.github.io/post/python-jiang-tu-pian-zhuan-huan-wei-zi-fu-chuan-charactermatrix/">
+        </link>
+        <updated>2020-04-14T03:22:19.000Z</updated>
+        <content type="html"><![CDATA[<p>发现了一个有趣的Python项目，将图片转换为字符串，<a href="https://github.com/RameshAditya/asciify">项目地址</a><br>
+<img src="https://ruxia-tjy.github.io/post-images/1586834749590.jpg" alt="" loading="lazy"><br>
+基本原理是：将图片转化为灰度图像，再根据强度替换字符串</p>
+<p>根据这个项目做了下，使用Pyinstaller打包了，使用方法如下：</p>
+<pre><code class="language-cmd">CharacterMatrix [图片路径]
+</code></pre>
+<p>会在图片目录下创建一个名为Character Matrix.txt的文件</p>
+<p>如果您想要使用其他保存名称,使用方法如下</p>
+<pre><code class="language-cmd">CharacterMatrix [图片路径] -o [保存名称]
+</code></pre>
+<p>如果您想要保存到其他路径，使用方法如下</p>
+<pre><code class="language-cmd">CharacterMatrix [图片路径] -o [保存路径]
+</code></pre>
+<p>百度网盘地址：<br>
+链接：https://pan.baidu.com/s/1mUTrquI1G1DxwA4FBWLwZw<br>
+提取码：1j7k</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[c语言实现base64加密字符串]]></title>
         <id>https://ruxia-tjy.github.io/post/c-yu-yan-shi-xian-base64-jia-mi-zi-fu-chuan/</id>
@@ -365,16 +389,6 @@ if __name__ == '__main__':
 </code></pre>
 <p>投稿到了bilibili：<a href="https://www.bilibili.com/video/av97691074/">https://www.bilibili.com/video/av97691074/</a><br>
 求三连😄</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[信息轰炸]]></title>
-        <id>https://ruxia-tjy.github.io/post/xin-xi-hong-zha/</id>
-        <link href="https://ruxia-tjy.github.io/post/xin-xi-hong-zha/">
-        </link>
-        <updated>2020-03-18T15:18:22.000Z</updated>
-        <content type="html"><![CDATA[<p>今天从朋友分享了一串vbs代码<br>
-<img src="https://ruxia-tjy.github.io/post-images/1584690332405.jpg" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>

@@ -2,11 +2,11 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>写了个主页 | ruxia</title>
+<title>Python将图片转换为字符串 - CharacterMatrix | ruxia</title>
 <link rel="shortcut icon" href="https://ruxia-tjy.github.io/favicon.ico?v=1586835779140">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://ruxia-tjy.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="写了个主页 | ruxia - Atom Feed" href="https://ruxia-tjy.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="Python将图片转换为字符串 - CharacterMatrix | ruxia - Atom Feed" href="https://ruxia-tjy.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
@@ -26,12 +26,14 @@
 <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>  
 <script >hljs.initHighlightingOnLoad();</script>  
 
-    <meta name="description" content="写了一个主页，很简单的网页，虽然任何一个初学者都能很轻松的做出来，但是对我来说还是很有用的，也算是我的私人定制😂
-看看图片：
+    <meta name="description" content="发现了一个有趣的Python项目，将图片转换为字符串，项目地址
 
-整个界面也就加了一个搜索框，一个搜索，图标，再加一些单选按钮，毕竟简洁，不需要那些对我来说没意义的东西。
-在搜..." />
-    <meta name="keywords" content="web" />
+基本原理是：将图片转化为灰度图像，再根据强度替换字符串
+根据这个项目做了下，使用Pyinstaller打包了，使用方法如下：
+CharacterMatrix [图片路径]
+
+..." />
+    <meta name="keywords" content="日常,python" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -111,35 +113,46 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              写了个主页
+              Python将图片转换为字符串 - CharacterMatrix
             </h2>
             <div class="post-info">
               <span>
-                2020-03-20
+                2020-04-14
               </span>
               <span>
-                2 min read
+                1 min read
               </span>
               
-                <a href="https://ruxia-tjy.github.io/tag/cdlveyPTM/" class="post-tag">
-                  # web
+                <a href="https://ruxia-tjy.github.io/tag/hTaDWdE6A/" class="post-tag">
+                  # 日常
+                </a>
+              
+                <a href="https://ruxia-tjy.github.io/tag/gTBalQHBn/" class="post-tag">
+                  # python
                 </a>
               
             </div>
             
-              <img class="post-feature-image" src="https://ruxia-tjy.github.io/post-images/xie-liao-ge-zhu-ye.jpg" alt="">
+              <img class="post-feature-image" src="https://ruxia-tjy.github.io/post-images/python-jiang-tu-pian-zhuan-huan-wei-zi-fu-chuan-charactermatrix.jpg" alt="">
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>写了一个主页，很简单的网页，虽然任何一个初学者都能很轻松的做出来，但是对我来说还是很有用的，也算是我的私人定制😂<br>
-看看图片：<br>
-<img src="https://ruxia-tjy.github.io/post-images/1584705246437.jpg" alt="主页图片" loading="lazy"></p>
-<p>整个界面也就加了一个搜索框，一个搜索，图标，再加一些单选按钮，毕竟简洁，不需要那些对我来说没意义的东西。</p>
-<p>在搜索框内输入内容，选择相应的单选按钮，点击搜索就可以了。</p>
-<p>网址是： https://ruxia-tjy.gitee.io</p>
-<p>大家有兴趣的话，可以看看。</p>
-<p>背景是: http://bing.ioliu.cn 这个网站的接口，一开始想用官方接口的，但被跨域问题折磨的欲生欲死。</p>
-<p>还有一开始是想在本地使用的，因为当时不知道可以使用github这些网站。所以有必要判断是否联网，但是我用的Chrome浏览器，navigator.onLine这个死活没用，百度了一下才知道chrome算是不支持，无论是否有网络，始终是true值。然后没办法，就先加载接口的bing图片，然后在最后判断是否获得图片，没获得就加载本地图片。然后部署到gitee上了，就不需要考虑这些了。因为打开网站肯定联网了。</p>
+                <p>发现了一个有趣的Python项目，将图片转换为字符串，<a href="https://github.com/RameshAditya/asciify">项目地址</a><br>
+<img src="https://ruxia-tjy.github.io/post-images/1586834749590.jpg" alt="" loading="lazy"><br>
+基本原理是：将图片转化为灰度图像，再根据强度替换字符串</p>
+<p>根据这个项目做了下，使用Pyinstaller打包了，使用方法如下：</p>
+<pre><code class="language-cmd">CharacterMatrix [图片路径]
+</code></pre>
+<p>会在图片目录下创建一个名为Character Matrix.txt的文件</p>
+<p>如果您想要使用其他保存名称,使用方法如下</p>
+<pre><code class="language-cmd">CharacterMatrix [图片路径] -o [保存名称]
+</code></pre>
+<p>如果您想要保存到其他路径，使用方法如下</p>
+<pre><code class="language-cmd">CharacterMatrix [图片路径] -o [保存路径]
+</code></pre>
+<p>百度网盘地址：<br>
+链接：https://pan.baidu.com/s/1mUTrquI1G1DxwA4FBWLwZw<br>
+提取码：1j7k</p>
 
               </div>
               <div class="toc-container">
@@ -152,9 +165,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://ruxia-tjy.github.io/post/python-pa-qu-bi-ying-mei-ri-bi-zhi/">
+            <a href="https://ruxia-tjy.github.io/post/c-yu-yan-shi-xian-base64-jia-mi-zi-fu-chuan/">
               <h3 class="post-title">
-                Python爬取必应每日壁纸
+                c语言实现base64加密字符串
               </h3>
             </a>
           </div>
