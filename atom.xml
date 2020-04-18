@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruxia-tjy.github.io</id>
     <title>ruxia</title>
-    <updated>2020-04-14T11:30:49.366Z</updated>
+    <updated>2020-04-18T10:34:15.201Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruxia-tjy.github.io"/>
     <link rel="self" href="https://ruxia-tjy.github.io/atom.xml"/>
@@ -10,6 +10,20 @@
     <logo>https://ruxia-tjy.github.io/images/avatar.png</logo>
     <icon>https://ruxia-tjy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ruxia</rights>
+    <entry>
+        <title type="html"><![CDATA[ts转换为mp4]]></title>
+        <id>https://ruxia-tjy.github.io/post/ts-zhuan-huan-wei-mp4/</id>
+        <link href="https://ruxia-tjy.github.io/post/ts-zhuan-huan-wei-mp4/">
+        </link>
+        <updated>2020-04-18T10:27:36.000Z</updated>
+        <content type="html"><![CDATA[<p>可能，，，很多人去找软件吧，但事实上，如果你使用windows系统的话，直接一句命令</p>
+<pre><code>copy /b *.ts test.mp4
+</code></pre>
+<p>就可以了。</p>
+<p>这个命令会按照windows的排序，将所有的ts文件合并成一个mp4文件，所以你需要注意你要合并的ts排序，使用一些批量重命名软件修改。</p>
+<p>emm，我也在写一个重命名软件，只是还没有写完。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[五星红旗迎风飘扬~ - EasyX库绘制五星红旗]]></title>
         <id>https://ruxia-tjy.github.io/post/wu-xing-hong-qi-ying-feng-piao-yang-~-easyx-ku-hui-zhi-wu-xing-hong-qi/</id>
@@ -455,26 +469,5 @@ for pages in range(22):
 with open('wzry.lst','w') as f:
     f.write(fileInfo)
 </code></pre>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GooseDesktopEdit]]></title>
-        <id>https://ruxia-tjy.github.io/post/goosedesktopedit/</id>
-        <link href="https://ruxia-tjy.github.io/post/goosedesktopedit/">
-        </link>
-        <updated>2020-04-12T10:02:56.000Z</updated>
-        <content type="html"><![CDATA[<p>发现了个宠物软件 GooseDesktop,  疫情期间闲的没事干，就做了个配置的软件，</p>
-<figure data-type="image" tabindex="1"><img src="https://ruxia-tjy.github.io/post-images/1586686201259.png" alt="" loading="lazy"></figure>
-<p>程序运行之后会自动检测电脑中名为 GooseDesktop.exe 的程序，如果存在多个，还是需要手动配置路径。</p>
-<p>程序使用VB.Net写的，虽说VB现在越来越没地位，但写些Windows小程序还是忍不住使用，毕竟这个软件也只是个很简单的小程序。</p>
-<ul>
-<li>.Net FrameWork 4.7.2框架（win10系统一般都会有该框架）</li>
-<li>x64位系统（32位的暂未开发）</li>
-<li>本程序包含文件完整（因为我没有写检查自身完整性的代码，基本上发布的压缩包里的文件不删除）</li>
-<li>电脑里有GooseDesktop（本程序是对GooseDektop这款软件的配置进行编辑）</li>
-</ul>
-<p>虽然程序很小很简单，但还是希望您的Star。</p>
-<p><a href="https://gitee.com/ruxia-tjy/GooseDesktopEdit">国内码云地址</a><br>
-<a href="https://github.com/ruxia-tjy/GooseDesktopEdit">github地址</a></p>
-]]></content>
     </entry>
 </feed>

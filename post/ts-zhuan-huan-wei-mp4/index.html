@@ -2,11 +2,11 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Python爬取必应每日壁纸 | ruxia</title>
+<title>ts转换为mp4 | ruxia</title>
 <link rel="shortcut icon" href="https://ruxia-tjy.github.io/favicon.ico?v=1587205936621">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://ruxia-tjy.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Python爬取必应每日壁纸 | ruxia - Atom Feed" href="https://ruxia-tjy.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="ts转换为mp4 | ruxia - Atom Feed" href="https://ruxia-tjy.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
@@ -26,20 +26,12 @@
 <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>  
 <script >hljs.initHighlightingOnLoad();</script>  
 
-    <meta name="description" content="必应壁纸的API:https://cn.bing.com/HPImageArchive.aspx
-参数：
+    <meta name="description" content="可能，，，很多人去找软件吧，但事实上，如果你使用windows系统的话，直接一句命令
+copy /b *.ts test.mp4
 
-
-format(可选)
-如果不存在format参数则返回xml格式
-
-js 返回json格式
-xml   返回xml格式
-
-
-
-id..." />
-    <meta name="keywords" content="python,爬虫" />
+就可以了。
+这个命令会按照windows的排序，将所有的ts文件合并成一个mp4文件，所以你需要注意你要合并..." />
+    <meta name="keywords" content="日常" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -119,90 +111,30 @@ id..." />
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              Python爬取必应每日壁纸
+              ts转换为mp4
             </h2>
             <div class="post-info">
               <span>
-                2020-03-20
+                2020-04-18
               </span>
               <span>
-                2 min read
+                1 min read
               </span>
               
-                <a href="https://ruxia-tjy.github.io/tag/gTBalQHBn/" class="post-tag">
-                  # python
-                </a>
-              
-                <a href="https://ruxia-tjy.github.io/tag/csBpSUPAP/" class="post-tag">
-                  # 爬虫
+                <a href="https://ruxia-tjy.github.io/tag/hTaDWdE6A/" class="post-tag">
+                  # 日常
                 </a>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>必应壁纸的API:https://cn.bing.com/HPImageArchive.aspx<br>
-参数：</p>
-<ul>
-<li>
-<p>format(可选)<br>
-如果不存在format参数则返回xml格式</p>
-<ul>
-<li>js 返回json格式</li>
-<li>xml   返回xml格式</li>
-</ul>
-</li>
-<li>
-<p>idx()<br>
-截止天数</p>
-<ul>
-<li>0 今天</li>
-<li>1 截止至明天</li>
-<li>-1    截止至昨天</li>
-</ul>
-</li>
-<li>
-<p>n<br>
-返回的数量<br>
-1-8</p>
-</li>
-<li>
-<p>mkt<br>
-地区<br>
-zh-CN   中国</p>
-</li>
-</ul>
-<pre><code class="python">"""
-Python爬取bing每日壁纸
-作者： ruxia-TJY
-转载请注明：https://ruxia-tjy.github.io/
-"""
-import requests
-import json
-import time
-
-def main():
-    # bing壁纸API
-    url = 'https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN'
-    # 获取json
-    jsonr  requests.get(url).text
-    # 获取图片路径
-    imgpath = json.loads(jsonr)["images"][0]["url"]
-    # 拼接路径
-    imgurl = 'http://cn.bing.com' + imgpath
-    # 获取壁纸
-    img = requests.get(imgurl)
-    #保存名称
-    savename = time.strftime("%Y-%m-%d") + '.jpg'
-    # 保存图片
-    with open(savename,'wb') as f1:
-        f1.write(img.content)
-
-if __name__ == '__main__':
-    main()
+                <p>可能，，，很多人去找软件吧，但事实上，如果你使用windows系统的话，直接一句命令</p>
+<pre><code>copy /b *.ts test.mp4
 </code></pre>
-<p>投稿到了bilibili：<a href="https://www.bilibili.com/video/av97691074/">https://www.bilibili.com/video/av97691074/</a><br>
-求三连😄</p>
+<p>就可以了。</p>
+<p>这个命令会按照windows的排序，将所有的ts文件合并成一个mp4文件，所以你需要注意你要合并的ts排序，使用一些批量重命名软件修改。</p>
+<p>emm，我也在写一个重命名软件，只是还没有写完。</p>
 
               </div>
               <div class="toc-container">
@@ -215,9 +147,9 @@ if __name__ == '__main__':
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://ruxia-tjy.github.io/post/xin-xi-hong-zha/">
+            <a href="https://ruxia-tjy.github.io/post/wu-xing-hong-qi-ying-feng-piao-yang-~-easyx-ku-hui-zhi-wu-xing-hong-qi/">
               <h3 class="post-title">
-                信息轰炸
+                五星红旗迎风飘扬~ - EasyX库绘制五星红旗
               </h3>
             </a>
           </div>
