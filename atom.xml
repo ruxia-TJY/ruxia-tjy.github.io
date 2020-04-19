@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruxia-tjy.github.io</id>
     <title>ruxia</title>
-    <updated>2020-04-18T10:34:15.201Z</updated>
+    <updated>2020-04-19T10:35:35.702Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruxia-tjy.github.io"/>
     <link rel="self" href="https://ruxia-tjy.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://ruxia-tjy.github.io/images/avatar.png</logo>
     <icon>https://ruxia-tjy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ruxia</rights>
+    <entry>
+        <title type="html"><![CDATA[初试OpenCV人脸识别]]></title>
+        <id>https://ruxia-tjy.github.io/post/chu-shi-opencv-ren-lian-shi-bie/</id>
+        <link href="https://ruxia-tjy.github.io/post/chu-shi-opencv-ren-lian-shi-bie/">
+        </link>
+        <updated>2020-04-19T10:26:11.000Z</updated>
+        <content type="html"><![CDATA[<p>今天在GitHub上发现一个入门的人脸识别项目。<br>
+忍耐不住好奇试了试。<br>
+改了个参数，然后，如果左图的眼和右图的嘴结合起来就好了<br>
+<img src="https://ruxia-tjy.github.io/post-images/1587292074034.png" alt="" loading="lazy"></p>
+<p>项目还有个性别检测。就试了试我最爱的天使彦，检测的结果竟然是男的！！！Excuse me?<br>
+<img src="https://ruxia-tjy.github.io/post-images/1587292027948.png" alt="" loading="lazy"></p>
+<p>老实说，对于人脸识别，OpenCV这些东西我兴趣来了。</p>
+<p>找到的项目地址：<a href="https://github.com/vipstone/faceai">vipstone/faceai</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ts转换为mp4]]></title>
         <id>https://ruxia-tjy.github.io/post/ts-zhuan-huan-wei-mp4/</id>
@@ -414,60 +430,6 @@ for hero in herolistjson["hero"]:
             print(hero["title"] + '\\' + skin["name"] + ".jpg is ok")
         except:pass
         else:pass
-</code></pre>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[python爬取王者荣耀壁纸]]></title>
-        <id>https://ruxia-tjy.github.io/post/python-pa-qu-wang-zhe-rong-yao-bi-zhi/</id>
-        <link href="https://ruxia-tjy.github.io/post/python-pa-qu-wang-zhe-rong-yao-bi-zhi/">
-        </link>
-        <updated>2020-04-12T10:24:24.000Z</updated>
-        <content type="html"><![CDATA[<p>王者荣耀官方是由壁纸的<a href="https://pvp.qq.com/web201605/wallpaper.shtml">官方壁纸链接</a>，而不是使用hero_list.json这个文件<br>
-废话不说，上代码</p>
-<pre><code class="python">
-import requests
-import time
-import json
-import os
-
-# 存放壁纸文件夹
-if not os.path.exists('.\\data'):
-    os.mkdir('.\\data')
-
-# 存放下载图片信息
-fileInfo = ''
-
-print('正在开始下载,请等待...')
-
-# 下载时候只有21页，没找到获取总共页数的方法，自己根据情况修改
-for pages in range(22):
-    # 拼接连接
-    jsonurl = 'https://apps.game.qq.com/cgi-bin/ams/module/ishow/V1.0/query/workList_inc.cgi?activityId=2735&sVerifyCode=ABCD&sDataType=JSON&iListNum=20&totalpage=0&page=' + str(pages) + '&iOrder=0&iSortNumClose=1&iAMSActivityId=51991&_everyRead=true&iTypeId=2&iFlowId=267733&iActId=2735&iModuleId=2735&_=1578643950203'
-    # 获取json文件
-    jsonr = json.loads(requests.utils.unquote(requests.get(jsonurl).text))
-    # 解析json文件
-    for i in jsonr["List"]:
-        # 本地图片文件不存在
-        # 防止再次下载重复下载
-        if not os.path.exists('.\\data\\' + i["sProdName"] + '.jpg'):
-            # 拼接路径下载
-            # 因为我只需要1920*1080大小的地址，所以本代码只爬了该大小
-            imgurl = i["sProdImgNo_6"][:len(i["sProdImgNo_6"]) -3] + '0'
-            img = requests.get(imgurl)
-            
-            # 写入本地
-            with open('.\\data\\' + i["sProdName"] + '.jpg','wb') as f:
-                f.write(img.content)
-            
-            fileInfo += '.\\data\\' + i["sProdName"] + '.jpg' + '\n'
-            print(i["sProdName"] + '.jpg 已下好')
-            time.sleep(2)
-        else:
-            print('.\\data\\' + i["sProdName"] + '.jpg 已存在')
-
-# 保存下载的图片列表
-with open('wzry.lst','w') as f:
-    f.write(fileInfo)
 </code></pre>]]></content>
     </entry>
 </feed>
