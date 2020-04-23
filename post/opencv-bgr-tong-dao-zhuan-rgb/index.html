@@ -2,11 +2,11 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>初试OpenCV人脸识别 | ruxia</title>
+<title>OpenCV BGR通道转RGB | ruxia</title>
 <link rel="shortcut icon" href="https://ruxia-tjy.github.io/favicon.ico?v=1587641859058">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://ruxia-tjy.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="初试OpenCV人脸识别 | ruxia - Atom Feed" href="https://ruxia-tjy.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="OpenCV BGR通道转RGB | ruxia - Atom Feed" href="https://ruxia-tjy.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
@@ -26,13 +26,16 @@
 <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>  
 <script >hljs.initHighlightingOnLoad();</script>  
 
-    <meta name="description" content="今天在GitHub上发现一个入门的人脸识别项目。
-忍耐不住好奇试了试。
-改了个参数，然后，如果左图的眼和右图的嘴结合起来就好了
+    <meta name="description" content="
+import cv2
 
-项目还有个性别检测。就试了试我最爱的天使彦，检测的结果竟然是男的！！！Excuse me?
-
-老实说，对于人脸..." />
+def BGR2RGB(img):
+    '''
+        BGR通道转换为RGB通道
+    :param img:要转换的图片
+    :return:转换后的图片
+    '''
+    b = im..." />
     <meta name="keywords" content="opencv,python" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -113,11 +116,11 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              初试OpenCV人脸识别
+              OpenCV BGR通道转RGB
             </h2>
             <div class="post-info">
               <span>
-                2020-04-19
+                2020-04-23
               </span>
               <span>
                 1 min read
@@ -135,15 +138,44 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>今天在GitHub上发现一个入门的人脸识别项目。<br>
-忍耐不住好奇试了试。<br>
-改了个参数，然后，如果左图的眼和右图的嘴结合起来就好了<br>
-<img src="https://ruxia-tjy.github.io/post-images/1587292074034.png" alt="" loading="lazy"></p>
-<p>项目还有个性别检测。就试了试我最爱的天使彦，检测的结果竟然是男的！！！Excuse me?<br>
-<img src="https://ruxia-tjy.github.io/post-images/1587292027948.png" alt="" loading="lazy"></p>
-<p>老实说，对于人脸识别，OpenCV这些东西我兴趣来了。</p>
-<p>找到的项目地址：<a href="https://github.com/vipstone/faceai">vipstone/faceai</a></p>
+                <pre><code class="python">
+import cv2
 
+def BGR2RGB(img):
+    '''
+        BGR通道转换为RGB通道
+    :param img:要转换的图片
+    :return:转换后的图片
+    '''
+    b = img[:,:,0].copy()
+    # 学习时候有这一句，也是让我迷糊的
+    # BGR转RGB，只要将R与B通道转换一下，为什么要写个G，不多于吗？
+    # 我找了几张照片实验了一下，有没有这个是一样的。不知道是不是有些图片比较特殊。
+    # g = img[:,:,1].copy()
+    r = img[:,:,2].copy()
+
+    img[:,:,0] = r
+    # img[:,:,1] = g
+    img[:,:,2] = b
+    return img
+
+# 图片路径
+imgpath = 'img\\image1.jpg'
+
+# 读取图片
+img = cv2.imread(imgpath)
+# 显示原本图片
+cv2.imshow('old',img)
+
+# 转换图片
+img = BGR2RGB(img)
+# 显示转换后的图片
+cv2.imshow('new',img)
+
+# 等待
+cv2.waitKey()
+cv2.destroyAllWindows()
+</code></pre>
               </div>
               <div class="toc-container">
                 
@@ -155,9 +187,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://ruxia-tjy.github.io/post/ts-zhuan-huan-wei-mp4/">
+            <a href="https://ruxia-tjy.github.io/post/chu-shi-opencv-ren-lian-shi-bie/">
               <h3 class="post-title">
-                ts转换为mp4
+                初试OpenCV人脸识别
               </h3>
             </a>
           </div>

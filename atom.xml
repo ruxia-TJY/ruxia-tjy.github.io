@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruxia-tjy.github.io</id>
     <title>ruxia</title>
-    <updated>2020-04-21T11:53:11.491Z</updated>
+    <updated>2020-04-23T11:38:15.244Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruxia-tjy.github.io"/>
     <link rel="self" href="https://ruxia-tjy.github.io/atom.xml"/>
@@ -10,6 +10,51 @@
     <logo>https://ruxia-tjy.github.io/images/avatar.png</logo>
     <icon>https://ruxia-tjy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ruxia</rights>
+    <entry>
+        <title type="html"><![CDATA[OpenCV BGR通道转RGB]]></title>
+        <id>https://ruxia-tjy.github.io/post/opencv-bgr-tong-dao-zhuan-rgb/</id>
+        <link href="https://ruxia-tjy.github.io/post/opencv-bgr-tong-dao-zhuan-rgb/">
+        </link>
+        <updated>2020-04-23T11:30:55.000Z</updated>
+        <content type="html"><![CDATA[<pre><code class="python">
+import cv2
+
+def BGR2RGB(img):
+    '''
+        BGR通道转换为RGB通道
+    :param img:要转换的图片
+    :return:转换后的图片
+    '''
+    b = img[:,:,0].copy()
+    # 学习时候有这一句，也是让我迷糊的
+    # BGR转RGB，只要将R与B通道转换一下，为什么要写个G，不多于吗？
+    # 我找了几张照片实验了一下，有没有这个是一样的。不知道是不是有些图片比较特殊。
+    # g = img[:,:,1].copy()
+    r = img[:,:,2].copy()
+
+    img[:,:,0] = r
+    # img[:,:,1] = g
+    img[:,:,2] = b
+    return img
+
+# 图片路径
+imgpath = 'img\\image1.jpg'
+
+# 读取图片
+img = cv2.imread(imgpath)
+# 显示原本图片
+cv2.imshow('old',img)
+
+# 转换图片
+img = BGR2RGB(img)
+# 显示转换后的图片
+cv2.imshow('new',img)
+
+# 等待
+cv2.waitKey()
+cv2.destroyAllWindows()
+</code></pre>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[初试OpenCV人脸识别]]></title>
         <id>https://ruxia-tjy.github.io/post/chu-shi-opencv-ren-lian-shi-bie/</id>
@@ -376,60 +421,5 @@ Wallpaper -config<br>
 <p>最尴尬的是写了之后不会玩，，，</p>
 <p><a href="https://gitee.com/ruxia-tjy/HRD">gitee地址</a></p>
 ]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[爬取LOL皮肤壁纸]]></title>
-        <id>https://ruxia-tjy.github.io/post/pa-qu-lol-pi-fu-bi-zhi/</id>
-        <link href="https://ruxia-tjy.github.io/post/pa-qu-lol-pi-fu-bi-zhi/">
-        </link>
-        <updated>2020-04-12T11:07:03.000Z</updated>
-        <content type="html"><![CDATA[<p>因为之前有爬取王者荣耀的经验，所以爬取LOL时候全程无百度，令我惊奇的是，竟然有语音可以爬取<br>
-不过什么时候LOL变成腾讯的了？？？之前一直以为LOL是外国的。<br>
-因为不玩LOL，爬取了之后没看</p>
-<pre><code class="python">
-'''
-    爬取LOL皮肤壁纸
-    作者： ruxia-TJY
-'''
-import requests
-import json
-import os
-
-# 英雄列表json文件链接
-herolist = 'https://game.gtimg.cn/images/lol/act/img/js/heroList/hero_list.js'
-# 获取
-herolistjson = json.loads(requests.utils.unquote(requests.get(herolist).text))
-
-for hero in herolistjson["hero"]:
-    # 爬取语音
-    if not os.path.exists('.\\data\\audio\\' + hero["title"]):
-        os.mkdir('.\\data\\audio\\' + hero["title"])
-
-    selectAudio = requests.get(hero['selectAudio'])
-    with open('.\\data\\audio\\' + hero["title"] + '\\selectAudio.ogg','wb') as f1:
-        f1.write(selectAudio.content)
-        print( hero["title"] + '\\selectAudio.ogg is ok')
-
-    banAudio = requests.get(hero['banAudio'])
-    with open('.\\data\\audio\\' + hero["title"] + '\\banAudio.ogg','wb') as f2:
-        f2.write(banAudio.content)
-        print(hero["title"] + '\\banAudio.ogg is ok')
-
-    # 爬取图片
-    if not os.path.exists('.\\data\\img\\' + hero["title"]):
-        os.mkdir('.\\data\\img\\' + hero["title"])
-    
-    imgjsonurl = 'https://game.gtimg.cn/images/lol/act/img/js/hero/' + hero['heroId'] + '.js'
-    jsonr = json.loads(requests.utils.unquote(requests.get(imgjsonurl).text))
-
-    for skin in jsonr["skins"]:
-        try:
-            img = requests.get(skin["mainImg"])
-            with open('.\\data\\img\\' + hero["title"] + '\\' + skin["name"] + ".jpg" ,'wb') as f:
-                f.write(img.content)
-            print(hero["title"] + '\\' + skin["name"] + ".jpg is ok")
-        except:pass
-        else:pass
-</code></pre>]]></content>
     </entry>
 </feed>
