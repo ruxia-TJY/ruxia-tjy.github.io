@@ -2,11 +2,11 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Python爬取必应每日壁纸 | ruxia</title>
+<title>OpenCV 图片二值化 | ruxia</title>
 <link rel="shortcut icon" href="https://ruxia-tjy.github.io/favicon.ico?v=1587719712677">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://ruxia-tjy.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Python爬取必应每日壁纸 | ruxia - Atom Feed" href="https://ruxia-tjy.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="OpenCV 图片二值化 | ruxia - Atom Feed" href="https://ruxia-tjy.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
@@ -26,20 +26,18 @@
 <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>  
 <script >hljs.initHighlightingOnLoad();</script>  
 
-    <meta name="description" content="必应壁纸的API:https://cn.bing.com/HPImageArchive.aspx
-参数：
+    <meta name="description" content="
+import cv2
+import numpy as np
 
 
-format(可选)
-如果不存在format参数则返回xml格式
-
-js 返回json格式
-xml   返回xml格式
-
-
-
-id..." />
-    <meta name="keywords" content="python,爬虫" />
+def BGR2Gray(img):
+    '''
+        灰度化图片
+    :param img:要转换的图片
+    :return: 转换后的图片
+    ..." />
+    <meta name="keywords" content="opencv,python" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -119,91 +117,82 @@ id..." />
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              Python爬取必应每日壁纸
+              OpenCV 图片二值化
             </h2>
             <div class="post-info">
               <span>
-                2020-03-20
+                2020-04-24
               </span>
               <span>
-                2 min read
+                1 min read
               </span>
+              
+                <a href="https://ruxia-tjy.github.io/tag/jdYYg9Iz2/" class="post-tag">
+                  # opencv
+                </a>
               
                 <a href="https://ruxia-tjy.github.io/tag/gTBalQHBn/" class="post-tag">
                   # python
-                </a>
-              
-                <a href="https://ruxia-tjy.github.io/tag/csBpSUPAP/" class="post-tag">
-                  # 爬虫
                 </a>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>必应壁纸的API:https://cn.bing.com/HPImageArchive.aspx<br>
-参数：</p>
-<ul>
-<li>
-<p>format(可选)<br>
-如果不存在format参数则返回xml格式</p>
-<ul>
-<li>js 返回json格式</li>
-<li>xml   返回xml格式</li>
-</ul>
-</li>
-<li>
-<p>idx()<br>
-截止天数</p>
-<ul>
-<li>0 今天</li>
-<li>1 截止至明天</li>
-<li>-1    截止至昨天</li>
-</ul>
-</li>
-<li>
-<p>n<br>
-返回的数量<br>
-1-8</p>
-</li>
-<li>
-<p>mkt<br>
-地区<br>
-zh-CN   中国</p>
-</li>
-</ul>
-<pre><code class="python">"""
-Python爬取bing每日壁纸
-作者： ruxia-TJY
-转载请注明：https://ruxia-tjy.github.io/
-"""
-import requests
-import json
-import time
+                <pre><code class="python">
+import cv2
+import numpy as np
 
-def main():
-    # bing壁纸API
-    url = 'https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN'
-    # 获取json
-    jsonr  requests.get(url).text
-    # 获取图片路径
-    imgpath = json.loads(jsonr)["images"][0]["url"]
-    # 拼接路径
-    imgurl = 'http://cn.bing.com' + imgpath
-    # 获取壁纸
-    img = requests.get(imgurl)
-    #保存名称
-    savename = time.strftime("%Y-%m-%d") + '.jpg'
-    # 保存图片
-    with open(savename,'wb') as f1:
-        f1.write(img.content)
 
-if __name__ == '__main__':
-    main()
+def BGR2Gray(img):
+    '''
+        灰度化图片
+    :param img:要转换的图片
+    :return: 转换后的图片
+    '''
+    b = img[:,:,0].copy()
+    g = img[:,:,1].copy()
+    r = img[:,:,2].copy()
+
+    # 灰度算法
+    # Y = 0.2126 * R + 0.7152 * G + 0.0722 * B
+    out = 0.2126 * r + 0.7152 * g + 0.0722 * b
+    out = out.astype(np.uint8)
+    return out
+
+def binarization(img,thresholding=128):
+    '''
+    二值化图片
+    :param img:要转换的图片
+    :param thresholding: 阈值，默认128
+    :return: 转换后的图片
+    '''
+    img[img >= thresholding] = 255
+    img[img < thresholding] = 0
+    return img
+
+
+# 图片路径
+imgpath = 'img\\image1.jpg'
+
+# 读取图片
+img = cv2.imread(imgpath)
+# 显示图片
+cv2.imshow('old',img)
+
+# 灰度化
+# 不要这一步，感觉其实生成的也很好玩
+# img = BGR2Gray(img)
+
+# 二值化
+img = binarization(img)
+# 显示图片
+cv2.imshow('new',img)
+
+# 等待
+cv2.waitKey()
+cv2.destroyAllWindows()
 </code></pre>
-<p>投稿到了bilibili：<a href="https://www.bilibili.com/video/av97691074/">https://www.bilibili.com/video/av97691074/</a><br>
-求三连😄</p>
-
               </div>
               <div class="toc-container">
                 
@@ -215,9 +204,9 @@ if __name__ == '__main__':
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://ruxia-tjy.github.io/post/xin-xi-hong-zha/">
+            <a href="https://ruxia-tjy.github.io/post/opencv-bgr-tong-dao-zhuan-rgb/">
               <h3 class="post-title">
-                信息轰炸
+                OpenCV BGR通道转RGB
               </h3>
             </a>
           </div>
