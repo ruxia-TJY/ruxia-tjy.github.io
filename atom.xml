@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruxia-tjy.github.io</id>
     <title>ruxia</title>
-    <updated>2020-04-27T07:50:50.029Z</updated>
+    <updated>2020-04-27T08:00:08.924Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruxia-tjy.github.io"/>
     <link rel="self" href="https://ruxia-tjy.github.io/atom.xml"/>
@@ -9579,7 +9579,7 @@ WwAAABF0RVh0U29mdHdhcmUAU25pcGFzdGVdF87dAAAAAElFTkSuQmCC" /><br>
         </link>
         <updated>2020-04-14T03:22:19.000Z</updated>
         <content type="html"><![CDATA[<p>发现了一个有趣的Python项目，将图片转换为字符串，<a href="https://github.com/RameshAditya/asciify">项目地址</a><br>
-<img src="https://ruxia-tjy.github.io/post-images/1586834749590.jpg" alt="" loading="lazy"><br>
+<img src="https://ruxia-tjy.github.io/post-images/1587974397882.svg" alt="" loading="lazy"><br>
 基本原理是：将图片转化为灰度图像，再根据强度替换字符串</p>
 <p>根据这个项目做了下，使用Pyinstaller打包了，使用方法如下：</p>
 <pre><code class="language-cmd">CharacterMatrix [图片路径]
