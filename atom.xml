@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruxia-tjy.github.io</id>
     <title>ruxia</title>
-    <updated>2020-04-24T12:01:52.932Z</updated>
+    <updated>2020-04-27T07:31:39.344Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruxia-tjy.github.io"/>
     <link rel="self" href="https://ruxia-tjy.github.io/atom.xml"/>
@@ -152,9 +152,84 @@ cv2.destroyAllWindows()
         <link href="https://ruxia-tjy.github.io/post/wu-xing-hong-qi-ying-feng-piao-yang-~-easyx-ku-hui-zhi-wu-xing-hong-qi/">
         </link>
         <updated>2020-04-14T11:07:40.000Z</updated>
-        <content type="html"><![CDATA[<p>先看看效果<br>
-<img src="https://ruxia-tjy.github.io/post-images/1586862552103.png" alt="" loading="lazy"></p>
-<figure data-type="image" tabindex="1"><img src="https://ruxia-tjy.github.io/post-images/1586862558776.png" alt="" loading="lazy"></figure>
+        <content type="html"><![CDATA[<p>先看看效果</p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<p><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px" height="400px" viewBox="0 0 600 400" enable-background="new 0 0 600 400" xml:space="preserve">  <image id="image0" width="600" height="400" x="0" y="0"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAGQAgMAAAAPW/YLAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEWqAAD//1X///8gJFRw
+AAAAAWJLR0QCZgt8ZAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAd0SU1FB+QEGxcUNVLtI+kAAAOw
+SURBVHja7ZzNbtswEAZFoLz7EL6PLr3zIL7/qzRSHTtWSGkVtN9ugJlDkDgGOOBSK/5PEwAAAAAA
+APwYfnkL9HnzFuizeAt0SfG01vjleFp5nqYSUGsJqZVanVo8ram1FFOrRdQqcbWqt8RXckyttDYu
+b4mBVvW2+EqLWV0tZIrYgtja7CbQLzk35+rqaxVnq3Sg5di0Uu1+7N3g+1ruaSt3C8/uWt1QlbYU
+x+ww0npvV9lVq9tjX8dizlqjF1+KqTW5arWoWqPSC1p70lgr+2rV0b/Q2pMPXn2+WuE67HG1Slit
+gKPBqFqGsfPspHVSbo2p5fBIJIPWFuSq1zopctUWv7ZNWlXeJbSMB8s6CpJa/dU6adPvvX11brNp
+/Va/oCwTMw5T9MUwReowRR9Uqxm15nBaHgsHhvnkotcyTHMnh3UDg1ZRzc/fp9z77Mu/i1dBHR1p
+Db6rSKdlbPW1+GzJIf+EZI/h49vz1UK+gT2GD68q0BpGsduEkqpxDaM497+9JE3muhLDbQeJptc8
+SF11rCUhXYihcoL+QgyVWtkew/v4VUKyx1Cp1Utdw9QkHF9kewyVWskeQ+m0SDHHUKqVzTGUTgcm
+cwy1FGsMtWRrDMVYXjwOlIgx3EWxets8CRnDlyjGieFLFKu3S18rUm0FDWJ8rUhPYtAEgdYFXnpc
+s7cNWt8iaA8CrSuYe6cJrcdO/XKuNSu17o0qn6Z57SaID52IWothYbi/pf4/kT4SQz5L80Wvtf4W
+T2t7AMuZlrJLnR8yZ2tN0p5+fjb0My1lJzE/k2gJpFWeDSodp3m51rPgkZa8n1g+qZSh1qP3o6qt
+zzWQxuWqh90vJmOtIu7rvzx8uY2P+0hj+HoI4+BIhjaGu1Xxg5Mi0hjuVqDHJ8a0+7d2Hgfr5EWq
+tWsu496Ltrbq8d9OWvujWOPrYaRN/u30Axet2/6D0Y1I7oeGR1pLDqlVdbts7Kx75QPetLMmuIjX
+JdUp4p1X5fEjFFs+005xWbh5CwAAmOFOyivEez+vBLyTMqgWV2Ve0mri6Xgb23Anntb7UFp+4NWm
+FWv31J0SUyujdQHL1QceBNvV9aJVvS36WuHCmMQrUEZySCv3OykHxLQ6W+x3Iuisd445673dxhJP
+a1Eeeb0GWleQbtuyI9179+O1Blclu4PWFW7eAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQhD94DuooF58yEAAAACV0RVh0ZGF0ZTpjcmVh
+dGUAMjAyMC0wNC0yN1QxNToyMDo1MyswODowMKjB1BAAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjAt
+MDQtMjdUMTU6MjA6NTMrMDg6MDDZnGysAAAAEXRFWHRTb2Z0d2FyZQBTbmlwYXN0ZV0Xzt0AAAAA
+SUVORK5CYII=" /><br>
+</svg></p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<p><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px" height="400px" viewBox="0 0 600 400" enable-background="new 0 0 600 400" xml:space="preserve">  <image id="image0" width="600" height="400" x="0" y="0"
+    href="data:image/png;base64,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" /><br>
+</svg></p>
 <pre><code class="c">
 /*************************************************
  * 名称： 基于EasyX绘制五星红旗
