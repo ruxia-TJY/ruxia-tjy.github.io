@@ -993,7 +993,7 @@ td {
       }
     
       body{
-background:url('https://bing.ioliu.cn/v1/?w=1920&h=1080');
+background:url('https://bing.ioliu.cn/v1/rand?w=1920&h=1080');
 background-attachment:fixed;
 }
 .main{
