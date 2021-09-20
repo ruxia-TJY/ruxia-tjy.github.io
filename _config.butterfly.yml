@@ -13,7 +13,7 @@ menu:
   标签: /tags/ || fa fa-tags
   分类: /categories/ || fa fa-folder-open
   友链: /link/ || fa fa-link
-  关于: /about/ || fa fa-heart
+  关于: /about || fa fa-heart
 rss: /atom.xml
 
 # Hide the child menu items in mobile sidebar
