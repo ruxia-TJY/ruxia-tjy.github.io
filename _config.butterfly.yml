@@ -640,15 +640,15 @@ aside:
   position: right # left or right
   card_author:
     enable: true
-    description:
+    description: 冰正斋主人元贞子
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
+      text: 我的GitHub
       link: https://github.com/ruxia-tjy
   card_announcement:
     enable: true
-    content: 欢迎来到我的博客
+    content: 你好啊~<br />欢迎向项目中国人民共和国史投你认为可以记录的事件<a href="PRC-history/投稿要求.html">如何投点我</a>
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
