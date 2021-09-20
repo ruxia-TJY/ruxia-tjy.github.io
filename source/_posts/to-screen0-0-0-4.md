@@ -2,8 +2,6 @@
 title: toScreen0.0.0.4版本发布
 date: 2021-08-30 09:03:02
 cover: https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/cover/toScreen0.0.0.4.png
-coverWidth: 1330
-coverHeight: 400
 tags: 
     - Python
     - PyQt5
