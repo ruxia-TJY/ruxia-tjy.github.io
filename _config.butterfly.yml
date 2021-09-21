@@ -847,7 +847,10 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_2824718_3ef131y84h8.css">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/css/iconfont_online.css">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/css/iconfont.css">
+
+
     
   bottom:
     # - <script src="xxxx"></script>
