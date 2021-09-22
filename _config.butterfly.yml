@@ -14,6 +14,7 @@ menu:
   分类: /categories/ || fa fa-folder-open
   友链: /link/ || fa fa-link
   书单: /booklist || fa fa-book
+  我的开源: /opensource/ || fab fa-sourcetree
   关于: /about || fa fa-heart
 rss: /atom.xml
 
@@ -23,7 +24,7 @@ hide_sidebar_menu_child: false
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: darker #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
