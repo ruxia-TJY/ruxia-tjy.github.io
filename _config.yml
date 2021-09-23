@@ -14,7 +14,7 @@ email: ruxia.tjy@qq.com
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://ruxia-tjy.github.io
+url: https://ruxia-tjy.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -99,6 +99,12 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: butterfly
+
+search:
+  path: search.xml
+  field: post
+  content: true
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

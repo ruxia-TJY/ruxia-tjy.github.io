@@ -28,7 +28,7 @@ highlight_theme: darker #  darker / pale night / light / ocean / mac / mac light
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: false # unit: px
+highlight_height_limit: 200 # unit: px
 code_word_wrap: false
 
 # copy settings
@@ -59,7 +59,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
 
 # Math (數學)
 # --------------------------------------
@@ -254,18 +254,18 @@ noticeOutdate:
 # https://www.addthis.com/
 addThis:
   enable: false
-  pubid:
+  pubid: ra-614bc78027c2af2e
 
 # Share.js
 # https://github.com/overtrue/share.js
 sharejs:
-  enable: true
+  enable: false
   sites: facebook,twitter,wechat,weibo,qq
 
 # AddToAny
 # https://www.addtoany.com/
 addtoany:
-  enable: false
+  enable: true
   item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 
 # Comments System
@@ -432,7 +432,7 @@ footer:
 
 # Baidu Analytics
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics:
+baidu_analytics: 'd2ee0cfc2e592039883088ddaf3ab6f1'
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
