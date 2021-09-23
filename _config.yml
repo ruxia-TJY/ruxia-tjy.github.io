@@ -29,7 +29,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: [map/**]
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -93,7 +93,7 @@ pagination_dir: page
 ## include:/exclude: options only apply to the 'source/' folder
 include:
 exclude:
-ignore:
+ignore:  
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
