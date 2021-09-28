@@ -4,7 +4,7 @@ date: 2021-08-30 09:10:47
 tags: 
   - Python
 toc: true
-categories: python
+categories: Python
 ---
 
 Winreg在导出注册表时候会出现OSError[WinError 1314] 客户端没有所需的特权错误。

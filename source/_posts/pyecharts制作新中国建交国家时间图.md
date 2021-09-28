@@ -3,9 +3,9 @@ title: pyecharts制作新中国建交国家时间图
 date: 2021-09-23 23:32:24
 tags:
     - 中国
-    - python
+    - Python
 toc: true
-categories: python
+categories: Python
 ---
 
 ## 简介
