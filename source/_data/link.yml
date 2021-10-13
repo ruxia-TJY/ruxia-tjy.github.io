@@ -5,3 +5,26 @@
       link: https://ruxia-tjy.gitee.io/webindex/
       avatar: https://ruxia-tjy.gitee.io/favicon.png
       descr: 很多好用网址
+
+- class_name: 内部通道
+  class_desc: 本网站内部一些链接
+  link_list:
+    - name: 宪法
+      link: https://ruxia-tjy.github.io/%E5%AE%AA%E6%B3%95/
+      avatar: https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/link/book.gif
+      descr: 新中国历次宪法（收录中）
+
+    - name: 毛选
+      link: https://ruxia-tjy.github.io/%E6%AF%9B%E9%80%89/
+      avatar: https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/link/book.gif
+      descr: 毛泽东选集（收录中）
+
+    - name: 中华人民共和国史
+      link: https://ruxia-tjy.github.io/PRC-history/
+      avatar: https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/link/book.gif
+      descr: 新中国历次事件（收录中）
+
+    - name: 新中国建交国家图
+      link: https://ruxia-tjy.github.io/map/%E6%96%B0%E4%B8%AD%E5%9B%BD%E5%BB%BA%E4%BA%A4%E5%9B%BD%E5%AE%B6%E5%9B%BE.html
+      avatar: https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/link/map.gif
+      descr: 新中国的可视化建交图
