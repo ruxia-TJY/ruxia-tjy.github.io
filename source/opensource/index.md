@@ -5,6 +5,8 @@ date: 2021-09-20 14:17:33
 
 {% ghcard ruxia-tjy, theme=algolia %}
 
+{% ghcard JiayuTu, theme=algolia %}
+
 <div class="gallery-group-main">
 
 {% galleryGroup '中华人民共和国史' '记载新中国成立以来发生的事件' 'https://github.com/ruxia-TJY/PRC-history' https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/img/opensource/PRC-history.jpg %}

@@ -2,6 +2,7 @@
 title: 目录 - 中华人民共和国宪法
 ---
 
+{% ghcard JiayuTu/PRC-constitution, theme=algolia %}
 
 {% note simple %}我国共颁布四部宪法，现行为八二年颁布的宪法，经历了五次修订。{% endnote %}
 
