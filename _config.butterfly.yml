@@ -665,7 +665,7 @@ aside:
       link: https://github.com/ruxia-tjy
   card_announcement:
     enable: true
-    content: 你好啊~这里是家宇的博客。
+    content: 你好啊~这里是家宇的博客。<br /></i>本网站域名：<br /><i class="fas fa-stream"><a href="https://blog.jiayublog.cn">https://blog.jiayublog.cn</a><br /><i class="fas fa-stream"><a href="https://ruxia-tjy.github.io">https://ruxia-tjy.github.io</a>
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
