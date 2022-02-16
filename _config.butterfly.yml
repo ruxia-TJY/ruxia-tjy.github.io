@@ -9,7 +9,6 @@
 # # Header
 menu:
   首页: / || fa fa-home
-  说说: /artitalk/ || fas fa-thumbtack
   目录||fa fa-list:
     时间轴: /archives/ || fa fa-archive
     标签: /tags/ || fa fa-tags
