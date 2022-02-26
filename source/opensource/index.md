@@ -5,8 +5,6 @@ date: 2021-09-20 14:17:33
 
 {% ghcard ruxia-tjy, theme=algolia %}
 
-{% ghcard JiayuTu, theme=algolia %}
-
 <div class="gallery-group-main">
 
 {% galleryGroup 'TKeyboard' '一个使用ATMega32U4的USB通信功能实现的简单的键盘项目' 'https://gitee.com/ruxia-tjy/tkeyboard' https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/img/opensource/TKeyboard.jpg %}
