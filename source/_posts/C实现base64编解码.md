@@ -2,9 +2,9 @@
 title: C实现base64编解码
 date: 2020-12-10 07:54:21
 tags: 
-    - C语言
+    - C/C++
 toc: true
-categories: C语言
+categories: C/C++
 ---
 
 找到一份以前写的使用C语言进行编解码的代码。
