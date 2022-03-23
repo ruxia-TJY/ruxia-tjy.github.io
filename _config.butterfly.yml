@@ -14,7 +14,6 @@ menu:
     标签: /tags/ || fa fa-tags
     分类: /categories/ || fa fa-folder-open
   链接: /link/ || fa fa-link
-  书单: /booklist || fa fa-book
   我的开源: /opensource/ || fab fa-sourcetree
   关于: /about || fa fa-heart
 rss: /atom.xml

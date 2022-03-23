@@ -12,5 +12,9 @@ date: 2021-09-20 14:17:33
 {% galleryGroup '《春秋写史》' '对春秋学习的总结，依《春秋公羊传》' 'https://gitee.com/ruxia-tjy/chunqiu-write-history' https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/img/opensource/春秋写史.jpg %}
 
 {% galleryGroup 'to-Screen' '使用python+PyQt5写的，屏幕动画上位机' 'https://gitee.com/ruxia-tjy/to-screen' https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/img/opensource/toscreen.jpg %}
+
+
+{% galleryGroup 'randomWallpaper' '使用python编写，随机切换壁纸软件，支持Ubuntu,Windows' 'https://github.com/ruxia-TJY/randomWallpaper' https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/img/opensource/randomWallpaper.jpg %}
+
 </div>
 

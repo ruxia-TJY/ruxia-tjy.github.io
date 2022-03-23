@@ -2,9 +2,18 @@
   class_desc: 那些人，那些事
   link_list:
     - name: webindex
-      link: https://ruxia-tjy.gitee.io/webindex/
+      link: https://webindex.jiayublog.cn
       avatar: https://ruxia-tjy.gitee.io/favicon.png
       descr: 很多好用网址
+
+
+- class_name: 精选书单
+  class_desc: 推荐的一些书籍
+  link_list:
+    - name: 春秋三传书单
+      link: https://ruxia-tjy.github.io/2021/09/01/%E6%98%A5%E7%A7%8B%E4%B8%89%E4%BC%A0%E4%B9%A6%E5%8D%95/
+      avatar: https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/link/book.gif
+      descr: 春秋三传书单
 
 - class_name: 内部通道
   class_desc: 本网站内部一些链接
@@ -18,11 +27,6 @@
       link: https://ruxia-tjy.github.io/%E6%AF%9B%E9%80%89/
       avatar: https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/link/book.gif
       descr: 毛泽东选集（收录中）
-
-    - name: 中华人民共和国史
-      link: https://ruxia-tjy.github.io/PRC-history/
-      avatar: https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/link/book.gif
-      descr: 新中国历次事件（收录中）
 
     - name: 新中国建交国家图
       link: https://ruxia-tjy.github.io/map/%E6%96%B0%E4%B8%AD%E5%9B%BD%E5%BB%BA%E4%BA%A4%E5%9B%BD%E5%AE%B6%E5%9B%BE.html
