@@ -95,6 +95,12 @@ include:
 exclude:
 ignore:  
 
+
+# hexo-hide-posts
+hide_posts:
+  filter: hidden
+  public_generators: []
+  noindex: true
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
