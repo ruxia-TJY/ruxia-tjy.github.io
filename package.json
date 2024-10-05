@@ -9,28 +9,28 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "5.4.0"
+    "version": "5.4.2"
   },
   "dependencies": {
     "add": "^2.0.6",
-    "hexo": "^5.0.0",
+    "hexo": "^7.3.0",
     "hexo-butterfly-artitalk": "^1.0.4",
-    "hexo-butterfly-tag-plugins-plus": "^1.0.3",
-    "hexo-deployer-git": "^3.0.0",
-    "hexo-generator-archive": "^1.0.0",
-    "hexo-generator-category": "^1.0.0",
-    "hexo-generator-index": "^2.0.0",
+    "hexo-butterfly-tag-plugins-plus": "^1.0.18",
+    "hexo-deployer-git": "^4.0.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^4.0.0",
     "hexo-generator-search": "^2.4.3",
-    "hexo-generator-tag": "^1.0.0",
-    "hexo-hide-posts": "^0.2.0",
-    "hexo-renderer-ejs": "^1.0.0",
-    "hexo-renderer-marked": "^4.0.0",
-    "hexo-renderer-pug": "^2.0.0",
-    "hexo-renderer-stylus": "^2.0.1",
-    "hexo-server": "^2.0.0",
-    "hexo-theme-butterfly": "^3.8.4",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-hide-posts": "^0.4.3",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^6.3.0",
+    "hexo-renderer-pug": "^3.0.0",
+    "hexo-renderer-stylus": "^3.0.1",
+    "hexo-server": "^3.0.0",
+    "hexo-theme-butterfly": "^5.0.0",
     "hexo-wordcount": "^6.0.1",
     "or": "^0.2.0",
-    "yarn": "^1.22.11"
+    "yarn": "^1.22.22"
   }
 }
