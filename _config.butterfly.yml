@@ -67,7 +67,7 @@ favicon: /favicon.png
 # 头像设置
 avatar:
   # 头像图片链接
-  img: https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/logo/logo.png
+  img: https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/avatar/avatar.png
   # 是否启用头像效果
   effect: false
 
