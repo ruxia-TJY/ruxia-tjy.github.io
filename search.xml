@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>urlCheck 批量检测链接是否有效的小工具</title>
+      <link href="/2024/08/28/urlCheck/"/>
+      <url>/2024/08/28/urlCheck/</url>
+      
+        <content type="html"><![CDATA[<h1 id="urlCheck"><a href="#urlCheck" class="headerlink" title="urlCheck"></a>urlCheck</h1><p>批量检测链接是否有效</p><img class="inline-img" src="https://img.shields.io/badge/language-Python-blue"  /><img class="inline-img" src="https://img.shields.io/github/languages/code-size/ruxia-TJY/urlCheck"  /><img class="inline-img" src="https://img.shields.io/badge/License-MIT-blue"  /><h2 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h2><p>在命令行中<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python urlCheck.py --url https://google.com https://youtube.com</span><br></pre></td></tr></table></figure><br>从文件中读取<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python urlCheck.py --file test.txt</span><br></pre></td></tr></table></figure></p><p>保存结果到文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python urlCheck.py --file test.txt --out result.txt</span><br></pre></td></tr></table></figure></p><p>设置保存的格式，通过<code>out-flag</code>选项，默认值是<strong>tcu</strong>。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python urlCheck.py --url https://github.com https://dadawdd --out result.txt --out-flag ctu</span><br></pre></td></tr></table></figure><h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">-h,--<span class="built_in">help</span>                 show this <span class="built_in">help</span> message and <span class="built_in">exit</span></span><br><span class="line">-url URL [URL ...]        check from string</span><br><span class="line">--file FILE               check from File</span><br><span class="line">--<span class="built_in">timeout</span> default=3       <span class="built_in">set</span> <span class="built_in">timeout</span></span><br><span class="line">--out OUT  output to file</span><br><span class="line">--out-flag OUTGLAG        output flag,default is <span class="string">&quot;tcu&quot;</span></span><br><span class="line">-v,-V,--Version           show program<span class="string">&#x27;s version number and exit</span></span><br></pre></td></tr></table></figure><h3 id="out-flag"><a href="#out-flag" class="headerlink" title="out-flag"></a>out-flag</h3><p>仅支持<strong>t</strong>,<strong>c</strong>,<strong>u</strong>，默认是<strong>tcu</strong>，即以测试时间,测试返回值,测试链接 格式保存</p><div class="table-container"><table><thead><tr><th style="text-align:center">flag</th><th style="text-align:center">description</th></tr></thead><tbody><tr><td style="text-align:center">t</td><td style="text-align:center">测试时间</td></tr><tr><td style="text-align:center">c</td><td style="text-align:center">测试返回值</td></tr><tr><td style="text-align:center">u</td><td style="text-align:center">测试链接</td></tr></tbody></table></div><p>可以任意进行组合</p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><a class="btn-beautify blue larger" href="https://github.com/ruxia-tjy/urlCheck" title="Github链接"><i class="far fa-hand-point-right"></i><span>Github链接</span></a><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><div class="timeline blue"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2024-11-03 <a href="https://github.com/ruxia-TJY/urlCheck/releases/tag/0.0.1">0.0.1</a></p></div></div><div class='timeline-item-content'><ol><li>实现从命令行解析和文件解析</li><li>保存结果到文件</li></ol></div></div></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我的开源 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 我的开源 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>祭先大父文</title>
+      <link href="/2022/07/17/%E7%A5%AD%E5%85%88%E5%A4%A7%E7%88%B6%E6%96%87/"/>
+      <url>/2022/07/17/%E7%A5%AD%E5%85%88%E5%A4%A7%E7%88%B6%E6%96%87/</url>
+      
+        <content type="html"><![CDATA[<p>年月日，先大父别去殊速，尤惊震惶，今葬将久，静坐恍然，哀从中来。<br>先是余实习合肥，先大父言与旺来，余因疫拒，后概期月电话来，余未得接，复来，无音，心忧疑之，乃数返复，皆未得听，问父，父泣先大父以祸去，呜呼！<br>余幼与先大父居，后稍长而别，及长，余居家亦不得久，先大父或有来，不知几日相见得年，余亦少往探望。余之家，犹有未期而其至心，呜呼岂可得乎？余与先大父不复得相见矣。余忆得接电话时，晃晃闻“是家宁”，复听录音，终无，鬼神欤？非之则于时未知其终，何得有此之幻？鬼神其存，相见终有其期。<br>呜呼！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+            <tag> 随想 </tag>
+            
+            <tag> 祭文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Qt串口通信</title>
+      <link href="/2022/06/16/Qt%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1/"/>
+      <url>/2022/06/16/Qt%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1/</url>
+      
+        <content type="html"><![CDATA[<p>使用QSerialPort和QSerialPortInfo,对日常使用进行了封装。</p><p>在实际使用Qt串口过程中，出现多次触发readyRead()信号，一次性使用readAll()并不能获取所有数据，可以通过修改通信协议，在本封装中采用的是延时，在接受到readyRead信号时进行倒计时，在倒计时结束之前，将接收到的信号存入一个缓冲区。</p><p>头文件<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * serial.h</span></span><br><span class="line"><span class="comment"> * 创建时间： 2022/5/9</span></span><br><span class="line"><span class="comment"> * 描述: 封装串口通信。</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 修改时间: 2022/5/23</span></span><br><span class="line"><span class="comment"> * 修改描述:</span></span><br><span class="line"><span class="comment"> *          添加readReady()可修改时长接口</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 修改时间： 2022/5/9</span></span><br><span class="line"><span class="comment"> * 修改描述：</span></span><br><span class="line"><span class="comment"> *          Qt在大量数据通信时会多次触发readyRead()信号，</span></span><br><span class="line"><span class="comment"> *      本文件使用了QTimer在第一次触发readyRead()信号时计</span></span><br><span class="line"><span class="comment"> *      时，每次触发的readyRead()信号添加到临时缓冲区，当</span></span><br><span class="line"><span class="comment"> *      计时终止时，将临时缓冲区内的内容复制给缓冲区，清空</span></span><br><span class="line"><span class="comment"> *      临时缓冲区。延时时间请根据实际情况进行修改</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">#<span class="keyword">ifndef</span> SERIAL_H</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> SERIAL_H</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QObject&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QSerialPort&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QSerialPortInfo&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QMessageBox&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QTimer&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Serial</span>:<span class="keyword">public</span> QObject</span><br><span class="line">&#123;</span><br><span class="line">    Q_OBJECT</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">Serial</span>();</span><br><span class="line">    <span class="type">bool</span> isOpen = <span class="literal">false</span>;                            <span class="comment">// 串口是否已打开</span></span><br><span class="line">    <span class="function">QStringList <span class="title">scanSerial</span><span class="params">()</span></span>;                       <span class="comment">// 扫描可用串口</span></span><br><span class="line">    <span class="function">QStringList <span class="title">standardBaudRates</span><span class="params">()</span></span>;                <span class="comment">// 获取标准波特率列表</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">open</span><span class="params">(QString serialName, <span class="type">int</span> baudRate,QSerialPort::DataBits databits=QSerialPort::Data8,</span></span></span><br><span class="line"><span class="params"><span class="function">            QSerialPort::Parity parity = QSerialPort::NoParity,QSerialPort::StopBits stopBits=QSerialPort::OneStop,</span></span></span><br><span class="line"><span class="params"><span class="function">              QSerialPort::FlowControl flowControl=QSerialPort::NoFlowControl)</span></span>;    <span class="comment">// 打开串口</span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">close</span><span class="params">()</span></span>;                                   <span class="comment">// 关闭串口</span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">sendData</span><span class="params">(QByteArray &amp;sendData)</span></span>;            <span class="comment">// 发送数据给下位机</span></span><br><span class="line">    <span class="function">QByteArray <span class="title">getReadBuf</span><span class="params">()</span></span>;                        <span class="comment">// 获得读取数据缓冲区</span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">clearReadBuf</span><span class="params">()</span></span>;                            <span class="comment">// 清除读取数据缓冲区</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">setReadTime</span><span class="params">(<span class="type">int</span> mesc)</span></span>;                     <span class="comment">// 设置读取时长</span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">getReadTime</span><span class="params">()</span></span>;                              <span class="comment">// 获取当前读取时长</span></span><br><span class="line"></span><br><span class="line">signals:</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">readSignal</span><span class="params">()</span></span>;                              <span class="comment">// 当下位机中有数据发送过来触发该信号</span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">readBufSignal</span><span class="params">()</span></span>;                           <span class="comment">// 计时器终止触发</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> slots:</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">readData</span><span class="params">()</span></span>;                                <span class="comment">// 读取数据</span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">timerUpdate</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    QSerialPort *m_serialPort;                      <span class="comment">// 实例化一个指向串口的指针，可以用于访问串口</span></span><br><span class="line">    QSerialPortInfo *m_serialPortInfo;              <span class="comment">// 实例化QSerialPortInfo</span></span><br><span class="line">    QByteArray m_tmpBuf;                            <span class="comment">// 临时存储下位机发来数据，因为大量数据通信Qt会多次分发</span></span><br><span class="line">    QByteArray m_readBuf;                           <span class="comment">// 返回读取的数据缓冲区</span></span><br><span class="line">    QTimer *m_timer;                                <span class="comment">// 时间对象</span></span><br><span class="line">    <span class="type">int</span> readTime;                                   <span class="comment">// 缓冲区读取时长</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span> <span class="comment">// SERIAL_H</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure></p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;serial.h&quot;</span></span></span><br><span class="line"></span><br><span class="line">Serial::<span class="built_in">Serial</span>()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 初始化串口</span></span><br><span class="line">    m_serialPort = <span class="keyword">new</span> QSerialPort;</span><br><span class="line">    m_serialPortInfo = <span class="keyword">new</span> QSerialPortInfo;</span><br><span class="line">    m_timer = <span class="keyword">new</span> <span class="built_in">QTimer</span>(<span class="keyword">this</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 当计时终止，处理读取到的数据，发送读取数据信号</span></span><br><span class="line">    <span class="built_in">connect</span>(m_timer,<span class="built_in">SIGNAL</span>(<span class="built_in">timeout</span>()),<span class="keyword">this</span>,<span class="built_in">SLOT</span>(<span class="built_in">timerUpdate</span>()));</span><br><span class="line">    <span class="built_in">connect</span>(m_timer,<span class="built_in">SIGNAL</span>(<span class="built_in">timeout</span>()),<span class="keyword">this</span>,<span class="built_in">SIGNAL</span>(<span class="built_in">readBufSignal</span>()));</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief Serial::scanSerial</span></span><br><span class="line"><span class="comment"> * 扫描可用串口</span></span><br><span class="line"><span class="comment"> * @return</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function">QStringList <span class="title">Serial::scanSerial</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    QStringList serialStrList;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 读取串口信息</span></span><br><span class="line">    foreach(<span class="type">const</span> QSerialPortInfo &amp;info, QSerialPortInfo::<span class="built_in">availablePorts</span>())</span><br><span class="line">    &#123;</span><br><span class="line">        QSerialPort serial;</span><br><span class="line">        serial.<span class="built_in">setPort</span>(info);</span><br><span class="line">        <span class="keyword">if</span>(serial.<span class="built_in">open</span>(QIODevice::ReadWrite))&#123;</span><br><span class="line">            serialStrList.<span class="built_in">append</span>(info.<span class="built_in">portName</span>());</span><br><span class="line">        &#125;</span><br><span class="line">        serial.<span class="built_in">close</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> serialStrList;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief Serial::open</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 打开串口</span></span><br><span class="line"><span class="comment"> * @param serialName 串口名</span></span><br><span class="line"><span class="comment"> * @param baudRate 波特率</span></span><br><span class="line"><span class="comment"> * @param databits  数据位</span></span><br><span class="line"><span class="comment"> * @param parity    校验位</span></span><br><span class="line"><span class="comment"> * @param stopBits  停止位</span></span><br><span class="line"><span class="comment"> * @param flowControl   流控制</span></span><br><span class="line"><span class="comment"> * @return</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">Serial::open</span><span class="params">(QString serialName, <span class="type">int</span> baudRate, QSerialPort::DataBits databits, QSerialPort::Parity parity, QSerialPort::StopBits stopBits, QSerialPort::FlowControl flowControl)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 设置串口名</span></span><br><span class="line">    m_serialPort-&gt;<span class="built_in">setPortName</span>(serialName);</span><br><span class="line">    <span class="comment">// 打开串口(以读写方式)</span></span><br><span class="line">    <span class="keyword">if</span>(m_serialPort-&gt;<span class="built_in">open</span>(QIODevice::ReadWrite))</span><br><span class="line">    &#123;</span><br><span class="line">        m_serialPort-&gt;<span class="built_in">setBaudRate</span>(baudRate); <span class="comment">// 设置波特率</span></span><br><span class="line">        m_serialPort-&gt;<span class="built_in">setDataBits</span>(databits); <span class="comment">// 设置数据位(数据位为8位)</span></span><br><span class="line">        m_serialPort-&gt;<span class="built_in">setParity</span>(parity); <span class="comment">// 设置校验位(无校验位)</span></span><br><span class="line">        m_serialPort-&gt;<span class="built_in">setStopBits</span>(stopBits); <span class="comment">// 设置停止位(停止位为1)</span></span><br><span class="line">        m_serialPort-&gt;<span class="built_in">setFlowControl</span>(flowControl); <span class="comment">// 设置流控制(无数据流控制)</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 当下位机中有数据发送过来时就会响应这个槽函数</span></span><br><span class="line">        <span class="built_in">connect</span>(m_serialPort, <span class="built_in">SIGNAL</span>(<span class="built_in">readyRead</span>()), <span class="keyword">this</span>, <span class="built_in">SLOT</span>(<span class="built_in">readData</span>()));</span><br><span class="line">        <span class="comment">// 当下位机中有数据发送过来时就会触发这个信号，以提示其它类对象</span></span><br><span class="line">        <span class="built_in">connect</span>(m_serialPort, <span class="built_in">SIGNAL</span>(<span class="built_in">readyRead</span>()), <span class="keyword">this</span>, <span class="built_in">SIGNAL</span>(<span class="built_in">readSignal</span>()));</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief Serial::close</span></span><br><span class="line"><span class="comment"> * 关闭串口</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Serial::close</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    m_serialPort-&gt;<span class="built_in">clear</span>();</span><br><span class="line">    m_serialPort-&gt;<span class="built_in">close</span>();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief Serial::standardBaudRates</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 返回QStringList格式的波特率列表</span></span><br><span class="line"><span class="comment"> * @return</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function">QStringList <span class="title">Serial::standardBaudRates</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    QStringList sBRs;</span><br><span class="line">    foreach(qint32 baud,m_serialPortInfo-&gt;<span class="built_in">standardBaudRates</span>())&#123;</span><br><span class="line">        sBRs &lt;&lt; QString::<span class="built_in">number</span>(baud);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> sBRs;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief Serial::sendData</span></span><br><span class="line"><span class="comment"> * 发送数据给下位机</span></span><br><span class="line"><span class="comment"> * @param sendData</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Serial::sendData</span><span class="params">(QByteArray &amp;sendData)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 发送数据帧</span></span><br><span class="line">    m_serialPort-&gt;<span class="built_in">write</span>(sendData);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief Serial::readData</span></span><br><span class="line"><span class="comment"> * 读取从下位机发来的数据</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Serial::readData</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 将下位机发来数据存储在数据缓冲区</span></span><br><span class="line">    m_timer-&gt;<span class="built_in">start</span>(readTime);</span><br><span class="line">    m_tmpBuf.<span class="built_in">append</span>(m_serialPort-&gt;<span class="built_in">readAll</span>());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief Serial::getReadBuf</span></span><br><span class="line"><span class="comment"> * 返回缓冲区数据</span></span><br><span class="line"><span class="comment"> * @return</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function">QByteArray <span class="title">Serial::getReadBuf</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> m_readBuf;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief Serial::clearReadBuf</span></span><br><span class="line"><span class="comment"> * 清空缓冲区</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Serial::clearReadBuf</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    m_readBuf.<span class="built_in">clear</span>();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief Serial::timerUpdate</span></span><br><span class="line"><span class="comment"> * QTimer计时结束触发，复制并清空临时缓冲区</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Serial::timerUpdate</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    m_timer-&gt;<span class="built_in">stop</span>();</span><br><span class="line">    m_readBuf = m_tmpBuf;</span><br><span class="line">    m_tmpBuf.<span class="built_in">clear</span>();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief Serial::setReadTime</span></span><br><span class="line"><span class="comment"> * 设置读取时长</span></span><br><span class="line"><span class="comment"> * @param mesc</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Serial::setReadTime</span><span class="params">(<span class="type">int</span> mesc)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    readTime = mesc;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief Serial::getReadTime</span></span><br><span class="line"><span class="comment"> * 获取当前读取时长</span></span><br><span class="line"><span class="comment"> * @return</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">Serial::getReadTime</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> readTime;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> C/C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C/C++ </tag>
+            
+            <tag> Qt </tag>
+            
+            <tag> 串口 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>tColorP-python控制台彩色输出</title>
+      <link href="/2022/04/29/tColorP-python%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%BD%A9%E8%89%B2%E8%BE%93%E5%87%BA/"/>
+      <url>/2022/04/29/tColorP-python%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%BD%A9%E8%89%B2%E8%BE%93%E5%87%BA/</url>
+      
+        <content type="html"><![CDATA[<img class="inline-img" src="https://img.shields.io/badge/language-Python-blue"  /><img class="inline-img" src="https://img.shields.io/github/languages/code-size/ruxia-TJY/TColorP"  /><img class="inline-img" src="https://img.shields.io/badge/-Linux-yellow?logo=linux"  /><img class="inline-img" src="https://img.shields.io/badge/-Linux-yellow?logo=windows"  /><img class="inline-img" src="https://img.shields.io/pypi/l/tColorP"  /><img class="inline-img" src="https://img.shields.io/pypi/v/tColorP?logo=pypi&logoColor=ffffff&label=PyPI&labelColor=blue"  /><p>通过在输出文件开头和结尾添加<code>\033[输出模式;文字颜色;背景色</code>进行改变</p><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>您可以使用<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install tColorP</span><br></pre></td></tr></table></figure><br>安装</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> TColorP <span class="keyword">import</span> TColorP, TColor</span><br><span class="line"></span><br><span class="line">tcp = TColorP()</span><br><span class="line"></span><br><span class="line"><span class="comment"># print success info </span></span><br><span class="line">tcp.success(<span class="string">&#x27;success&#x27;</span>)</span><br><span class="line"><span class="comment"># print error info</span></span><br><span class="line">tcp.error(<span class="string">&#x27;error&#x27;</span>)</span><br><span class="line"><span class="comment"># print warning info</span></span><br><span class="line">tcp.warning(<span class="string">&#x27;warning&#x27;</span>)</span><br><span class="line"><span class="comment"># print normal info</span></span><br><span class="line">tcp.normal(<span class="string">&#x27;normal&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># print normal Style</span></span><br><span class="line"><span class="built_in">print</span>(tcp.normalStyle)</span><br><span class="line"></span><br><span class="line"><span class="comment"># change normal style</span></span><br><span class="line">tcp.normalStyle = [TColor.method_highlight,TColor.foreground_red]</span><br><span class="line">tcp.normal(<span class="string">&quot;normal&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># change normal style once</span></span><br><span class="line">tcp.normal(<span class="string">&#x27;normal once&#x27;</span>,style=[TColor.method_highlight,TColor.foreground_red])</span><br><span class="line"></span><br><span class="line"><span class="comment"># format color</span></span><br><span class="line">tcp.formatColor([TColor.method_normal,TColor.foreground_red])</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;this will change color with red&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># print suppos method and color</span></span><br><span class="line"><span class="built_in">print</span>(TColor())</span><br><span class="line"><span class="comment"># method_normal=0,method_highlight=1,method_underline=4,method_reverse=7</span></span><br><span class="line"><span class="comment"># foreground_black=30,foreground_red=31,foreground_green=32,foreground_yellow=33,foreground_blue=34,foreground_fuchsia=35,foreground_cyan=36,foreground_white=37</span></span><br><span class="line"><span class="comment"># background_black=40,background_red=41,background_green=42,background_yellow=43,background_blue=44,background_fuchsia=45,background_cyan=46,background_white=47</span></span><br></pre></td></tr></table></figure><h2 id="源码讲解"><a href="#源码讲解" class="headerlink" title="源码讲解"></a>源码讲解</h2><p>程序分为两个Class。</p><p>TColor存储支持的颜色和模式。</p><p>TColorP进行输出。</p><p>将要改变的样式作为列表传入formatColor函数中<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">formatColor</span>(<span class="params">self,style:<span class="built_in">list</span></span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">            format color,print after this function will changed as arg style.</span></span><br><span class="line"><span class="string">        :param style: list of style,use TColor or number</span></span><br><span class="line"><span class="string">        :return: None</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> <span class="built_in">len</span>(style):</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">        method = -<span class="number">1</span></span><br><span class="line">        foreground = -<span class="number">1</span></span><br><span class="line">        background = -<span class="number">1</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> style:</span><br><span class="line">            <span class="keyword">if</span> i <span class="keyword">in</span> [<span class="number">0</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">7</span>]:</span><br><span class="line">                method = i</span><br><span class="line">            <span class="keyword">if</span> i &gt;=<span class="number">30</span> <span class="keyword">and</span> i &lt;= <span class="number">37</span>:</span><br><span class="line">                foreground = i</span><br><span class="line">            <span class="keyword">if</span> i &gt;= <span class="number">40</span> <span class="keyword">and</span> i &lt;= <span class="number">47</span>:</span><br><span class="line">                background = i</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> method == -<span class="number">1</span>:</span><br><span class="line">            method = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> background &gt;= <span class="number">0</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">f&#x27;\033[<span class="subst">&#123;method&#125;</span>;<span class="subst">&#123;foreground&#125;</span>;<span class="subst">&#123;background&#125;</span>m&#x27;</span>,end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">if</span> foreground &gt;= <span class="number">0</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">f&#x27;\033[<span class="subst">&#123;method&#125;</span>;<span class="subst">&#123;foreground&#125;</span>m&#x27;</span>,end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">f&#x27;\033[<span class="subst">&#123;method&#125;</span>m&#x27;</span>,end=<span class="string">&#x27;&#x27;</span>)</span><br></pre></td></tr></table></figure></p><p>例如默认的成功样式为正常输出，绿色文字<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">success</span>(<span class="params">self,txt:<span class="built_in">str</span>,**args</span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">        print any text with normal style and foreground is green,change once with style arg.</span></span><br><span class="line"><span class="string">        :param txt: text you want to print</span></span><br><span class="line"><span class="string">        :param args: end arg like print(),style arg for change print style once</span></span><br><span class="line"><span class="string">        :return: None</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span></span><br><span class="line">        style = args.get(<span class="string">&#x27;style&#x27;</span>,[TColor.method_normal,TColor.foreground_green])</span><br><span class="line">        <span class="variable language_">self</span>.formatColor(style)</span><br><span class="line">        end = args.get(<span class="string">&#x27;end&#x27;</span>, <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">        <span class="built_in">print</span>(txt, end=end)</span><br><span class="line">        <span class="variable language_">self</span>.formatColor([TColor.method_normal])</span><br></pre></td></tr></table></figure></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我的开源 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 我的开源 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>尝试写一个随机更换壁纸程序-randomWallpaper</title>
+      <link href="/2022/03/23/%E5%B0%9D%E8%AF%95%E5%86%99%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E6%9B%B4%E6%8D%A2%E5%A3%81%E7%BA%B8%E7%A8%8B%E5%BA%8F-randomWallpaper/"/>
+      <url>/2022/03/23/%E5%B0%9D%E8%AF%95%E5%86%99%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E6%9B%B4%E6%8D%A2%E5%A3%81%E7%BA%B8%E7%A8%8B%E5%BA%8F-randomWallpaper/</url>
+      
+        <content type="html"><![CDATA[<img class="inline-img" src="https://img.shields.io/badge/language-Python-blue"  /><img class="inline-img" src="https://img.shields.io/github/languages/code-size/ruxia-TJY/randomWallpaper"  /><img class="inline-img" src="https://img.shields.io/badge/-Linux-yellow?logo=linux"  /><img class="inline-img" src="https://img.shields.io/badge/-Linux-blue?logo=windows"  /><img class="inline-img" src="https://img.shields.io/badge/License-MIT-blue"  /><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><strong>方法一、</strong> 直接<code>clone</code>仓库，使用Python3运行或自己打包。</p><p><em>注意：</em> 如果在Windows下需要安装requirements.txt的包，linux不需要。</p><p><strong>方法二、</strong> 从release界面下载可执行程序。请注意，我是使用Pyinstaller在Ubuntu20.04 x64环境下打包的，在其他环境无法使用，需要自己打包。下载完成解压，运行<code>install.sh</code>文件。</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>无命令行参数，会按照config.json的配置进行运行</p><p>虽然程序支持一直运行并每隔一段时间更换壁纸，但我还是推荐在Linux上使用<code>cron</code>进行管理。</p><h3 id="参数列表"><a href="#参数列表" class="headerlink" title="参数列表"></a>参数列表</h3><p><code>-a,--add</code>, 添加壁纸文件夹到程序运行的选择列表中，输入多个文件夹通过<code>,</code>和空格分割。</p><p><code>-c,--config</code>, 在命令行中运行</p><p><code>-d,--delete</code>,删除壁纸文件夹，输入多个文件夹通过’,’和空格分割</p><p><code>--desktop</code>, 在~/.local/share/applications路径下创建randomWallpaper.desktop文件</p><p><code>-h,--help</code>, 显示帮助</p><p><code>-k,--keep</code>, 保持程序运行，并根据config.json的<code>keep-time</code>(s)切换壁纸</p><p><code>-l,--list</code>, 输出壁纸文件夹列表</p><p><code>-n,--clean</code>, 清空壁纸文件夹</p><p><code>-q,quit</code>, 退出程序，仅在运行<code>-k,--keep</code>时才需要此选项进行退出</p><p><code>-r,--run</code>, 按照config.json配置运行</p><p><code>-v,--version</code>, 版本号</p><h3 id="配置文件config-json"><a href="#配置文件config-json" class="headerlink" title="配置文件config.json"></a>配置文件config.json</h3><p>程序在运行会自动创建一个配置文件。<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;WallpaperDir&quot;</span><span class="punctuation">:</span><span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;keep-time&quot;</span><span class="punctuation">:</span><span class="number">3</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;keep-flag&quot;</span><span class="punctuation">:</span><span class="literal"><span class="keyword">true</span></span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><br><code>WallpaperDir</code>：值为提供壁纸的文件夹，程序运行会在这些文件夹下随机选择一个文件作为壁纸。</p><p><code>keep-time</code>: 使用<code>-k.--keep</code>参数后，间隔多少秒切换一次壁纸。</p><p><code>keep-flag</code>:为false时，程序退出<code>-k,--keep</code>循环。</p><p>使用MIT协议开源：地址：<a href="https://github.com/ruxia-TJY/randomWallpaper">https://github.com/ruxia-TJY/randomWallpaper</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我的开源 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 我的开源 </tag>
+            
+            <tag> Python </tag>
+            
+            <tag> Ubuntu </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ubuntu中PyCharm配置PySide6</title>
+      <link href="/2022/03/12/Ubuntu%E4%B8%ADPyCharm%E9%85%8D%E7%BD%AEPySide6/"/>
+      <url>/2022/03/12/Ubuntu%E4%B8%ADPyCharm%E9%85%8D%E7%BD%AEPySide6/</url>
+      
+        <content type="html"><![CDATA[<p>在PyCharm中配置PySide6网上有很多教程，步骤其实相同。</p><p>在Ubuntu中进行配置最大的问题是不知道Designer的位置。</p><p>我安装PySide6后，在命令行中使用pyside6-designer打开Designer了(笔者不记得是否为手动添加的华环境变量了，诸君可以输入试试)。</p><p>Designer的路径为<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.local/bin/pyside6-designer</span><br></pre></td></tr></table></figure></p><p>我们常用的uic/rcc等都在~/.local/bin/目录下，名称为pyside6-uic,pyside6-rcc。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> Ubuntu </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>c++显示隐藏桌面图标</title>
+      <link href="/2022/03/06/c-%E6%98%BE%E7%A4%BA%E9%9A%90%E8%97%8F%E6%A1%8C%E9%9D%A2%E5%9B%BE%E6%A0%87/"/>
+      <url>/2022/03/06/c-%E6%98%BE%E7%A4%BA%E9%9A%90%E8%97%8F%E6%A1%8C%E9%9D%A2%E5%9B%BE%E6%A0%87/</url>
+      
+        <content type="html"><![CDATA[<p>使用SHGetSetSettings死活没用，后来在StackOverflow发现一份隐藏桌面图标的代码。</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Copy this code from: https://stackoverflow.com/questions/53310374/how-to-hide-desktop-icons-with-windows-api-in-c</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;ShlObj.h&gt;</span>     <span class="comment">// Shell API</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;atlcomcli.h&gt;</span>  <span class="comment">// CComPtr &amp; Co.</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span> </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span> </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;system_error&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;Windows.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// Throw a std::system_error if the HRESULT indicates failure.</span></span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">ThrowIfFailed</span><span class="params">(HRESULT hr, T&amp;&amp; msg)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">FAILED</span>(hr))</span><br><span class="line">        <span class="keyword">throw</span> std::system_error&#123; hr, std::<span class="built_in">system_category</span>(), std::forward&lt;T&gt;(msg) &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// RAII wrapper to initialize/uninitialize COM</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">CComInit</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">CComInit</span>() &#123; <span class="built_in">ThrowIfFailed</span>(::<span class="built_in">CoInitialize</span>(<span class="literal">nullptr</span>), <span class="string">&quot;CoInitialize failed&quot;</span>); &#125;</span><br><span class="line">    ~<span class="built_in">CComInit</span>() &#123; ::<span class="built_in">CoUninitialize</span>(); &#125;</span><br><span class="line">    <span class="built_in">CComInit</span>(CComInit <span class="type">const</span>&amp;) = <span class="keyword">delete</span>;</span><br><span class="line">    CComInit&amp; <span class="keyword">operator</span>=(CComInit <span class="type">const</span>&amp;) = <span class="keyword">delete</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Query an interface from the desktop shell view.</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">FindDesktopFolderView</span><span class="params">(REFIID riid, <span class="type">void</span>** ppv, std::string <span class="type">const</span>&amp; interfaceName)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    CComPtr&lt;IShellWindows&gt; spShellWindows;</span><br><span class="line">    <span class="built_in">ThrowIfFailed</span>(</span><br><span class="line">        spShellWindows.<span class="built_in">CoCreateInstance</span>(CLSID_ShellWindows),</span><br><span class="line">        <span class="string">&quot;Failed to create IShellWindows instance&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="function">CComVariant <span class="title">vtLoc</span><span class="params">(CSIDL_DESKTOP)</span></span>;</span><br><span class="line">    CComVariant vtEmpty;</span><br><span class="line">    <span class="type">long</span> lhwnd;</span><br><span class="line">    CComPtr&lt;IDispatch&gt; spdisp;</span><br><span class="line">    <span class="built_in">ThrowIfFailed</span>(</span><br><span class="line">        spShellWindows-&gt;<span class="built_in">FindWindowSW</span>(</span><br><span class="line">            &amp;vtLoc, &amp;vtEmpty, SWC_DESKTOP, &amp;lhwnd, SWFO_NEEDDISPATCH, &amp;spdisp),</span><br><span class="line">        <span class="string">&quot;Failed to find desktop window&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="function">CComQIPtr&lt;IServiceProvider&gt; <span class="title">spProv</span><span class="params">(spdisp)</span></span>;</span><br><span class="line">    <span class="keyword">if</span> (!spProv)</span><br><span class="line">        <span class="built_in">ThrowIfFailed</span>(E_NOINTERFACE, <span class="string">&quot;Failed to get IServiceProvider interface for desktop&quot;</span>);</span><br><span class="line"></span><br><span class="line">    CComPtr&lt;IShellBrowser&gt; spBrowser;</span><br><span class="line">    <span class="built_in">ThrowIfFailed</span>(</span><br><span class="line">        spProv-&gt;<span class="built_in">QueryService</span>(SID_STopLevelBrowser, <span class="built_in">IID_PPV_ARGS</span>(&amp;spBrowser)),</span><br><span class="line">        <span class="string">&quot;Failed to get IShellBrowser for desktop&quot;</span>);</span><br><span class="line"></span><br><span class="line">    CComPtr&lt;IShellView&gt; spView;</span><br><span class="line">    <span class="built_in">ThrowIfFailed</span>(</span><br><span class="line">        spBrowser-&gt;<span class="built_in">QueryActiveShellView</span>(&amp;spView),</span><br><span class="line">        <span class="string">&quot;Failed to query IShellView for desktop&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">ThrowIfFailed</span>(</span><br><span class="line">        spView-&gt;<span class="built_in">QueryInterface</span>(riid, ppv),</span><br><span class="line">        <span class="string">&quot;Could not query desktop IShellView for interface &quot;</span> + interfaceName);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">ToggleDesktopIcons</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    CComPtr&lt;IFolderView2&gt; spView;</span><br><span class="line">    <span class="built_in">FindDesktopFolderView</span>(<span class="built_in">IID_PPV_ARGS</span>(&amp;spView), <span class="string">&quot;IFolderView2&quot;</span>);</span><br><span class="line"></span><br><span class="line">    DWORD flags = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">ThrowIfFailed</span>(</span><br><span class="line">        spView-&gt;<span class="built_in">GetCurrentFolderFlags</span>(&amp;flags),</span><br><span class="line">        <span class="string">&quot;GetCurrentFolderFlags failed&quot;</span>);</span><br><span class="line">    <span class="built_in">ThrowIfFailed</span>(</span><br><span class="line">        spView-&gt;<span class="built_in">SetCurrentFolderFlags</span>(FWF_NOICONS, flags ^ FWF_NOICONS),</span><br><span class="line">        <span class="string">&quot;SetCurrentFolderFlags failed&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">wmain</span><span class="params">(<span class="type">int</span> argc, <span class="type">wchar_t</span>** argv)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">try</span></span><br><span class="line">    &#123;</span><br><span class="line">        CComInit init;</span><br><span class="line">            </span><br><span class="line">        <span class="built_in">ToggleDesktopIcons</span>();</span><br><span class="line"></span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;Desktop icons have been toggled.\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">catch</span> (std::system_error <span class="type">const</span>&amp; e)</span><br><span class="line">    &#123;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;ERROR: &quot;</span> &lt;&lt; e.<span class="built_in">what</span>() &lt;&lt; <span class="string">&quot;, error code: &quot;</span> &lt;&lt; e.<span class="built_in">code</span>() &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> C/C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C/C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第一次尝试编写第三方包-Morse</title>
+      <link href="/2022/02/26/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95%E7%BC%96%E5%86%99%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85-Morse/"/>
+      <url>/2022/02/26/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95%E7%BC%96%E5%86%99%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85-Morse/</url>
+      
+        <content type="html"><![CDATA[<img class="inline-img" src="https://img.shields.io/badge/language-Python-blue"  /><img class="inline-img" src="https://img.shields.io/github/languages/code-size/ruxia-TJY/Morse"  /><img class="inline-img" src="https://img.shields.io/badge/-Linux-yellow?logo=linux"  /><img class="inline-img" src="https://img.shields.io/badge/-Linux-yellow?logo=windows"  /><img class="inline-img" src="https://img.shields.io/pypi/l/morse-ruxia-TJY"  /><img class="inline-img" src="https://img.shields.io/pypi/v/Morse-ruxia-TJY?logo=pypi&logoColor=ffffff&label=PyPI&labelColor=blue"  /><p>第一次写第三方包，拿摩斯编解码练练手,BSD3协议开源在Github，已上传至PyPi.</p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>命令行中<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install Morse-ruxia-TJY</span><br></pre></td></tr></table></figure></p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Morse <span class="keyword">import</span> morse</span><br><span class="line"></span><br><span class="line">M = morse.Morse()</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(M.encode(<span class="string">&#x27;morse&#x27;</span>))</span><br><span class="line"><span class="comment"># ————/——————/.——./.../.</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(M.decode(<span class="string">&#x27;————/——————/.——./.../.&#x27;</span>))</span><br><span class="line"><span class="comment"># MORSE</span></span><br><span class="line">M.isLower = <span class="literal">True</span></span><br><span class="line"><span class="built_in">print</span>(M.decode(<span class="string">&#x27;————/——————/.——./.../.&#x27;</span>))</span><br><span class="line"><span class="comment"># morse</span></span><br><span class="line"></span><br><span class="line">M.Separator = <span class="string">&#x27;?&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(M.encode(<span class="string">&#x27;morse&#x27;</span>))</span><br><span class="line"><span class="comment"># ————?——————?.——.?...?.</span></span><br><span class="line"></span><br><span class="line">M.dot = <span class="string">&#x27;&lt;&#x27;</span></span><br><span class="line">M.dash = <span class="string">&#x27;&gt;&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(M.encode(<span class="string">&#x27;morse&#x27;</span>))</span><br><span class="line"><span class="comment"># &gt;&gt;/&gt;&gt;&gt;/&lt;&gt;&lt;/&lt;&lt;&lt;/&lt;</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 我的开源 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>论曹刿论战</title>
+      <link href="/2021/12/18/%E8%AE%BA%E6%9B%B9%E5%88%BF%E8%AE%BA%E6%88%98/"/>
+      <url>/2021/12/18/%E8%AE%BA%E6%9B%B9%E5%88%BF%E8%AE%BA%E6%88%98/</url>
+      
+        <content type="html"><![CDATA[<p>古之偏战，自有礼度，相据约时，而刿以三鼓尽击，或行诈击之事，则齐师之败，亦非智之不及，守战之礼也。若刿之计，诸侯相战，岂复信乎？春秋诈战，未必不自刿始，前人既遂，效者宾从，至宋襄公之世，礼法殆亡矣，是以不鼓不成列而成人所笑。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+            <tag> 随想 </tag>
+            
+            <tag> 杂文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>必应壁纸接口</title>
+      <link href="/2021/12/08/%E5%BF%85%E5%BA%94%E5%A3%81%E7%BA%B8%E6%8E%A5%E5%8F%A3/"/>
+      <url>/2021/12/08/%E5%BF%85%E5%BA%94%E5%A3%81%E7%BA%B8%E6%8E%A5%E5%8F%A3/</url>
+      
+        <content type="html"><![CDATA[<p>诸君在Github或者Gitee上搭建博客的时候有没有想过每天自动变换漂亮的壁纸？</p><p>如果诸君使用过bing就会发现，每一天网站都会有质量非常高的壁纸图片。倘如我们使用python或者其他编程语言，可以很轻松的通过bing官方的API接口获得当日壁纸链接来下载他的壁纸图片。</p><p>但是通过Github和Gitee搭建的静态网站的时候是没有办法得到这些壁纸的。在之前，我也使用过第三方的API接口，但是后来没法使用，而后就逐渐放弃了。</p><p>当我买了自己的服务器时，我想要做的，且做的第一个API接口就是获取bing壁纸。现在把链接公开给大家。</p><p>要使用的链接如下<br><a href="https://jiayublog.cn/api/bingWallpaper">https://jiayublog.cn/api/bingWallpaper</a></p><p>该链接将会返回今日的bing壁纸图片</p><blockquote><p><img src='https://jiayublog.cn/api/bingWallpaper'></p></blockquote><p>将链接插在需要的地方就好</p><p>例如设置body的背景图片，在css代码中设置<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">  <span class="attribute">background</span>:<span class="built_in">url</span>(<span class="string">&#x27;https://jiayublog.cn/api/bingWallpaper&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>即可。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我的开源 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 我的开源 </tag>
+            
+            <tag> 接口 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我注册了新的域名</title>
+      <link href="/2021/11/04/%E6%88%91%E6%B3%A8%E5%86%8C%E4%BA%86%E6%96%B0%E7%9A%84%E5%9F%9F%E5%90%8D/"/>
+      <url>/2021/11/04/%E6%88%91%E6%B3%A8%E5%86%8C%E4%BA%86%E6%96%B0%E7%9A%84%E5%9F%9F%E5%90%8D/</url>
+      
+        <content type="html"><![CDATA[<p>我注册了新的域名！！！</p><p>我的博客域名为：blog.jiayublog.cn</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日记随想 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>登录校园网</title>
+      <link href="/2021/10/25/%E7%99%BB%E5%BD%95%E6%A0%A1%E5%9B%AD%E7%BD%91/"/>
+      <url>/2021/10/25/%E7%99%BB%E5%BD%95%E6%A0%A1%E5%9B%AD%E7%BD%91/</url>
+      
+        <content type="html"><![CDATA[<p>先前我写了<br><a href="/2021/10/11/python%E7%99%BB%E5%BD%95%E6%A0%A1%E5%9B%AD%E7%BD%91/" title="python登录校园网">python登录校园网</a><br>，打包成了exe，但是在很多时候早上醒来，躺在床上玩手机，并不想下去，更别说开电脑了。</p><p>可惜我没有学过安卓，听说uniapp可以导出安卓软件，就写了一个。</p><p>不需要整太多花里胡哨的，连接Wifi的时候，打开App就可以登录校园网。</p><p>HbuildX新建一个uniapp项目模板，将index页面的的script换成下面的，注意将url换成你的校园网解析到的网址，打包APP就OK了！</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">data() &#123;</span><br><span class="line">return &#123;</span><br><span class="line">text: &#x27;&#x27;</span><br><span class="line">&#125;</span><br><span class="line">&#125;,</span><br><span class="line">onLoad() &#123;</span><br><span class="line">this.doReq()</span><br><span class="line">&#125;,</span><br><span class="line">methods: &#123;</span><br><span class="line"></span><br><span class="line">doReq()&#123;</span><br><span class="line"></span><br><span class="line">uni.request(&#123;</span><br><span class="line">url:&#x27;&#x27;, // 校园网登录网址，详见python登录校园网</span><br><span class="line"></span><br><span class="line">method:&quot;GET&quot;,</span><br><span class="line">success: (res) =&gt; &#123;</span><br><span class="line">return&#123;</span><br><span class="line">text:&quot;成功&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">&#125;)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 安卓 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 登录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>python登录校园网</title>
+      <link href="/2021/10/11/python%E7%99%BB%E5%BD%95%E6%A0%A1%E5%9B%AD%E7%BD%91/"/>
+      <url>/2021/10/11/python%E7%99%BB%E5%BD%95%E6%A0%A1%E5%9B%AD%E7%BD%91/</url>
+      
+        <content type="html"><![CDATA[<p>校园网的登录可以通过requests一个url登录。</p><p>首先打开校园网登录界面，打开浏览器开发者工具，一般按F12就可以了。</p><p>输入完自己的密码，完成登录。在开发者工具中找到带有login的链接，复制请求URL和请求标头。</p><p>将请求url复制到下面代码的url中，请求标头替换下面的headers。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">url = <span class="string">&#x27;&#x27;</span></span><br><span class="line">headers = &#123;</span><br><span class="line">    <span class="string">&#x27;Accept&#x27;</span>: <span class="string">&#x27;*/*&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Accept-Encoding&#x27;</span>: <span class="string">&#x27;gzip, deflate&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Accept-Language&#x27;</span>: <span class="string">&#x27;zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Connection&#x27;</span>: <span class="string">&#x27;keep-alive&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Host&#x27;</span>: <span class="string">&#x27;10.64.11.250:801&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Referer&#x27;</span>: <span class="string">&#x27;http://10.64.11.250/&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;User-Agent&#x27;</span>: <span class="string">&#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Edg/94.0.992.38&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line">r = requests.get(url,headers=headers)</span><br></pre></td></tr></table></figure><p>运行一下测试能否连接。</p><p>可以通过pyinstaller打包成可执行文件，添加到系统开机启动项中，就可以每次打开电脑自动设置连接校园网了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 爬虫 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电梯问题</title>
+      <link href="/2021/09/28/%E7%94%B5%E6%A2%AF%E9%97%AE%E9%A2%98/"/>
+      <url>/2021/09/28/%E7%94%B5%E6%A2%AF%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p>20层楼，一个电梯，在一个小时内下去。</p><p>电梯最优效益为电梯每次将不同层运到第一层，在所有楼层都按电梯的情况下，电梯会升至顶层运送，然后从上层到下层逐步清空，这样整体上所需的时间最小。<br>但在事实上，整体最大效益并不一定与个体效益重合。</p><p>根据对电梯需求以及实际情况，我将所有楼层分为三个层次，17-20最高层，7-16中层，1-6底层。</p><p>在刚开始的第一天，所有楼层都会选择遵守规则按向下按钮，乘坐电梯，但结果将是，电梯每次在最高层乘满，随后直接前往第一楼，中层底层无法做电梯。此为第一阶段。对于中层来说，不做电梯的代价太大，等待电梯的时间又过长。对于底层，通过楼梯可以跳过对电梯的需求。基于此随时间的推移，将产生如下结果，中层由于不断的等待，将会选择按向上的电梯，乘坐上升的电梯仓占位到达顶楼，然后随电梯向下，到达目的地一楼，我姑且将这种做法称为向上占位以简化叙述。底层会选择放弃电梯，选择直接走楼梯。成为第二阶段。结果如下：电梯依然在高层显示坐满，但到达一楼目的地的多为中层，高层由于中层向上占位，下去人数减少，甚至出现出现电梯未到达高层即满员的状况。随着时间推移，本来遵守整体最大效益的中层将会逐步放弃，而选择向上占位。上升过程中满员的情况将会逐步偏向中下层。在最后第三个阶段，随着中层的选择向上占位的人逐步清空，最高层获得重新乘坐电梯的权力，随着最高层的清空，中层遵守整体最大利益的人开始做上电梯到达目的地。</p><p>对于最底层而言，距离目标很近，因此，楼梯是一个可以选择的第二选择，在诸阶段，底层可以直接跳过对电梯的等待，到达目的地。因此在实际运行过程中，底层对整理最大效益的缺失影响很小。</p><p>对于中层而言，距离目标远，楼梯成为一个艰难的选择，电梯的需求较高。但是对电梯的需求和电梯在高层即满导致巨大的矛盾。而部分向上占位的人加大了这个矛盾，随着选择向上占位的人增多，等待的时间将会越来越长，继续促使向上占位的选择。直接导致遵守整体效益的人最后到达目的地。</p><p>对于顶层而言，采用楼梯到达目的地已不显示，事实上存在的楼梯成为实际上的摆设。随着第二阶段的发展，向上占位向中下层扩散导致的在中下层向上满员加大了顶层想要通过楼梯到达中层乘坐电梯的难度。顶层逐步丧失电梯实际上的使用权，除去第一阶段下去的个体剩下的成为事实上的牺牲品。</p><p>对于具体的个体而言，导致其行为的根本原因是其所处的阶层距离目标的远近。对于部分楼层，守序将会造成事实上的利益损失。距离目标的远近决定事实上存在的楼梯成为自由的选择和摆设。</p><p>本文所写的底层中层高层是为了更好的理解这个问题，而在实际社会分析，应当根据距离目标的远近分层。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日记随想 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+            <tag> 随想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>无题</title>
+      <link href="/2021/09/26/%E6%97%A0%E9%A2%98/"/>
+      <url>/2021/09/26/%E6%97%A0%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p>有所思兮忘所言，目窈窕兮水幽涵。<br>愈不能兮安徊，鸿振兮将何年。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+            <tag> 随想 </tag>
+            
+            <tag> 诗词 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>pyecharts制作新中国建交国家时间图</title>
+      <link href="/2021/09/23/pyecharts%E5%88%B6%E4%BD%9C%E6%96%B0%E4%B8%AD%E5%9B%BD%E5%BB%BA%E4%BA%A4%E5%9B%BD%E5%AE%B6%E6%97%B6%E9%97%B4%E5%9B%BE/"/>
+      <url>/2021/09/23/pyecharts%E5%88%B6%E4%BD%9C%E6%96%B0%E4%B8%AD%E5%9B%BD%E5%BB%BA%E4%BA%A4%E5%9B%BD%E5%AE%B6%E6%97%B6%E9%97%B4%E5%9B%BE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>数据来自政府<a href="http://www.gov.cn/guoqing/2017-06/14/content_5202420.htm" title="中华人民共和国与各国建立外交关系日期简表">中华人民共和国与各国建立外交关系日期简表</a></p><h2 id="页面"><a href="#页面" class="headerlink" title="页面"></a>页面</h2><p>点击 <a href="https://ruxia-tjy.github.io/map/新中国建交国家图.html" title="新中国建交国家图">新中国建交国家图</a> 查看</p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">from</span> pyecharts <span class="keyword">import</span> options <span class="keyword">as</span> opts</span><br><span class="line"><span class="keyword">from</span> pyecharts.charts <span class="keyword">import</span> Map</span><br><span class="line"></span><br><span class="line"><span class="comment"># 此文件见附件</span></span><br><span class="line">data = pd.read_excel(<span class="string">&#x27;data.xlsx&#x27;</span>,index_col=<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">c = (</span><br><span class="line">    Map(init_opts=opts.InitOpts(width=<span class="string">&quot;1400px&quot;</span>,height=<span class="string">&#x27;600px&#x27;</span>))</span><br><span class="line">    </span><br><span class="line">    .add(<span class="string">&quot;国家&quot;</span>, [<span class="built_in">list</span>(z) <span class="keyword">for</span> z <span class="keyword">in</span> <span class="built_in">zip</span>(data[<span class="string">&#x27;国家_re&#x27;</span>], data[<span class="string">&#x27;年份&#x27;</span>])], <span class="string">&quot;world&quot;</span>,is_map_symbol_show=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line">    .set_series_opts(label_opts=opts.LabelOpts(is_show=<span class="literal">True</span>))</span><br><span class="line">    .set_global_opts(</span><br><span class="line">        title_opts=opts.TitleOpts(title=<span class="string">&quot;新中国建交国家时间&quot;</span>,subtitle=<span class="string">&#x27;马尔代夫-1972.10.14\n摩纳哥-1995.1.16\n圣马力诺1971.5.6\n多米尼克2004.3.23\n库克群岛1997.7.25\n技术原因未标注位置&#x27;</span>),</span><br><span class="line">        visualmap_opts=opts.VisualMapOpts(min_=<span class="number">1949</span>,max_=<span class="number">2022</span>),</span><br><span class="line">    )</span><br><span class="line">)</span><br><span class="line">c.render(<span class="string">&quot;与新中国建交国家.html&quot;</span>)       <span class="comment"># 生成html文件</span></span><br></pre></td></tr></table></figure><a class="btn-beautify outline" href="https://gitee.com/ruxia-tjy/bloguse/raw/master/file/2021/9/23/data.xlsx" title="点击下载附件"><i class="far fa-hand-point-right"></i><span>点击下载附件</span></a>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 中国 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用知乎插入latex</title>
+      <link href="/2021/09/06/%E4%BD%BF%E7%94%A8%E7%9F%A5%E4%B9%8E%E6%8F%92%E5%85%A5latex/"/>
+      <url>/2021/09/06/%E4%BD%BF%E7%94%A8%E7%9F%A5%E4%B9%8E%E6%8F%92%E5%85%A5latex/</url>
+      
+        <content type="html"><![CDATA[<p>在使用Hexo中，出现插入数学公式问题，后来在群里一位大佬帮助下，通过如下链接返回公式图片<br><span id="more"></span><br><a href="https://www.zhihu.com/equation?tex={latex公式}">https://www.zhihu.com/equation?tex={latex公式}</a></p><p>在使用过程中发现，需要将参数转为符合url规则<br>python代码如下</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    Gongshi = <span class="built_in">input</span>(<span class="string">&#x27;输入要转换的公式：&#x27;</span>)</span><br><span class="line">    value = requests.utils.quote(Gongshi)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;https://www.zhihu.com/equation?tex=<span class="subst">&#123;value&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网页 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>python使用高氏日柱法实现干支纪日法</title>
+      <link href="/2021/09/06/%E5%B9%B2%E6%94%AF%E7%BA%AA%E6%97%A5%E6%B3%95%E5%AE%9E%E7%8E%B0/"/>
+      <url>/2021/09/06/%E5%B9%B2%E6%94%AF%E7%BA%AA%E6%97%A5%E6%B3%95%E5%AE%9E%E7%8E%B0/</url>
+      
+        <content type="html"><![CDATA[<p>最近需要用到干支纪日，找到了《高氏日柱法》<br><span id="more"></span></p><h2 id="高氏日柱法公式"><a href="#高氏日柱法公式" class="headerlink" title="高氏日柱法公式"></a>高氏日柱法公式</h2><p>公式：<br><img src="https://www.zhihu.com/equation?tex=r%3D%5Cfrac%7Bs%7D%7B4%7D%5Ctimes6%2B5%28%5Cfrac%7Bs%7D%7B4%7D%5Ctimes3%2Bu%29%2Bm%2Bd%2Bx" alt="" title="高氏日柱法"></p><ul><li>r：日柱的母数，r除以60的余数即是日柱的干支序列数；</li><li>s：公元年数后两位数减1，取整数值商</li><li>u: s除以4的余数；</li><li>m: 月基数 d:日期数 x:世纪常数<br>注意：闰年2月之后，求出的r需要再加1。</li></ul><p><strong>世纪常数</strong></p><div class="table-container"><table><thead><tr><th style="text-align:center">世纪数</th><th style="text-align:center">世纪常数</th></tr></thead><tbody><tr><td style="text-align:center">17</td><td style="text-align:center">3</td></tr><tr><td style="text-align:center">18</td><td style="text-align:center">47</td></tr><tr><td style="text-align:center">19</td><td style="text-align:center">31</td></tr><tr><td style="text-align:center">20</td><td style="text-align:center">15</td></tr><tr><td style="text-align:center">21</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">22</td><td style="text-align:center">44</td></tr><tr><td style="text-align:center">23</td><td style="text-align:center">28</td></tr><tr><td style="text-align:center">24</td><td style="text-align:center">12</td></tr><tr><td style="text-align:center">25</td><td style="text-align:center">57</td></tr><tr><td style="text-align:center">26</td><td style="text-align:center">41</td></tr></tbody></table></div><p><img src="https://www.zhihu.com/equation?tex=X%3D44%28C-17%29%2B%5Cfrac%7BC-17%7D%7B4%7D%2B3" alt="" title="世纪常数计算公式"><br>C为世纪数，X为世纪常数母数。C-17/4取整数值，X除以60玉树即为世界常数。<br><strong>月基数</strong><br>为前几月日数和除以60的余数<br><img src="https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/img/2021/9/6/1/1.png" alt="" title="月基数"></p><h2 id="python实现"><a href="#python实现" class="headerlink" title="python实现"></a>python实现</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">getGanZhiBySolarDay</span>(<span class="params">year,month,day</span>):</span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    使用高氏日柱法</span></span><br><span class="line"><span class="string">    :param year: str: 公历年</span></span><br><span class="line"><span class="string">    :param month: str: 公里月</span></span><br><span class="line"><span class="string">    :param day: str: 公历日</span></span><br><span class="line"><span class="string">    :return: str: 干支</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    干支 = [<span class="string">&quot;甲子&quot;</span>, <span class="string">&quot;乙丑&quot;</span>, <span class="string">&quot;丙寅&quot;</span>, <span class="string">&quot;丁卯&quot;</span>, <span class="string">&quot;戊辰&quot;</span>, <span class="string">&quot;己巳&quot;</span>, <span class="string">&quot;庚午&quot;</span>, <span class="string">&quot;辛未&quot;</span>, <span class="string">&quot;壬申&quot;</span>, <span class="string">&quot;癸酉&quot;</span>, <span class="string">&quot;甲戌&quot;</span>, <span class="string">&quot;乙亥&quot;</span>, <span class="string">&quot;丙子&quot;</span>, <span class="string">&quot;丁丑&quot;</span>, <span class="string">&quot;戊寅&quot;</span>, <span class="string">&quot;己卯&quot;</span>, <span class="string">&quot;庚辰&quot;</span>, <span class="string">&quot;辛巳&quot;</span>, <span class="string">&quot;壬午&quot;</span>, <span class="string">&quot;癸未&quot;</span>, <span class="string">&quot;甲申&quot;</span>, <span class="string">&quot;乙酉&quot;</span>, <span class="string">&quot;丙戌&quot;</span>, <span class="string">&quot;丁亥&quot;</span>, <span class="string">&quot;戊子&quot;</span>, <span class="string">&quot;己丑&quot;</span>, <span class="string">&quot;庚寅&quot;</span>, <span class="string">&quot;辛卯&quot;</span>, <span class="string">&quot;壬辰&quot;</span>, <span class="string">&quot;癸巳&quot;</span>, <span class="string">&quot;甲午&quot;</span>, <span class="string">&quot;乙未&quot;</span>, <span class="string">&quot;丙申&quot;</span>, <span class="string">&quot;丁酉&quot;</span>, <span class="string">&quot;戊戌&quot;</span>, <span class="string">&quot;己亥&quot;</span>, <span class="string">&quot;庚子&quot;</span>, <span class="string">&quot;辛丑&quot;</span>, <span class="string">&quot;壬寅&quot;</span>, <span class="string">&quot;癸卯&quot;</span>, <span class="string">&quot;甲辰&quot;</span>, <span class="string">&quot;乙巳&quot;</span>, <span class="string">&quot;丙午&quot;</span>, <span class="string">&quot;丁未&quot;</span>, <span class="string">&quot;戊申&quot;</span>, <span class="string">&quot;己酉&quot;</span>, <span class="string">&quot;庚戌&quot;</span>, <span class="string">&quot;辛亥&quot;</span>, <span class="string">&quot;壬子&quot;</span>, <span class="string">&quot;癸丑&quot;</span>, <span class="string">&quot;甲寅&quot;</span>, <span class="string">&quot;乙卯&quot;</span>, <span class="string">&quot;丙辰&quot;</span>, <span class="string">&quot;丁巳&quot;</span>, <span class="string">&quot;戊午&quot;</span>, <span class="string">&quot;己未&quot;</span>, <span class="string">&quot;庚申&quot;</span>, <span class="string">&quot;辛酉&quot;</span>, <span class="string">&quot;壬戌&quot;</span>, <span class="string">&quot;癸亥&quot;</span>]</span><br><span class="line"></span><br><span class="line">    世纪常数 = &#123;<span class="string">&quot;17&quot;</span>:<span class="number">3</span>,<span class="string">&quot;18&quot;</span>:<span class="number">47</span>,<span class="string">&quot;19&quot;</span>:<span class="number">31</span>,<span class="string">&quot;20&quot;</span>:<span class="number">15</span>,<span class="string">&quot;21&quot;</span>:<span class="number">0</span>,<span class="string">&quot;22&quot;</span>:<span class="number">44</span>,<span class="string">&quot;23&quot;</span>:<span class="number">28</span>,<span class="string">&quot;24&quot;</span>:<span class="number">12</span>,<span class="string">&quot;25&quot;</span>:<span class="number">57</span>,<span class="string">&quot;26&quot;</span>:<span class="number">41</span>&#125;</span><br><span class="line">    月基数= [<span class="number">0</span>,<span class="number">0</span>,<span class="number">31</span>,-<span class="number">1</span>,<span class="number">30</span>,<span class="number">0</span>,<span class="number">31</span>,<span class="number">1</span>,<span class="number">32</span>,<span class="number">3</span>,<span class="number">33</span>,<span class="number">4</span>,<span class="number">34</span>]</span><br><span class="line"></span><br><span class="line">    s = <span class="built_in">int</span>(year[-<span class="number">2</span>:]) - <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    s4 = <span class="built_in">int</span>(s / <span class="number">4</span>)</span><br><span class="line">    <span class="comment"># 发现2000年时候结果不对，需要将S/4设置为-1，</span></span><br><span class="line">    <span class="comment"># 如果是2000年尾数00减1的话s/4取-1</span></span><br><span class="line">    <span class="keyword">if</span> year[-<span class="number">2</span>:] == <span class="string">&#x27;00&#x27;</span>:</span><br><span class="line">        s4 = -<span class="number">1</span></span><br><span class="line"></span><br><span class="line">    u = s % <span class="number">4</span></span><br><span class="line">    x = 世纪常数[<span class="built_in">str</span>(<span class="built_in">int</span>(year[:-<span class="number">2</span>]) + <span class="number">1</span>)]</span><br><span class="line">    m = 月基数[<span class="built_in">int</span>(month)]</span><br><span class="line">    d = <span class="built_in">int</span>(day)</span><br><span class="line"></span><br><span class="line">    r = s4 * <span class="number">6</span> + <span class="number">5</span> * (s4 * <span class="number">3</span> + u) + m + d + x</span><br><span class="line"></span><br><span class="line">    r = r % <span class="number">60</span> - <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 判断闰年，闰年二月后需要加1</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">int</span>(year) % <span class="number">100</span> != <span class="number">0</span> <span class="keyword">and</span> <span class="built_in">int</span>(year) % <span class="number">4</span> == <span class="number">0</span>) <span class="keyword">or</span> (<span class="built_in">int</span>(year) % <span class="number">400</span> == <span class="number">0</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">int</span>(month) &gt; <span class="number">2</span>:</span><br><span class="line">            r += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> 干支[r]</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>春秋三传书单</title>
+      <link href="/2021/09/01/%E6%98%A5%E7%A7%8B%E4%B8%89%E4%BC%A0%E4%B9%A6%E5%8D%95/"/>
+      <url>/2021/09/01/%E6%98%A5%E7%A7%8B%E4%B8%89%E4%BC%A0%E4%B9%A6%E5%8D%95/</url>
+      
+        <content type="html"><![CDATA[<p>春秋三传书单，排名不分先后。<br><span id="more"></span></p><h2 id="《春秋公羊传》-黄铭在，曾亦译注-中华书局"><a href="#《春秋公羊传》-黄铭在，曾亦译注-中华书局" class="headerlink" title="《春秋公羊传》-黄铭在，曾亦译注-中华书局"></a>《春秋公羊传》-黄铭在，曾亦译注-中华书局</h2><p>我的《春秋写史》即是整理本书，其中的译注对于初学者很有用。</p><hr><blockquote><p>以下引用自知乎<br>作者：人世如尘<br>链接：<a href="https://www.zhihu.com/question/480071662/answer/2070077813">https://www.zhihu.com/question/480071662/answer/2070077813</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p></blockquote><h2 id="《春秋大义述》-杨树达著-上海古籍出版社"><a href="#《春秋大义述》-杨树达著-上海古籍出版社" class="headerlink" title="《春秋大义述》-杨树达著-上海古籍出版社"></a>《春秋大义述》-杨树达著-上海古籍出版社</h2><p>杨树达先生是杨伯峻先生的叔叔，而其学问的纯粹，我觉得更优于杨伯峻。此春秋大义述，是将他理解的春秋大义，以不同的主题归纳出来，条分缕析，都有公羊、谷梁、春秋繁露等书为论据，援引在总结的大义之下。兼采左传的某些论义的内容。</p><h2 id="《春秋三传比义》-傅隶朴著-中国友谊出版社"><a href="#《春秋三传比义》-傅隶朴著-中国友谊出版社" class="headerlink" title="《春秋三传比义》-傅隶朴著-中国友谊出版社"></a>《春秋三传比义》-傅隶朴著-中国友谊出版社</h2><p>傅先生将三传全部列在春秋原文之下，并给出自己的校正和品评，是极可参考的一套释义及经史评论的书籍。</p><h2 id="《春秋三传评注》-王璞著-作家出版社"><a href="#《春秋三传评注》-王璞著-作家出版社" class="headerlink" title="《春秋三传评注》-王璞著-作家出版社"></a>《春秋三传评注》-王璞著-作家出版社</h2><p>是当代一个春秋爱好者自己工作之余的力作，也是将三传列在春秋原文后，有简单的注释，并援引了不少古人名人对春秋的评述，也有自己的评论。</p><h2 id="《日讲春秋解义》-康熙内府刻本-清库勒纳等撰-田洪整理注释-海南出版社"><a href="#《日讲春秋解义》-康熙内府刻本-清库勒纳等撰-田洪整理注释-海南出版社" class="headerlink" title="《日讲春秋解义》-康熙内府刻本-清库勒纳等撰-田洪整理注释-海南出版社"></a>《日讲春秋解义》-康熙内府刻本-清库勒纳等撰-田洪整理注释-海南出版社</h2><p>也是三传附后，解义出自清代，言简意赅，极可参考。当代人田洪做了简单注释。但校对方面以及水平方面，都有限，注释的错误以及排版的错误很多。海南出版社这些年，出的书都很好，抓的很准，方向很独到，就是水平方面，尤其书籍的整理、点校方面，实为遗憾。</p><h2 id="《春秋三传书法义例研究》-赵友林著-人民出版社"><a href="#《春秋三传书法义例研究》-赵友林著-人民出版社" class="headerlink" title="《春秋三传书法义例研究》-赵友林著-人民出版社"></a>《春秋三传书法义例研究》-赵友林著-人民出版社</h2><p>研究春秋三传历代义例和为何这样书写背后的志趣（书法）的专著。</p><h2 id="《春秋三传义例研究》-晁岳佩著-线装书局"><a href="#《春秋三传义例研究》-晁岳佩著-线装书局" class="headerlink" title="《春秋三传义例研究》-晁岳佩著-线装书局"></a>《春秋三传义例研究》-晁岳佩著-线装书局</h2><p>与上一本不同，上一本是从历史纵线上，分析历代对义例的总结、观点等，这本书，从横向上，直接总结出许多义例，比如内事、外事、政治、外交、称谓、书写时间、书写地点、丧葬、祭祀等等等，春秋是如何来判定的，它的志趣是什么。</p><h2 id="《春秋学史》-赵伯雄著-山东教育出版社"><a href="#《春秋学史》-赵伯雄著-山东教育出版社" class="headerlink" title="《春秋学史》-赵伯雄著-山东教育出版社"></a>《春秋学史》-赵伯雄著-山东教育出版社</h2><p>从先秦一直到清朝，各个时期对春秋研究的综述和概括，这一本书，不啻为一本研究春秋三传的书目汇总。题主可以按图索骥，基本上历史上重要的研究春秋学的名著都不会有遗漏了。</p><p>其他的一些普及性的读物，比如上海古籍出的十三经译注一套，都有三传的单独的译注，如华东师大出版社出的十三经开讲的春秋三传单独的“开讲”系列，估计题主已经超越这个阶段了，不再赘述。</p><hr><blockquote><p>以下引用自知乎<br>作者：四藏居士<br>链接：<a href="https://www.zhihu.com/question/480071662/answer/2063296321">https://www.zhihu.com/question/480071662/answer/2063296321</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p></blockquote><h2 id="《春秋公羊学史》"><a href="#《春秋公羊学史》" class="headerlink" title="《春秋公羊学史》"></a>《春秋公羊学史》</h2><p>曾亦郭晓东</p><h2 id="《春秋左传学史稿》"><a href="#《春秋左传学史稿》" class="headerlink" title="《春秋左传学史稿》"></a>《春秋左传学史稿》</h2><p>沈玉成刘宁</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 书单 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 书单 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>winreg导出注册表出现OSError[WinError 1314] 客户端没有所需的特权</title>
+      <link href="/2021/08/30/winreg-save-oserror/"/>
+      <url>/2021/08/30/winreg-save-oserror/</url>
+      
+        <content type="html"><![CDATA[<p>Winreg在导出注册表时候会出现OSError[WinError 1314] 客户端没有所需的特权错误。<br><span id="more"></span><br>原因是导出注册表需要SeBackPrivileg安全权限（才知道特权跟权限不一样）</p><p>一开始在百度和bing上找不到答案，但是google搜索第一个就是！！！</p><p>答案在StackOverFlow上面。原链接：<a href="https://stackoverflow.com/questions/30984406/winreg-savekey-error-a-required-privilege-is-not-held-by-the-client">https://stackoverflow.com/questions/30984406/winreg-savekey-error-a-required-privilege-is-not-held-by-the-client</a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os, sys</span><br><span class="line"><span class="keyword">import</span> winreg</span><br><span class="line"><span class="keyword">import</span> win32api</span><br><span class="line"><span class="keyword">import</span> win32security</span><br><span class="line"></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># You need to have SeBackupPrivilege enabled for this to work</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"></span><br><span class="line">priv_flags = win32security.TOKEN_ADJUST_PRIVILEGES | win32security.TOKEN_QUERY</span><br><span class="line">hToken = win32security.OpenProcessToken (win32api.GetCurrentProcess (), priv_flags)</span><br><span class="line">privilege_id = win32security.LookupPrivilegeValue (<span class="literal">None</span>, <span class="string">&quot;SeBackupPrivilege&quot;</span>)</span><br><span class="line">win32security.AdjustTokenPrivileges (hToken, <span class="number">0</span>, [(privilege_id, win32security.SE_PRIVILEGE_ENABLED)])</span><br><span class="line"></span><br><span class="line">key = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, <span class="string">r&#x27;SOFTWARE\Bandizip&#x27;</span>)</span><br><span class="line"></span><br><span class="line">filepath = <span class="string">&#x27;key.reg&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> os.path.exists (filepath):</span><br><span class="line">  os.unlink (filepath)</span><br><span class="line">winreg.SaveKey(key, filepath)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>toScreen0.0.0.4版本发布</title>
+      <link href="/2021/08/30/to-screen0-0-0-4/"/>
+      <url>/2021/08/30/to-screen0-0-0-4/</url>
+      
+        <content type="html"><![CDATA[<p>toScreen是一款由PyQt5+OpenCV写的屏幕动画开源上位机。<br><strong>0.0.0.4</strong>更新</p><ul><li>增加了跳转指定帧和首帧功能</li><li>增加视频信息显示</li><li>小幅度修改界面</li></ul><span id="more"></span><p>通过对视频每帧进行处理传输进单片机，并使用OLED播放。</p><p>在<a href="https://gitee.com/ruxia-tjy/to-screen">Gitee开源</a>使用BSD-3协议进行开源。</p><div style="position: relative; padding: 30% 45%;"><iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="//player.bilibili.com/player.html?bvid=BV1K44y187fg&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我的开源 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> PyQt5 </tag>
+            
+            <tag> OpenCV </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>《春秋写史》</title>
+      <link href="/2021/08/20/%E3%80%8A%E6%98%A5%E7%A7%8B%E5%86%99%E5%8F%B2%E3%80%8B%E5%BC%80%E6%BA%90/"/>
+      <url>/2021/08/20/%E3%80%8A%E6%98%A5%E7%A7%8B%E5%86%99%E5%8F%B2%E3%80%8B%E5%BC%80%E6%BA%90/</url>
+      
+        <content type="html"><![CDATA[<h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><!-- <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/img/opensource/春秋写史.jpg' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">《春秋写史》</div>  <p>对春秋学习的总结，依《春秋公羊传》</p>  <a href='https://gitee.com/ruxia-tjy/chunqiu-write-history'></a>  </figcaption>  </figure>   --><p>余自读《春秋》，中华书局《春秋公羊传 黄铭 曾亦译注》本。自读日起，九成时间在看注。先秦去今甚远，余有不解，无从问之。以余愚见，《春秋》之中，孔子或依礼制地位，择称名称字，复因其行，称字者称名，以表褒贬。间或有定例，余整理之。</p><p>余非文科，《左传》《谷梁传》及当时之他国史书未尝一读，又未有可以一问者。如有谬误，但直刺之。</p><h2 id="开源链接"><a href="#开源链接" class="headerlink" title="开源链接"></a>开源链接</h2><p>使用<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-4.0</a>协议在<a href="https://gitee.com/ruxia-tjy/chunqiu-write-history">Gitee开源</a> <a class="btn-beautify blue larger" href="https://gitee.com/ruxia-tjy/chunqiu-write-history" title="Gitee链接"><i class="far fa-hand-point-right"></i><span>Gitee链接</span></a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我的开源 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 我的开源 </tag>
+            
+            <tag> 古文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>toscreen</title>
+      <link href="/2021/08/13/toscreen/"/>
+      <url>/2021/08/13/toscreen/</url>
+      
+        <content type="html"><![CDATA[<p>开始开发C++版本，后期Python版本可能不在开发。</p><p>将图片从电脑通过串口显示到屏幕上，目前支持单色OLED屏幕。</p><h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><h3 id="CPP版本"><a href="#CPP版本" class="headerlink" title="CPP版本"></a>CPP版本</h3><p>使用Qt5.9.9进行开发，因为使用的是MinGW编译好的OpenCV，所以请使用MInGW编译Qt，如果更改为MSVC请自行编译相应的OpenCV。</p><h3 id="Python版本"><a href="#Python版本" class="headerlink" title="Python版本"></a>Python版本</h3><p>发布版本通过pyinstaller打包。再Windows上，您可以直接下载exe程序运行，或者下载源代码，通过命令</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure><p>安装相关包，运行toScreen.py文件。</p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><a class="btn-beautify blue larger" href="https://gitee.com/ruxia-tjy/to-screen" title="Gitee链接"><i class="far fa-hand-point-right"></i><span>Gitee链接</span></a><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><p><strong>0.0.0.4</strong>更新</p><ul><li>增加了跳转指定帧和首帧功能</li><li>增加视频信息显示</li><li>小幅度修改界面</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我的开源 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C/C++ </tag>
+            
+            <tag> 我的开源 </tag>
+            
+            <tag> Qt </tag>
+            
+            <tag> Python </tag>
+            
+            <tag> 上位机 </tag>
+            
+            <tag> PySide6 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>辛丑五月廿六读《资治通鉴》</title>
+      <link href="/2021/07/05/%E6%97%A5%E8%AE%B0-%E8%BE%9B%E4%B8%91%E4%BA%94%E6%9C%88%E5%BB%BF%E5%85%AD/"/>
+      <url>/2021/07/05/%E6%97%A5%E8%AE%B0-%E8%BE%9B%E4%B8%91%E4%BA%94%E6%9C%88%E5%BB%BF%E5%85%AD/</url>
+      
+        <content type="html"><![CDATA[<p>辛丑五月廿六读《资治通鉴》<br><span id="more"></span><br>田单之复国也，引燕劓降掘冢以扬己民奋激心。后得功封安平，得以庙享，谓为知兵。</p><p>故知当政者有利国心不惮伤己民。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日记随想 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+            <tag> 随想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>幽忆</title>
+      <link href="/2021/06/16/%E5%B9%BD%E5%BF%86-1/"/>
+      <url>/2021/06/16/%E5%B9%BD%E5%BF%86-1/</url>
+      
+        <content type="html"><![CDATA[<p>余与父祭祖，至坟，则曰此谁谁，其先何何，其言今则不忆。<br>曾祖父名明哲，或曰哲，不忆。祖父曰亚，有三子，余父居二。所言曾祖者，余乡曰老太，不论男女，不知他乡亦然否。余生前，曾祖父已逝。<br>一日与余父饮酒食，言至字辈，十有六字，今则唯余八字，曰“明朝亭献，治国安邦”，吾曾祖为明，祖为朝，余父为亭，至余为献。<br>一日余还乡，房中有火炉，上烤朝牌。余与多龙等于屋后田放风筝，饿则归食一朝牌再还。<br>余幼时，壁有字画，余曾祖所书。有浮尘，余常喜执玩。<br>小涂之房屋，外壁多以青石为基，上为红砖，青石与砖有突，水泥平铺其上。余少时喜踩青石，手扣砖隙移动。</p><p>辛丑五月初七</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+            <tag> 随想 </tag>
+            
+            <tag> 杂文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>幽忆</title>
+      <link href="/2021/06/14/%E5%B9%BD%E5%BF%86/"/>
+      <url>/2021/06/14/%E5%B9%BD%E5%BF%86/</url>
+      
+        <content type="html"><![CDATA[<p>泗县小涂村，今见地图之云小涂庄，二十余户人家，与双郭村唯一渠之间隔，渠宽数米而已，边有一小湖，宽或十米，长则不忆，渠与湖今皆涸，然忆少时，则有水溢至小桥，下地笼，有鲶鱼泥鳅，水中亦有金鱼，叔父得之予余及堂姐。叔父，余乡余则称小爷。堂姐，叔父之女，余乡余称姐，余少时，与祖父母叔父母堂姐居于此，祖父母，余乡则称之爹奶，叔母，余乡余则称小娘。余父母则在广东。忆得湖水干涸，间布小洞，余与姐挖之，祖父则与岸观之，或得一二蜗牛，午食之，渠中亦有鱼，今则不知。渠边有花椒树，又有苇叶，祖父折苇插花椒刺予余及姐，吹之有声。余幼时居于此村。西邻之西墙有枣树，西斜，颇易爬之，枣色青，食甚美，待其成，邻以袋铺地，以杆击枝，余数儿童聚之，高枝余不敢上，时邻村吴海洋来，攀而击枣，吴海洋，同小学之友，学习极好，后以溺亡。枣树西有空地，收麦于之晒，或拖拉机拖石碾于麦上，脱其粒。余村伙伴常戏于此。不记何日，余初学自行车，亦于此，场边有垛，余初不会刹车，则骑车撞止。<br>小学则行两里外至庙涂。逮上学时，群行于阡陌，间或嬉戏。同村赛赛者，余之友也，后余居泗县，其亦移北湖，每周五末余归之，或有周六归，则曰，赛赛昨日来寻汝玩。<br>余家门口有小树林，西邻亦然，夏则蝉鸣声声，尝与友捉蝉而未得。有一鸟窝落于地，则与多龙换一麻雀。林南有渠，渠中杂污，尝于林岸草丛得一鸟，毛冠艳丽，与鱼肉皆不食，后放去。渠旁有一桑葚树，一日多龙爬树摘扔之，余三五先拾则食之，至多龙下，其竟未有食。<br>至于他处不知何所言。因忆余虽幼居此村，所到之处而不为多。<br>后公路通于庙涂，有数户移至庙涂。余自三年级以学习至县城，初时尚常归，后祖母以食道癌亡，归渐少，至于今已不知得几年未归矣。前时归去祭祖母，双郭已移走，吾小村人气亦希。昔日场已种麦，树林亦然。<br>至于至县，始租房于北关。共租者已不记样貌，记有两老者，颇善。<br>于时，余班主任曰史广辉。后余初中，有一日与赵硕同归见之，再后余往余妹家长会，尾欲见之，已归矣。<br>县北有河，余不知何名，常有钓者，河上有一桥，曰八里桥，余少时归家，即乘车由上过焉，或晚，则见落日浮于河上。<br>自出县，北至屏山，西南至郭墩，或至草场，然后步行至村。<br>余曾祖母则不知其貌，然闻余母言，余生时，曾祖母则种葫芦，成而寄绳，引余踢，余始会走路。<br>概余所生，颇事钟爱，今则或亡殇，或异乡，多未往来。往事忽然有忆，今已死事，不能不痛哭，亦不足哭耳。至今犹忆得归路，只是何益？<br>辛丑五月五</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+            <tag> 随想 </tag>
+            
+            <tag> 杂文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>幽思</title>
+      <link href="/2021/06/14/%E5%B9%BD%E6%80%9D/"/>
+      <url>/2021/06/14/%E5%B9%BD%E6%80%9D/</url>
+      
+        <content type="html"><![CDATA[<p>辛丑五月初五于泗县<br><span id="more"></span><br>余所喜者月。<br>试思之，流光照于素野，白金浮于江海，间闻螽斯寒蛩，风吹乎竹柏，身处于幽亭，思量贤人诗词，逍遥诸子文章，此乐何极。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日记随想 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+            <tag> 随想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>TKeyboard</title>
+      <link href="/2021/06/10/TKeyboard/"/>
+      <url>/2021/06/10/TKeyboard/</url>
+      
+        <content type="html"><![CDATA[<h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p>暂时使用Pro Micro(Mini接口)开发板，等到芯片的价格降下去，直接使用32U4贴上去缩小体积。</p><p>共计两个版本（两个玩具），具体内容详见相应文件夹的文档。</p><h2 id="Tkeyboard"><a href="#Tkeyboard" class="headerlink" title="Tkeyboard"></a>Tkeyboard</h2><div class="img-wrap"><div class="img-bg"><img class="img" src="https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/img/opensource/tkeyboard/TKeyboard.png" alt="预览图。" style="width:200px;"/></div><span class="image-caption">预览图。</span></div><p>共计两块电路板，其中所有的电路都在主电路板上。</p><p>floor仅仅作为支撑外壳使用，上面没有任何电路，可以不打，将两块电路板用4个M3螺丝组装。</p><div class="table-container"><table><thead><tr><th style="text-align:center">模块</th><th style="text-align:center">数量</th></tr></thead><tbody><tr><td style="text-align:center">Leonardo Pro Micro</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">旋转编码器EC11</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">0.96寸OLED（可选）</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">按键（组成3x4矩阵键盘）</td><td style="text-align:center">12</td></tr></tbody></table></div><div class="table-container"><table><thead><tr><th style="text-align:center">Leonardo引脚</th><th style="text-align:center">元件</th></tr></thead><tbody><tr><td style="text-align:center">2</td><td style="text-align:center">OLED SDA</td></tr><tr><td style="text-align:center">3</td><td style="text-align:center">OLED SCL</td></tr><tr><td style="text-align:center">5</td><td style="text-align:center">LED 音量/亮度</td></tr><tr><td style="text-align:center">6</td><td style="text-align:center">LED 音乐/浏览器</td></tr><tr><td style="text-align:center">7</td><td style="text-align:center">EC11 CLK</td></tr><tr><td style="text-align:center">8</td><td style="text-align:center">EC11 SW</td></tr><tr><td style="text-align:center">9</td><td style="text-align:center">EC11 DT</td></tr><tr><td style="text-align:center">10</td><td style="text-align:center">3x4矩阵 1列</td></tr><tr><td style="text-align:center">16</td><td style="text-align:center">3x4矩阵 2列</td></tr><tr><td style="text-align:center">14</td><td style="text-align:center">3x4矩阵 3列</td></tr><tr><td style="text-align:center">15</td><td style="text-align:center">3x4矩阵 4列</td></tr><tr><td style="text-align:center">20</td><td style="text-align:center">3x4矩阵 1行</td></tr><tr><td style="text-align:center">19</td><td style="text-align:center">3x4矩阵 2行</td></tr><tr><td style="text-align:center">18</td><td style="text-align:center">3x4矩阵 3行</td></tr></tbody></table></div><h3 id="焊接教程"><a href="#焊接教程" class="headerlink" title="焊接教程"></a>焊接教程</h3><div class="gallery-container" data-type="data" data-button="true">      <div class="gallery-items">[{"url":"https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/img/opensource/tkeyboard/电路板_PreView.png","alt":"电路板正面图"},{"url":"https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/img/opensource/tkeyboard/电路板背面_PreView.png","alt":"背面图"}]</div>    </div><ol><li>焊接好正面贴片元件，如上图显示焊接电阻，+为LED正极。</li><li>两排1x4排母焊接在正面，供OLED插入，根据自己的OLED引脚选择焊接，有的OLED最左为VCC，有的为GND，注意区分。</li><li>在电路板背面焊接1x12螺母，共Leonardo插入，根据自己购买的大小选择焊接两个即可。</li><li>使用M3螺丝将电路板与底板连接起来</li></ol><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>旋钮存在两种模式，音量调节/亮度调节，按下 切换模式 按钮切换。</p><ul><li>处于音量调节模式时，音量/亮度指示灯亮起，左旋减小音量，右旋增加音量，按下切换静音</li><li>处于亮度调节模式时，音量/亮度指示灯熄灭，左旋降低亮度，右旋增加亮度，按下切换静音</li></ul><p>按键功能为标识所示</p><p>第二行按钮有两种模式，音乐/浏览器，按下 音乐/浏览器 按钮切换</p><ul><li>处于音乐模式时，音乐/浏览器指示灯亮起，按下按键执行 / 左边所示功能</li><li>处于浏览器模式时。音乐/浏览器指示灯熄灭，按下按键执行 / 右边所示功能</li></ul><h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h3><ul><li>Pro Micro有两种，两种的电路板大小不同，排针位置不同。可自行选择删除排母</li><li>OLED有左边VCC和左边GND的，自行选择保留。</li><li>当您对本项目电路图进行修改时，请删去作者图标：涂，以及作者:ruxia,并修改代码中将图标作者显示在OLED中的部分</li></ul><h2 id="Tkeyboard2-（开发中）"><a href="#Tkeyboard2-（开发中）" class="headerlink" title="Tkeyboard2 （开发中）"></a>Tkeyboard2 （开发中）</h2><div class="img-wrap"><div class="img-bg"><img class="img" src="https://cdn.jsdelivr.net/gh/ruxia-TJY/BlogUse@latest/img/opensource/tkeyboard/TKeyboard2.png" alt="TKeyboard预览图" style="width:200px;"/></div><span class="image-caption">TKeyboard预览图</span></div><p>按下按键，从EEPROM相应地址读取操作字符串。对于媒体音量增加等使用转义字符串。例如提升音量存储为\m。</p><p>对于具体转义字符串请查看表。</p><p>原本制作了OLED动画，但是会导致旋转旋钮出现问题，所以注释掉。</p><p>8个LED显示灯通过74LS595控制，其中三个LED用于系统CAPS，NUMS，ScrollLock.剩余5个灯暂时未想好功能。</p><div class="table-container"><table><thead><tr><th style="text-align:center">元件</th><th style="text-align:center">封装</th><th style="text-align:center">数量</th></tr></thead><tbody><tr><td style="text-align:center">Leonardo Pro Micro</td><td style="text-align:center">Mini接口</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">旋转编码器EC11</td><td style="text-align:center"></td><td style="text-align:center">2</td></tr><tr><td style="text-align:center">0.96寸OLED</td><td style="text-align:center"></td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">按键</td><td style="text-align:center"></td><td style="text-align:center">25</td></tr><tr><td style="text-align:center">BC6301</td><td style="text-align:center">SOP-14</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">AT24C04</td><td style="text-align:center">SOP-8</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">74LS595</td><td style="text-align:center">SOP-16</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">LED</td><td style="text-align:center">0805</td><td style="text-align:center">8</td></tr><tr><td style="text-align:center">排母</td><td style="text-align:center">1x12</td><td style="text-align:center">2</td></tr><tr><td style="text-align:center">排母</td><td style="text-align:center">1x4</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">1N4148WS</td><td style="text-align:center">SOD-323</td><td style="text-align:center">25</td></tr></tbody></table></div><h3 id="修改键值"><a href="#修改键值" class="headerlink" title="修改键值"></a>修改键值</h3><p>目前写死在程序里面，可以通过程序里面的setKeyForEEPROM()函数修改每个键值的功能，并调用一次该函数即可写入EEPROM。后续写一个软件，用以修改。</p><h3 id="焊接教程-1"><a href="#焊接教程-1" class="headerlink" title="焊接教程"></a>焊接教程</h3><p>元件焊接位置见bom文件夹下文件</p><p>外壳有两种方案，一是像TKeyboard版本一样，由两块PCB板4枚M3螺丝组装。</p><p>二是3D打印（设计中），本人设计很烂，建议可以自行设计</p><h2 id="开源链接"><a href="#开源链接" class="headerlink" title="开源链接"></a>开源链接</h2><p>采用BSD3.0开源</p><a class="btn-beautify blue larger" href="https://gitee.com/ruxia-tjy/tkeyboard" title="Gitee链接"><i class="far fa-hand-point-right"></i><span>Gitee链接</span></a> <a class="btn-beautify blue larger" href="https://github.com/ruxia-TJY/TKeyboard" title="Github链接"><i class="far fa-hand-point-right"></i><span>Github链接</span></a>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我的开源 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C/C++ </tag>
+            
+            <tag> DIY </tag>
+            
+            <tag> 我的开源 </tag>
+            
+            <tag> 硬件 </tag>
+            
+            <tag> Arduino </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>积概</title>
+      <link href="/2021/06/08/%E7%A7%AF%E6%A6%82/"/>
+      <url>/2021/06/08/%E7%A7%AF%E6%A6%82/</url>
+      
+        <content type="html"><![CDATA[<p>辛丑四月廿八于合肥<br><span id="more"></span><br>水，非千百不能成洪涝，民，非千百不能成大势。<br>滴水势柔，广积而能溃坝，横行肆流，未能之止。固夫大者，非不纤芥累时之所积。江海大矣，由斯聚之，失一不足以更易，汤汤滴珠，不是两物。故一物之重，在质非体，积微成势，在量非质。<br>寄伟于众，己亦居众，因时而存，未脱今根。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+            <tag> 随想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>祭袁公</title>
+      <link href="/2021/05/22/%E7%A5%AD%E8%A2%81%E5%85%AC/"/>
+      <url>/2021/05/22/%E7%A5%AD%E8%A2%81%E5%85%AC/</url>
+      
+        <content type="html"><![CDATA[<p>上午便有消息，然后澄清是谣言。下午便见得共青团中央发视频，始知先生确是去了。余忆见前时采访之视频，先生言欲民无饥，尚康健，未竟几月，何由之速也。</p><p>先生于下午一时去的，始知上午确系谣言。余颇恨此等媒体之无良，竟能未经确实而公然伪言先生已死。先生虽死未死，彼人皆死名徒也。</p><p>余素以为，凡于民有大功绩者，待其死，民必圣而神之，余必知，时久则先生为神矣。此固非先生之所为愿也，然于生者，或稍解一哀悲矣。</p><p>先生所思者，在解人类少食之患也，先生所为者，在解人类少食之患也。吾人即日所享，且尽食之，以悼先生也，纵使不能长久为之，亦应谨记勿浪费。</p><p>余零零后，未知饥苦之年，然于史书中，易子食诸言已知先生之伟大也。</p><p>余以身，人际关系，社会三者皆死方为真死，先生与老，庄，孔，毛亦然，实未死也。</p><p>辛丑四月十一元贞子于合肥</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 中国 </tag>
+            
+            <tag> 日记 </tag>
+            
+            <tag> 随想 </tag>
+            
+            <tag> 祭文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>法言</title>
+      <link href="/2021/05/17/%E6%B3%95%E8%A8%80/"/>
+      <url>/2021/05/17/%E6%B3%95%E8%A8%80/</url>
+      
+        <content type="html"><![CDATA[<p>辛丑四月初六元贞子于合肥<br><span id="more"></span><br>法之理，在止恩怨，扬道德，定公义。<br>法不止怨，民必以私刑复。<br>法不扬德，民必诫于善举。<br>法不定义，民必肆行无矩。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日记随想 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+            <tag> 随想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>且待</title>
+      <link href="/2021/05/16/%E4%B8%94%E5%BE%85/"/>
+      <url>/2021/05/16/%E4%B8%94%E5%BE%85/</url>
+      
+        <content type="html"><![CDATA[<p>辛丑四月初五元贞子于合肥<br><span id="more"></span><br>今有假而断电，学生闹之，有人曰：“勿从，且待，必复”，久，电果复来，其曰：“我必知之”。<br>呜呼，智欤？智也，见断电知将复来。然试思之，今断电复来非其欲然，民闹使然，民不闹，电不复。<br>固世将革易，必先有为革易而走死之民，然后有革易之世。轻之而曰且待，何贼也！<br>殇！民之公者多，大义死身，使世革易显其如常，成此智者之幸，而笑其民！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+            <tag> 随想 </tag>
+            
+            <tag> 杂文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>曲水说</title>
+      <link href="/2021/05/14/%E6%9B%B2%E6%B0%B4%E8%AF%B4/"/>
+      <url>/2021/05/14/%E6%9B%B2%E6%B0%B4%E8%AF%B4/</url>
+      
+        <content type="html"><![CDATA[<p>辛丑四月三日元贞子于合肥。<br><span id="more"></span><br>水本清,其性柔,尽依他形无自形。覆之于地，则绵绵若无止休，载之以尘，则并于其污。夫大块流水，未能免浊，浊非其性，其所含合，概水含鸿广纳，不能辨之。置之于皿，其清虽持，非其自然，皿之成之。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+            <tag> 随想 </tag>
+            
+            <tag> 杂文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>冰德论</title>
+      <link href="/2021/05/04/%E5%86%B0%E5%BE%B7%E8%AE%BA/"/>
+      <url>/2021/05/04/%E5%86%B0%E5%BE%B7%E8%AE%BA/</url>
+      
+        <content type="html"><![CDATA[<p>我曰：君子如冰。冰者，水之寒，物之刚。<br>或曰：冰者何刚？铁以相击，未能得完。曰:实也，然物各有性，使吾有力，铁曲之矣，子尝见冰之曲乎？冰者，可碎而不可柔，有力而不能使之曲，何以不可谓刚？君子之节，立身刚正，亦如斯乎。世有不能之人，时有不可之事，刚节正，非独应规顺律，是知其必死生败亡而为之。伯夷采薇，武侯北伐，吾谓冰士。孟子曰:虽千万人吾往矣。<br>水性柔，尽依他形而无自形。器善水善，器邪水不邪欤？是谓曲水。<br>故君子为冰不为水，取正不取邪。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+            <tag> 随想 </tag>
+            
+            <tag> 杂文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>祭奶文</title>
+      <link href="/2021/05/04/%E7%A5%AD%E5%A5%B6%E6%96%87/"/>
+      <url>/2021/05/04/%E7%A5%AD%E5%A5%B6%E6%96%87/</url>
+      
+        <content type="html"><![CDATA[<p>年月日，孙与父及汝坟祭汝，汝丧十年矣。<br>吾少时与汝至亲，未及长而离汝，每周末必归以见汝，后汝以食道癌亡。吾今已长矣，已入大学矣，汝知之乎？汝果知之，当何喜也！<br>吾自别汝，旧事渐失，朝花未能夕拾，竟不能思乎？所忆唯汝遗像之貌，此终不能忘也。<br>世有幽冥乎，吾侪可知乎？唯有庄生，气聚此身，气散归乡，愿汝无异此乡，当胜此乡乎。呜呼哀哉，欣其余生必有一见乎！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+            <tag> 随想 </tag>
+            
+            <tag> 祭文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>冰正斋序</title>
+      <link href="/2021/04/30/%E5%86%B0%E6%AD%A3%E6%96%8B%E5%BA%8F/"/>
+      <url>/2021/04/30/%E5%86%B0%E6%AD%A3%E6%96%8B%E5%BA%8F/</url>
+      
+        <content type="html"><![CDATA[<p>冰正斋，无实之所，余所居习皆谓之。<br><span id="more"></span><br>有为利权而害人者，则为之辩曰：“为汝亦为此”；有为公义而死身者，则曰：“吾不能为也”。凡今古之善人贤事，必以己之私心，人之性恶度之，然后则曰“事不真，必不久，于私有利人莫知”，是乃于己曰：“或善吾不能为，性恶公亦然”。又见国贼类，一则曰：“非其愿也，世之迫也”，再则曰“智也”，于己方曰：“我为亦如然”。必得以毁圣贤之名誉，脱邪贼之罪责，又常以缺避之言祸人听闻，然后翻然以为己有知见。<br>焉如斯乎？焉如斯乎？<br>余深然为戒，自取其正，贞正不移，如冰不柔。</p><p>— 辛丑三月十九元贞子于合肥</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+            <tag> 随想 </tag>
+            
+            <tag> 杂文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C实现base64编解码</title>
+      <link href="/2020/12/10/C%E5%AE%9E%E7%8E%B0base64%E7%BC%96%E8%A7%A3%E7%A0%81/"/>
+      <url>/2020/12/10/C%E5%AE%9E%E7%8E%B0base64%E7%BC%96%E8%A7%A3%E7%A0%81/</url>
+      
+        <content type="html"><![CDATA[<p>找到一份以前写的使用C语言进行编解码的代码。</p><h2 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifndef</span> BASE64_H__</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BASE64_H__</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 对字符串进行base64加密</span></span><br><span class="line"><span class="comment">// str： 要进行加密的字符串</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span>* <span class="title function_">base64EncodeStr</span><span class="params">(<span class="type">unsigned</span> <span class="type">char</span> str[])</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 对base64编码解密</span></span><br><span class="line"><span class="comment">// code: 要进行解密的字符串</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span>*<span class="title function_">base64DecodeStr</span><span class="params">(<span class="type">unsigned</span> <span class="type">char</span> code[])</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span><span class="comment">// 内存</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string.h&gt;</span><span class="comment">// strcmp()</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// base64编码表</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span>* encodeTable = <span class="string">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 对字符串进行base64加密</span></span><br><span class="line"><span class="comment">// str： 要进行加密的字符串</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span>* <span class="title function_">base64EncodeStr</span><span class="params">(<span class="type">unsigned</span> <span class="type">char</span> str[])</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">// str_len,要计算的字符串长度</span></span><br><span class="line"><span class="comment">// encode_len,加密后的字符串长度</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">long</span> str_len, encode_len;</span><br><span class="line"></span><br><span class="line">str_len = <span class="built_in">strlen</span>(str);</span><br><span class="line"><span class="comment">// 计算加密后的字符串长度</span></span><br><span class="line"><span class="comment">// （字符串长度 + 2） / 3类似与取进一法，向上取整，</span></span><br><span class="line">encode_len = (str_len + <span class="number">2</span>) / <span class="number">3</span> * <span class="number">4</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//分配内存</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span>* encode;</span><br><span class="line">encode = (<span class="type">unsigned</span> <span class="type">char</span>*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">unsigned</span> <span class="type">char</span>) * encode_len);</span><br><span class="line">encode[encode_len] = <span class="string">&#x27;\0&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 进行编码</span></span><br><span class="line"><span class="type">int</span> i, j;</span><br><span class="line"><span class="comment">// 循环每三个字节执行操作</span></span><br><span class="line"><span class="keyword">for</span> (i = <span class="number">0</span>, j = <span class="number">0</span>; i &lt; encode_len - <span class="number">2</span>; i += <span class="number">4</span>, j += <span class="number">3</span>) &#123;</span><br><span class="line"><span class="comment">// 此处进行位操作</span></span><br><span class="line"><span class="comment">// 字符串第一个字节右移两位，高位补零</span></span><br><span class="line"><span class="comment">// 获取加密后的第一个字节        </span></span><br><span class="line">encode[i] = encodeTable[str[j] &gt;&gt; <span class="number">2</span>];</span><br><span class="line"><span class="comment">// 将字符串第一个字节与0x3(0000 0011)执行与操作，获取第一个字节的低两位</span></span><br><span class="line"><span class="comment">// 第二个字节右移四位与执行或操作</span></span><br><span class="line"><span class="comment">// 获取加密后第二个字节</span></span><br><span class="line">encode[i + <span class="number">1</span>] = encodeTable[(str[j] &amp; <span class="number">0x3</span>) &lt;&lt; <span class="number">4</span> | str[j + <span class="number">1</span>] &gt;&gt; <span class="number">4</span>];</span><br><span class="line"><span class="comment">// 将字符串第二个字节与0xf(0000 1111)执行与操作，获取第二个字节的低四位</span></span><br><span class="line"><span class="comment">// 第三个字节右移六位与执行或操作</span></span><br><span class="line"><span class="comment">// 获取加密后的第三个字节</span></span><br><span class="line">encode[i + <span class="number">2</span>] = encodeTable[(str[j + <span class="number">1</span>] &amp; <span class="number">0xf</span>) &lt;&lt; <span class="number">2</span> | str[j + <span class="number">2</span>] &gt;&gt; <span class="number">6</span>];</span><br><span class="line"><span class="comment">// 将字符串第三个字节与0x3f(0011 1111)执行与操作，获取第三个字节的低六位</span></span><br><span class="line"><span class="comment">// 获取加密后第四个字节</span></span><br><span class="line">encode[i + <span class="number">3</span>] = encodeTable[str[j + <span class="number">2</span>] &amp; <span class="number">0x3f</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 补=</span></span><br><span class="line"><span class="keyword">if</span> (str_len % <span class="number">3</span> == <span class="number">1</span>) &#123;</span><br><span class="line">encode[encode_len - <span class="number">2</span>] = <span class="string">&#x27;=&#x27;</span>;</span><br><span class="line">encode[encode_len - <span class="number">1</span>] = <span class="string">&#x27;=&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (str_len % <span class="number">3</span> == <span class="number">2</span>) &#123;</span><br><span class="line">encode[encode_len - <span class="number">1</span>] = <span class="string">&#x27;=&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> encode;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 将字符转成编码表里的位置并返回索引值，不在返回*，=号返回64</span></span><br><span class="line"><span class="comment">// code： 要转换的字符</span></span><br><span class="line"><span class="comment">// index： 在编码表里的位置</span></span><br><span class="line"><span class="comment">// return: 索引值，不在返回*，=号返回64</span></span><br><span class="line"><span class="type">char</span> <span class="title function_">changeToArr</span><span class="params">(<span class="type">char</span> code,<span class="type">int</span> index)</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">if</span>(code &gt;= <span class="number">65</span> &amp;&amp; code&lt;=<span class="number">90</span>)&#123;</span><br><span class="line">code -= <span class="number">65</span>;</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(code &gt;= <span class="number">97</span> &amp;&amp; code &lt;= <span class="number">122</span>)&#123;</span><br><span class="line">code -= <span class="number">71</span>;</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(code &gt;= <span class="number">48</span> &amp;&amp; code &lt;= <span class="number">57</span>)&#123;</span><br><span class="line">code += <span class="number">4</span>;</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(code == <span class="string">&#x27;+&#x27;</span>)&#123;</span><br><span class="line">code += <span class="number">19</span>;</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(code == <span class="string">&#x27;/&#x27;</span>)&#123;</span><br><span class="line">code += <span class="number">16</span>;</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(code == <span class="string">&#x27;=&#x27;</span>)&#123;</span><br><span class="line">code = <span class="number">64</span>;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;不存在字符!%d位,%c\n&quot;</span>,index+<span class="number">1</span>,code);</span><br><span class="line"><span class="keyword">return</span> <span class="string">&#x27;*&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> code;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 对base64编码解密</span></span><br><span class="line"><span class="comment">// code: 要进行解密的字符串</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span>*<span class="title function_">base64DecodeStr</span><span class="params">(<span class="type">unsigned</span> <span class="type">char</span> code[])</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">// str_len： 解码后字符串的长度</span></span><br><span class="line"><span class="comment">// code_len: 编码的长度</span></span><br><span class="line">    <span class="type">unsigned</span> <span class="type">long</span> str_len,code_len;</span><br><span class="line">    code_len = <span class="built_in">strlen</span>(code);</span><br><span class="line">    str_len = code_len / <span class="number">4</span> * <span class="number">3</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 分配内存</span></span><br><span class="line">    <span class="type">unsigned</span> <span class="type">char</span>* decode;</span><br><span class="line">    decode = (<span class="type">unsigned</span> <span class="type">char</span>*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">unsigned</span> <span class="type">char</span>) * code_len);</span><br><span class="line">    decode[code_len] = <span class="string">&#x27;\0&#x27;</span>;</span><br><span class="line">    </span><br><span class="line"><span class="comment">// 等于号的个数</span></span><br><span class="line"><span class="type">int</span> EqualsignNum = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(code[code_len <span class="number">-1</span>] == <span class="string">&#x27;=&#x27;</span>)&#123;</span><br><span class="line">EqualsignNum += <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (code[code_len - <span class="number">2</span>] == <span class="string">&#x27;=&#x27;</span>)&#123;</span><br><span class="line">EqualsignNum += <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 进行解码</span></span><br><span class="line">    <span class="type">int</span> i,j;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>,j = <span class="number">0</span>;i &lt; code_len - <span class="number">3</span>;i += <span class="number">3</span>,j += <span class="number">4</span>)&#123;</span><br><span class="line"><span class="comment">// 解码</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> t=j;t&lt;=j+<span class="number">3</span>;t++)&#123;</span><br><span class="line"><span class="keyword">if</span>(changeToArr(code[t],t) != <span class="string">&#x27;*&#x27;</span>)&#123;</span><br><span class="line">code[t] = changeToArr(code[t],t);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line"><span class="keyword">return</span> <span class="string">&quot;请重试&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">decode[i] = code[j] &lt;&lt; <span class="number">2</span> | code[j+<span class="number">1</span>] &gt;&gt; <span class="number">6</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(i+<span class="number">1</span> == str_len <span class="number">-2</span> &amp;&amp; EqualsignNum == <span class="number">2</span>)&#123;</span><br><span class="line">decode[i+<span class="number">1</span>] = <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">decode[i+<span class="number">1</span>] = code[j+<span class="number">1</span>] &lt;&lt; <span class="number">4</span> | (code[j+<span class="number">2</span>]&amp; <span class="number">0x3c</span>) &gt;&gt; <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(i+<span class="number">2</span> == str_len - <span class="number">1</span> &amp;&amp; EqualsignNum != <span class="number">0</span> )&#123;</span><br><span class="line">decode[i+<span class="number">2</span>] = <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">decode[i+<span class="number">2</span>] = (code[j+<span class="number">2</span>] &amp; <span class="number">0x3</span>) &lt;&lt; <span class="number">6</span> | code[j+<span class="number">3</span>];</span><br><span class="line">&#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> decode;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> C/C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C/C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>爬取LOL壁纸音频</title>
+      <link href="/2020/04/12/%E7%88%AC%E5%8F%96LOL%E5%A3%81%E7%BA%B8%E9%9F%B3%E9%A2%91/"/>
+      <url>/2020/04/12/%E7%88%AC%E5%8F%96LOL%E5%A3%81%E7%BA%B8%E9%9F%B3%E9%A2%91/</url>
+      
+        <content type="html"><![CDATA[<p>因为之前有爬取王者荣耀的经验，所以爬取LOL时候全程无百度，令我惊奇的是，竟然有语音可以爬取<br>不过什么时候LOL变成腾讯的了？？？之前一直以为LOL是外国的。<br>因为不玩LOL，爬取了之后没看</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    爬取LOL皮肤壁纸</span></span><br><span class="line"><span class="string">    作者： ruxia-TJY</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line"><span class="comment"># 英雄列表json文件链接</span></span><br><span class="line">herolist = <span class="string">&#x27;https://game.gtimg.cn/images/lol/act/img/js/heroList/hero_list.js&#x27;</span></span><br><span class="line"><span class="comment"># 获取</span></span><br><span class="line">herolistjson = json.loads(requests.utils.unquote(requests.get(herolist).text))</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> hero <span class="keyword">in</span> herolistjson[<span class="string">&quot;hero&quot;</span>]:</span><br><span class="line">    <span class="comment"># 爬取语音</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(<span class="string">&#x27;.\\data\\audio\\&#x27;</span> + hero[<span class="string">&quot;title&quot;</span>]):</span><br><span class="line">        os.mkdir(<span class="string">&#x27;.\\data\\audio\\&#x27;</span> + hero[<span class="string">&quot;title&quot;</span>])</span><br><span class="line"></span><br><span class="line">    selectAudio = requests.get(hero[<span class="string">&#x27;selectAudio&#x27;</span>])</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;.\\data\\audio\\&#x27;</span> + hero[<span class="string">&quot;title&quot;</span>] + <span class="string">&#x27;\\selectAudio.ogg&#x27;</span>,<span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f1:</span><br><span class="line">        f1.write(selectAudio.content)</span><br><span class="line">        <span class="built_in">print</span>( hero[<span class="string">&quot;title&quot;</span>] + <span class="string">&#x27;\\selectAudio.ogg is ok&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    banAudio = requests.get(hero[<span class="string">&#x27;banAudio&#x27;</span>])</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;.\\data\\audio\\&#x27;</span> + hero[<span class="string">&quot;title&quot;</span>] + <span class="string">&#x27;\\banAudio.ogg&#x27;</span>,<span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f2:</span><br><span class="line">        f2.write(banAudio.content)</span><br><span class="line">        <span class="built_in">print</span>(hero[<span class="string">&quot;title&quot;</span>] + <span class="string">&#x27;\\banAudio.ogg is ok&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 爬取图片</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(<span class="string">&#x27;.\\data\\img\\&#x27;</span> + hero[<span class="string">&quot;title&quot;</span>]):</span><br><span class="line">        os.mkdir(<span class="string">&#x27;.\\data\\img\\&#x27;</span> + hero[<span class="string">&quot;title&quot;</span>])</span><br><span class="line">    </span><br><span class="line">    imgjsonurl = <span class="string">&#x27;https://game.gtimg.cn/images/lol/act/img/js/hero/&#x27;</span> + hero[<span class="string">&#x27;heroId&#x27;</span>] + <span class="string">&#x27;.js&#x27;</span></span><br><span class="line">    jsonr = json.loads(requests.utils.unquote(requests.get(imgjsonurl).text))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> skin <span class="keyword">in</span> jsonr[<span class="string">&quot;skins&quot;</span>]:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            img = requests.get(skin[<span class="string">&quot;mainImg&quot;</span>])</span><br><span class="line">            <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;.\\data\\img\\&#x27;</span> + hero[<span class="string">&quot;title&quot;</span>] + <span class="string">&#x27;\\&#x27;</span> + skin[<span class="string">&quot;name&quot;</span>] + <span class="string">&quot;.jpg&quot;</span> ,<span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                f.write(img.content)</span><br><span class="line">            <span class="built_in">print</span>(hero[<span class="string">&quot;title&quot;</span>] + <span class="string">&#x27;\\&#x27;</span> + skin[<span class="string">&quot;name&quot;</span>] + <span class="string">&quot;.jpg is ok&quot;</span>)</span><br><span class="line">        <span class="keyword">except</span>:<span class="keyword">pass</span></span><br><span class="line">        <span class="keyword">else</span>:<span class="keyword">pass</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 爬虫 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>爬取王者荣耀壁纸</title>
+      <link href="/2020/04/12/%E7%88%AC%E5%8F%96%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E5%A3%81%E7%BA%B8/"/>
+      <url>/2020/04/12/%E7%88%AC%E5%8F%96%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E5%A3%81%E7%BA%B8/</url>
+      
+        <content type="html"><![CDATA[<p>王者荣耀官方是由壁纸的<a href="https://pvp.qq.com/web201605/wallpaper.shtml">官方壁纸链接</a>，而不是使用hero_list.json这个文件<br>废话不说，上代码</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line"><span class="comment"># 存放壁纸文件夹</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(<span class="string">&#x27;.\\data&#x27;</span>):</span><br><span class="line">    os.mkdir(<span class="string">&#x27;.\\data&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 存放下载图片信息</span></span><br><span class="line">fileInfo = <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;正在开始下载,请等待...&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载时候只有21页，没找到获取总共页数的方法，自己根据情况修改</span></span><br><span class="line"><span class="keyword">for</span> pages <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">22</span>):</span><br><span class="line">    <span class="comment"># 拼接连接</span></span><br><span class="line">    jsonurl = <span class="string">&#x27;https://apps.game.qq.com/cgi-bin/ams/module/ishow/V1.0/query/workList_inc.cgi?activityId=2735&amp;sVerifyCode=ABCD&amp;sDataType=JSON&amp;iListNum=20&amp;totalpage=0&amp;page=&#x27;</span> + <span class="built_in">str</span>(pages) + <span class="string">&#x27;&amp;iOrder=0&amp;iSortNumClose=1&amp;iAMSActivityId=51991&amp;_everyRead=true&amp;iTypeId=2&amp;iFlowId=267733&amp;iActId=2735&amp;iModuleId=2735&amp;_=1578643950203&#x27;</span></span><br><span class="line">    <span class="comment"># 获取json文件</span></span><br><span class="line">    jsonr = json.loads(requests.utils.unquote(requests.get(jsonurl).text))</span><br><span class="line">    <span class="comment"># 解析json文件</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> jsonr[<span class="string">&quot;List&quot;</span>]:</span><br><span class="line">        <span class="comment"># 本地图片文件不存在</span></span><br><span class="line">        <span class="comment"># 防止再次下载重复下载</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(<span class="string">&#x27;.\\data\\&#x27;</span> + i[<span class="string">&quot;sProdName&quot;</span>] + <span class="string">&#x27;.jpg&#x27;</span>):</span><br><span class="line">            <span class="comment"># 拼接路径下载</span></span><br><span class="line">            <span class="comment"># 因为我只需要1920*1080大小的地址，所以本代码只爬了该大小</span></span><br><span class="line">            imgurl = i[<span class="string">&quot;sProdImgNo_6&quot;</span>][:<span class="built_in">len</span>(i[<span class="string">&quot;sProdImgNo_6&quot;</span>]) -<span class="number">3</span>] + <span class="string">&#x27;0&#x27;</span></span><br><span class="line">            img = requests.get(imgurl)</span><br><span class="line">            </span><br><span class="line">            <span class="comment"># 写入本地</span></span><br><span class="line">            <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;.\\data\\&#x27;</span> + i[<span class="string">&quot;sProdName&quot;</span>] + <span class="string">&#x27;.jpg&#x27;</span>,<span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                f.write(img.content)</span><br><span class="line">            </span><br><span class="line">            fileInfo += <span class="string">&#x27;.\\data\\&#x27;</span> + i[<span class="string">&quot;sProdName&quot;</span>] + <span class="string">&#x27;.jpg&#x27;</span> + <span class="string">&#x27;\n&#x27;</span></span><br><span class="line">            <span class="built_in">print</span>(i[<span class="string">&quot;sProdName&quot;</span>] + <span class="string">&#x27;.jpg 已下好&#x27;</span>)</span><br><span class="line">            time.sleep(<span class="number">2</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;.\\data\\&#x27;</span> + i[<span class="string">&quot;sProdName&quot;</span>] + <span class="string">&#x27;.jpg 已存在&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 保存下载的图片列表</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;wzry.lst&#x27;</span>,<span class="string">&#x27;w&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(fileInfo)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 爬虫 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>爬取bing每日壁纸</title>
+      <link href="/2020/03/20/%E7%88%AC%E5%8F%96bing%E6%AF%8F%E6%97%A5%E5%A3%81%E7%BA%B8/"/>
+      <url>/2020/03/20/%E7%88%AC%E5%8F%96bing%E6%AF%8F%E6%97%A5%E5%A3%81%E7%BA%B8/</url>
+      
+        <content type="html"><![CDATA[<div style="position: relative; padding: 30% 45%;"><iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="//player.bilibili.com/player.html?bvid=BV15E411N72T&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div><p>必应壁纸的API:<a href="https://cn.bing.com/HPImageArchive.aspx">https://cn.bing.com/HPImageArchive.aspx</a><br>参数：</p><ul><li><p>format(可选)<br>  如果不存在format参数则返回xml格式</p><ul><li>js 返回json格式</li><li>xml   返回xml格式</li></ul></li><li><p>idx()<br>  截止天数</p><ul><li>0 今天</li><li>1 截止至明天</li><li>-1    截止至昨天</li></ul></li><li><p>n<br>  返回的数量<br>  1-8</p></li><li><p>mkt<br>  地区<br>  zh-CN   中国</p></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">Python爬取bing每日壁纸</span></span><br><span class="line"><span class="string">作者： ruxia-TJY</span></span><br><span class="line"><span class="string">转载请注明：https://ruxia-tjy.github.io/</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    <span class="comment"># bing壁纸API</span></span><br><span class="line">    url = <span class="string">&#x27;https://cn.bing.com/HPImageArchive.aspx?format=js&amp;idx=0&amp;n=1&amp;mkt=zh-CN&#x27;</span></span><br><span class="line">    <span class="comment"># 获取json</span></span><br><span class="line">    jsonr  requests.get(url).text</span><br><span class="line">    <span class="comment"># 获取图片路径</span></span><br><span class="line">    imgpath = json.loads(jsonr)[<span class="string">&quot;images&quot;</span>][<span class="number">0</span>][<span class="string">&quot;url&quot;</span>]</span><br><span class="line">    <span class="comment"># 拼接路径</span></span><br><span class="line">    imgurl = <span class="string">&#x27;http://cn.bing.com&#x27;</span> + imgpath</span><br><span class="line">    <span class="comment"># 获取壁纸</span></span><br><span class="line">    img = requests.get(imgurl)</span><br><span class="line">    <span class="comment">#保存名称</span></span><br><span class="line">    savename = time.strftime(<span class="string">&quot;%Y-%m-%d&quot;</span>) + <span class="string">&#x27;.jpg&#x27;</span></span><br><span class="line">    <span class="comment"># 保存图片</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(savename,<span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f1:</span><br><span class="line">        f1.write(img.content)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 爬虫 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
