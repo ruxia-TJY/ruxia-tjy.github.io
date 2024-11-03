@@ -20,9 +20,9 @@
       
         <tags>
             
-            <tag> 我的开源 </tag>
-            
             <tag> Python </tag>
+            
+            <tag> 我的开源 </tag>
             
         </tags>
       
@@ -105,9 +105,9 @@
       
         <tags>
             
-            <tag> 我的开源 </tag>
-            
             <tag> Python </tag>
+            
+            <tag> 我的开源 </tag>
             
         </tags>
       
@@ -132,9 +132,9 @@
       
         <tags>
             
-            <tag> 我的开源 </tag>
-            
             <tag> Python </tag>
+            
+            <tag> 我的开源 </tag>
             
             <tag> Ubuntu </tag>
             
@@ -213,9 +213,9 @@
       
         <tags>
             
-            <tag> 我的开源 </tag>
-            
             <tag> Python </tag>
+            
+            <tag> 我的开源 </tag>
             
         </tags>
       
@@ -429,9 +429,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 中国 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -602,7 +602,7 @@
       <link href="/2021/08/13/toscreen/"/>
       <url>/2021/08/13/toscreen/</url>
       
-        <content type="html"><![CDATA[<p>开始开发C++版本，后期Python版本可能不在开发。</p><p>将图片从电脑通过串口显示到屏幕上，目前支持单色OLED屏幕。</p><h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><h3 id="CPP版本"><a href="#CPP版本" class="headerlink" title="CPP版本"></a>CPP版本</h3><p>使用Qt5.9.9进行开发，因为使用的是MinGW编译好的OpenCV，所以请使用MInGW编译Qt，如果更改为MSVC请自行编译相应的OpenCV。</p><h3 id="Python版本"><a href="#Python版本" class="headerlink" title="Python版本"></a>Python版本</h3><p>发布版本通过pyinstaller打包。再Windows上，您可以直接下载exe程序运行，或者下载源代码，通过命令</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure><p>安装相关包，运行toScreen.py文件。</p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><a class="btn-beautify blue larger" href="https://gitee.com/ruxia-tjy/to-screen" title="Gitee链接"><i class="far fa-hand-point-right"></i><span>Gitee链接</span></a><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><p><strong>0.0.0.4</strong>更新</p><ul><li>增加了跳转指定帧和首帧功能</li><li>增加视频信息显示</li><li>小幅度修改界面</li></ul>]]></content>
+        <content type="html"><![CDATA[<p>开始开发C++版本，后期Python版本可能不在开发。</p><p>将图片从电脑通过串口显示到屏幕上，目前支持单色OLED屏幕。</p><div style="position: relative; padding: 30% 45%;"><iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="//player.bilibili.com/player.html?bvid=BV1K44y187fg&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div><h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><h3 id="CPP版本"><a href="#CPP版本" class="headerlink" title="CPP版本"></a>CPP版本</h3><p>使用Qt5.9.9进行开发，因为使用的是MinGW编译好的OpenCV，所以请使用MInGW编译Qt，如果更改为MSVC请自行编译相应的OpenCV。</p><h3 id="Python版本"><a href="#Python版本" class="headerlink" title="Python版本"></a>Python版本</h3><p>发布版本通过pyinstaller打包。再Windows上，您可以直接下载exe程序运行，或者下载源代码，通过命令</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure><p>安装相关包，运行toScreen.py文件。</p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><a class="btn-beautify blue larger" href="https://gitee.com/ruxia-tjy/to-screen" title="Gitee链接"><i class="far fa-hand-point-right"></i><span>Gitee链接</span></a><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><div class="timeline blue"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>更新记录</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2021-09-16 <a href="https://gitee.com/ruxia-TJY/to-screen/releases/tag/0.0.0.5">0.0.0.4 -&gt; 0.0.0.5</a></p></div></div><div class='timeline-item-content'><ol><li>修改读取到末尾异常终止</li><li>设置读取到末尾再次点击播放重新加载视频</li><li>更新版本号</li></ol></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2021-08-28 <a href="https://gitee.com/ruxia-TJY/to-screen/releases/tag/0.0.0.4">0.0.0.3 -&gt; 0.0.0.4</a></p></div></div><div class='timeline-item-content'><ol><li>增加了跳转指定帧和首帧功能</li><li>增加视频信息显示</li><li>小幅度修改界面</li></ol></div></div></div>]]></content>
       
       
       <categories>
@@ -616,11 +616,11 @@
             
             <tag> C/C++ </tag>
             
-            <tag> 我的开源 </tag>
-            
             <tag> Qt </tag>
             
             <tag> Python </tag>
+            
+            <tag> 我的开源 </tag>
             
             <tag> 上位机 </tag>
             
