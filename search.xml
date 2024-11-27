@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>爬取京东top100图书排行榜</title>
+      <link href="/2024/11/12/%E7%88%AC%E5%8F%96%E4%BA%AC%E4%B8%9C%E5%8F%8C11top10%E5%9B%BE%E4%B9%A6%E6%8E%92%E8%A1%8C%E6%A6%9C/"/>
+      <url>/2024/11/12/%E7%88%AC%E5%8F%96%E4%BA%AC%E4%B8%9C%E5%8F%8C11top10%E5%9B%BE%E4%B9%A6%E6%8E%92%E8%A1%8C%E6%A6%9C/</url>
+      
+        <content type="html"><![CDATA[<p>打开京东官网，搜索图书，随便选择一本进入详情页，点击排行榜详情，可以到达京东的<a href="https://book.jd.com/booktop/0-0-0.html?category=3258-0-0-0-10001-1">图书排行榜</a><br>按F12-&gt;网络,Ctrl+R刷新，一条条排查，可以找到数据URL为<br><a href="https://gw-e.jd.com/client.action?callback=func&amp;body=%7B%22moduleType%22%3A1%2C%22page%22%3A1%2C%22pageSize%22%3A20%2C%22scopeType%22%3A1%7D&amp;functionId=bookRank&amp;client=e.jd.com&amp;_=1732717114846">https://gw-e.jd.com/client.action?callback=func&amp;body=%7B%22moduleType%22%3A1%2C%22page%22%3A1%2C%22pageSize%22%3A20%2C%22scopeType%22%3A1%7D&amp;functionId=bookRank&amp;client=e.jd.com&amp;_=1732717114846</a></p><p>解码一下，网址内容如下</p><p><a href="https://gw-e.jd.com/client.action?callback=func&amp;body={&quot;moduleType&quot;:1,&quot;page&quot;:1,&quot;pageSize&quot;:20,&quot;scopeType&quot;:1}&amp;functionId=bookRank&amp;client=e.jd.com&amp;_=1732717114846">https://gw-e.jd.com/client.action?callback=func&amp;body={&quot;moduleType&quot;:1,&quot;page&quot;:1,&quot;pageSize&quot;:20,&quot;scopeType&quot;:1}&amp;functionId=bookRank&amp;client=e.jd.com&amp;_=1732717114846</a></p><p>其中参数</p><div class="table-container"><table><thead><tr><th style="text-align:center">参数</th><th style="text-align:center">含义</th></tr></thead><tbody><tr><td style="text-align:center">moduleType</td><td style="text-align:center">图书销量榜/新书热卖榜</td></tr><tr><td style="text-align:center">page</td><td style="text-align:center">页面</td></tr><tr><td style="text-align:center">pageSize</td><td style="text-align:center">页面书籍数量</td></tr><tr><td style="text-align:center">scopeType</td><td style="text-align:center">日榜/周榜/月榜</td></tr><tr><td style="text-align:center">_</td><td style="text-align:center">时间戳</td></tr></tbody></table></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_data</span>():</span><br><span class="line">    <span class="comment"># 请求标头伪装浏览器</span></span><br><span class="line">    headers = &#123;</span><br><span class="line">        <span class="string">&#x27;User-Agent&#x27;</span>: <span class="string">&#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36&#x27;</span>,</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 2024年11月11日24:00:00的时间戳为1731340800</span></span><br><span class="line">    timestamp = <span class="string">&#x27;1731340800&#x27;</span></span><br><span class="line">    <span class="comment"># url通过在网页F12获取的到，尾部的_后面为时间戳</span></span><br><span class="line">    url = <span class="string">f&#x27;https://gw-e.jd.com/client.action?callback=func&amp;body=%7B%22moduleType%22%3A1%2C%22page%22%3A1%2C%22pageSize%22%3A10%2C%22scopeType%22%3A1%7D&amp;functionId=bookRank&amp;client=e.jd.com&amp;_=<span class="subst">&#123;timestamp&#125;</span>&#x27;</span></span><br><span class="line">    req = requests.get(url,headers=headers)</span><br><span class="line">    <span class="comment"># 返回200，成功</span></span><br><span class="line">    <span class="keyword">if</span>(req.status_code == <span class="number">200</span>):</span><br><span class="line">        req_txt= req.text</span><br><span class="line">    <span class="comment"># 返回的结果为&quot;func(&#123;&#125;)&quot;将开头的func(和尾部的)去掉，剩下的为json</span></span><br><span class="line">    req_txt = req_txt[<span class="number">5</span>:-<span class="number">1</span>]</span><br><span class="line">    <span class="comment"># 加载json</span></span><br><span class="line">    j = json.loads(req_txt)</span><br><span class="line">    <span class="comment"># 图书数据在j[&#x27;data&#x27;][&#x27;books&#x27;]下</span></span><br><span class="line">    book_lst = j[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;books&#x27;</span>]</span><br><span class="line">    <span class="comment"># 用于记录排名，一个json中包含20本书，</span></span><br><span class="line">    rank = <span class="number">1</span></span><br><span class="line">    <span class="comment"># 遍历</span></span><br><span class="line">    <span class="keyword">for</span> book <span class="keyword">in</span> book_lst:</span><br><span class="line">        <span class="comment"># 因为只需要获取前10名，所以超过10跳出循环，舍去结果</span></span><br><span class="line">        <span class="keyword">if</span>(rank &gt; <span class="number">10</span>):</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        <span class="comment"># 图书名</span></span><br><span class="line">        book_name = book[<span class="string">&#x27;bookName&#x27;</span>]</span><br><span class="line">        <span class="comment"># 图书原价</span></span><br><span class="line">        book_definePrice = book[<span class="string">&#x27;definePrice&#x27;</span>]</span><br><span class="line">        <span class="comment"># 图书卖价</span></span><br><span class="line">        book_sellPrice = book[<span class="string">&#x27;sellPrice&#x27;</span>]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 进行输出</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&#x27;<span class="subst">&#123;rank&#125;</span> 图书:<span class="subst">&#123;book_name&#125;</span>,原价:<span class="subst">&#123;book_definePrice&#125;</span>,卖价:<span class="subst">&#123;book_sellPrice&#125;</span>&#x27;</span>)</span><br><span class="line">        rank = rank + <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    get_data()</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 爬虫 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>urlCheck 批量检测链接是否有效的小工具</title>
       <link href="/2024/08/28/urlCheck/"/>
       <url>/2024/08/28/urlCheck/</url>
@@ -20,9 +47,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 我的开源 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -105,9 +132,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 我的开源 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -132,9 +159,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 我的开源 </tag>
+            
+            <tag> Python </tag>
             
             <tag> Ubuntu </tag>
             
@@ -213,9 +240,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 我的开源 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -429,9 +456,9 @@
       
         <tags>
             
-            <tag> 中国 </tag>
-            
             <tag> Python </tag>
+            
+            <tag> 中国 </tag>
             
         </tags>
       
@@ -618,9 +645,9 @@
             
             <tag> Qt </tag>
             
-            <tag> Python </tag>
-            
             <tag> 我的开源 </tag>
+            
+            <tag> Python </tag>
             
             <tag> 上位机 </tag>
             
